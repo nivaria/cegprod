@@ -59,9 +59,60 @@ function cegprod_preprocess_page(&$variables) {
     }
 }
 
-function cegprod_preprocess_node(&$variables) {
+function cegprod_preprocess_node(&$vars) {
     $query = 'destination=' . $_GET['q'];
-    $variables['answers_login'] = t('<a href="@login">Login</a> or <a href="@register">register</a> to vote', array('@login' => url('user/login', array('query' => $query)), '@register' => url('user/register', array('query' => $query))));
+    $vars['answers_login'] = t('<a href="@login">Login</a> or <a href="@register">register</a> to vote', array('@login' => url('user/login', array('query' => $query)), '@register' => url('user/register', array('query' => $query))));
+    // Only build custom submitted information if it was first available
+    // If it's not, that indicates that it's been turned off for this
+    // node type
+    if ($vars['submitted']) {
+        // Load the node author
+        $author = user_load($vars['node']->uid);
+
+        // Author picture
+        if (theme_get_setting('toggle_node_user_picture')) {
+            $picture = $vars['picture'];
+            unset($vars['picture']);
+            $submitted = ($author->uid && user_access('access user profiles')) ? l($picture, "user/{$author->uid}", array('html' => TRUE)) : $picture;
+        }
+        $vars['submitted_name'] = (module_exists('contributors') && _check_contributors_ctype_enabled($vars['node']->type)) ? $vars['node']->content['contributors']['#value'] : theme('username', $author);
+
+        // Author information
+        $submitted .= '<span class="submitted-by">';
+        $submitted .= t('Submitted by !name', array('!name' => $vars['submitted_name']));
+        $submitted .= '</span>';
+
+
+        if (!module_exists('contributors') || !_check_contributors_ctype_enabled($vars['node']->type)) {
+
+            // User points
+            if ($author->uid && module_exists('userpoints')) {
+                $points = userpoints_get_current_points($author->uid);
+                $submitted .= '<span class="userpoints-value" title="' . t('!val user points', array('!val' => $points)) . '">';
+                $submitted .= "({$points})";
+                $submitted .= '</span>';
+            }
+
+            // User badges
+            if ($author->uid && module_exists('user_badges')) {
+                if (is_array($author->badges)) {
+                    foreach ($author->badges as $badge) {
+                        $badges[] = theme('user_badge', $badge, $author);
+                    }
+                }
+
+                if (!empty($badges)) {
+                    $submitted .= theme('user_badge_group', $badges);
+                }
+            }
+        }
+        // Created time
+        $submitted .= '<span class="submitted-on">';
+        $submitted .= format_date($vars['node']->created);
+        $submitted .= '</span>';
+
+        $vars['submitted'] = $submitted;
+    }
 }
 
 function cegprod_og_subscribe_link($node) {
