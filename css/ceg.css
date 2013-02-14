@@ -177,7 +177,6 @@ h1 {
 }
 #nav-group li:last-child{
     border-right: 1px solid #00559C;
-    display:none;
 }
 #nav-group a{
         background-color: transparent;
@@ -212,6 +211,44 @@ h1 {
 }
 /* END header stuff */
 
+/* BEGIN home slideshow */
+#block-views-home_slideshow-block_1{
+    float:none;
+    width:100%;
+}
+#block-views-home_slideshow-block_1 .inner{
+    background-color: #FFFFFF;
+    padding: 42px 20px;
+}
+.views_slideshow_previous{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-97px -75px;
+    display:block;
+    width:50px;
+    height:50px;
+    text-indent:-9999px;
+}
+.views_slideshow_next{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-97px -190px;
+    display:block;
+    width:50px;
+    height:50px;
+    text-indent:-9999px;
+}
+.views_slideshow_pause{
+    display:none;
+}
+/* END home slideshow */
+
+/* BEGIN metagroups view */
+#block-views-metagroups-block_1{
+    float:none;
+    width:100%;
+}
+/* END metagroups view */
 /* BEGIN images */
 .sidebar-last .block-views .views-field-field-group-image-fid,
 .sidebar-last .block-views .views-field-picture,
