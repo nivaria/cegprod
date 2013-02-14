@@ -12,8 +12,7 @@ Drupal.behaviors.user_dropdown = function (context) {
     
     $('body').addClass('user-dropdown-processed');
     $('.view-user-meta .views-field-name a').attr('href','javascript:;');
-    $('.views-field-nothing, .views-field-nothing-1').wrapAll('<div class="user-field-options" />');
-    $('.views-field-nothing-2, .views-field-nothing-3').wrapAll('<div class="user-field-options" />');
+    $('.views-field-nothing, .views-field-nothing-1, .views-field-nothing-2, .views-field-nothing-3').wrapAll('<div class="user-field-options" />');
     $('.user-field-options').width($('.view-user-meta .views-field-name .welcome-text').width());
     
     $('.view-user-meta .views-field-name a').click(function(){
