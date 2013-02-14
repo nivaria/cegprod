@@ -248,6 +248,18 @@ h1 {
     float:none;
     width:100%;
 }
+#page .view-metagroups li.views-row{
+    background-color: #FFFFFF;
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 168px;
+    list-style: none outside none;
+    margin: 0 30px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+}
 /* END metagroups view */
 /* BEGIN images */
 .sidebar-last .block-views .views-field-field-group-image-fid,
