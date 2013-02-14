@@ -7,7 +7,9 @@ core = 6.x
 engine = phptemplate
 
 stylesheets[all][] = css/commons_origins-style.css
+stylesheets[all][] = css/ceg.css
 scripts[] = js/commons_origins.js
+scripts[] = js/ceg.js
 
 regions[sidebar_first] = sidebar first
 regions[sidebar_last] = sidebar last

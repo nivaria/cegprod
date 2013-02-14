@@ -1,0 +1,599 @@
+body{
+    background-color:#f1f2f3;
+    color: #444444;
+    font-family: arial;
+    font-size: 13px;
+}
+#page{
+    background-image:none;
+}
+#logo{
+    margin:0;
+}
+#page #content-inner,
+#page #sidebar-last.nested,
+#page #main{
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    padding:0;
+    background-image:none;
+}
+#page #content-inner-inner,
+#page #sidebar-last.nested .inner,
+#main .inner{
+    padding:0;
+}
+#content-inner-inner{
+    margin: 0 20px 0 0;
+}
+#content-group-inner{
+    margin:0;
+}
+#content-messages{
+    display:none !important;
+}
+#site-name-wrapper,
+.sidebar-last-cap {
+    display: none;
+}
+a,
+a:link,
+a:visited{
+    color: #1b80c9;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+.view div.more-link,
+.view .view-footer,
+.heartbeat-more-messages-wrapper {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: right;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #0088c9;
+    font-size: 32px;
+    font-weight: bold;
+}
+#page h2{
+    color: #656565;
+    font-size: 18px;
+    font-weight: bold;
+    margin:0 0 8px;
+}
+/* BEGIN blocks */
+#main .block{
+    background-color: #FFFFFF;
+    display: block;
+    padding: 0;
+    overflow:hidden;	
+    box-shadow: 2px 4px 4px #D6D6D6;
+    -webkit-box-shadow: 2px 4px 4px #D6D6D6;
+    -moz-box-shadow: 2px 4px 4px #D6D6D6;	
+    border:0 none;
+    margin-bottom:20px;
+}
+#main .block .inner{
+    padding:20px;	
+}
+#block-commons_nivaria-1{
+    float:none;
+    width:auto;
+}
+#block-views-29a6f88b4b3b4e056713daa56b994c9e{
+    width:49%;
+}
+#block-views-content_event_page-block_1{
+    float: right;
+    width: 48%;
+}
+/* END blocks */
+
+/* BEGIN header stuff */
+.view-user-meta .views-field-name .welcome-text {
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    color: #DBDBDB;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 4px;
+    text-align: left;
+}
+.view-user-meta .views-field-name .welcome-text a{
+    color: #00A5F1;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right:17px;
+    
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-140px -141px;    
+}
+#search-box{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-188px -323px;
+    width:300px;
+    height:26px;
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    min-width: 0;
+    padding: 0;
+    top:68px;
+}
+#search-box-inner{
+    border:0 none;
+}
+#search-box .form-text{
+    background-color: transparent;
+}
+#search-box .form-submit{
+   background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    box-shadow: none;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-top: -21px;
+    padding: 0;
+    text-indent: -9999px;
+    width: 40px;
+}
+#search-box .contextual-search-wrapper{
+    border: 0 none;
+    left: 0;
+    right: auto;
+    top: 3px;
+}
+#search-box .contextual-search-wrapper a{
+    background-color: transparent;
+    background-image: none;
+    color: #0077B7;
+}
+#nav-group{
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    left: 202px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 36px;
+}
+#nav-group li{
+    border-left: 1px solid #00559C;
+}
+#nav-group li:last-child{
+    border-right: 1px solid #00559C;
+    display:none;
+}
+#nav-group a{
+        background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    height: 30px;
+    padding: 40px 22px 0 22px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 46px;
+    width:auto;
+    border-left: 1px solid #009EFF;
+}
+#nav-group ul.menu li.first a{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-284px -242px;
+}
+#nav-group ul.menu li.second a{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-277px -184px;
+}
+#nav-group ul.menu li.third a{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-262px -117px;
+}
+/* END header stuff */
+
+/* BEGIN images */
+.sidebar-last .block-views .views-field-field-group-image-fid,
+.sidebar-last .block-views .views-field-picture,
+.sidebar-last .block-views .views-field-field-date-value {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+#page .block-views .views-field-picture{
+    border-radius:8px;
+    float:none;
+    margin:0;
+    width:auto;
+    background-color:#fff;
+    padding:3px;
+    border:1px solid #D6D6D6;
+    box-shadow: 2px 4px 4px #D6D6D6;
+    -webkit-box-shadow: 2px 4px 4px #D6D6D6;
+    -moz-box-shadow: 2px 4px 4px #D6D6D6;	    
+}
+#page .block-views .views-field-picture a{
+    display:block;
+}
+#page .block-views .views-field-picture img{
+    vertical-align:middle;
+}
+/* END images */
+
+
+/* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
+.Shadowbox {
+	background-color: #ffffff;
+}
+.Botonvioletanivaria {
+	background-color: #8c81aa;
+}
+.Bloquegrissuavenivaria {
+	background-color: #999999;
+}
+.Bloquesombra {
+	background-color: #ffffff;
+}
+.Estilo {
+	color: #1c81c9;
+	font-size: 15px;
+}
+.NaranjaNivariasolido {
+	background-color: #f57d0a;
+}
+.Estilo2 {
+	background-color: #0088c9;
+}
+.WebButton490 {
+	background-color: #e4f1f8;
+	border-color: #54b200;
+	border-width: 1px;
+	background-image: linear-gradient(rgba(204, 232, 179, 1) 0%, rgba(122, 185, 54, 1) 47%, rgba(98, 173, 18, 1) 49%, rgba(143, 196, 44, 1) 98%, rgba(144, 197, 45, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(204, 232, 179, 1) 0%, rgba(122, 185, 54, 1) 47%, rgba(98, 173, 18, 1) 49%, rgba(143, 196, 44, 1) 98%, rgba(144, 197, 45, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(204, 232, 179, 1) 0%, rgba(122, 185, 54, 1) 47%, rgba(98, 173, 18, 1) 49%, rgba(143, 196, 44, 1) 98%, rgba(144, 197, 45, 1) 99%);
+	background-image: -o-linear-gradient(rgba(204, 232, 179, 1) 0%, rgba(122, 185, 54, 1) 47%, rgba(98, 173, 18, 1) 49%, rgba(143, 196, 44, 1) 98%, rgba(144, 197, 45, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(204, 232, 179, 1) 0%, rgba(122, 185, 54, 1) 47%, rgba(98, 173, 18, 1) 49%, rgba(143, 196, 44, 1) 98%, rgba(144, 197, 45, 1) 99%);
+}
+.WebButton002 {
+	background-color: #77a2e9;
+	border-color: #dcdcdc;
+	border-width: 1px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 98%, rgba(246, 246, 246, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 98%, rgba(246, 246, 246, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 98%, rgba(246, 246, 246, 1) 99%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 98%, rgba(246, 246, 246, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 98%, rgba(246, 246, 246, 1) 99%);
+}
+.WebButton003 {
+	background-color: #77a2e9;
+	border-color: #ffffff;
+	border-width: 1px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 97%, rgba(227, 227, 227, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 97%, rgba(227, 227, 227, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 97%, rgba(227, 227, 227, 1) 98%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 97%, rgba(227, 227, 227, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(227, 227, 227, 1) 97%, rgba(227, 227, 227, 1) 98%);
+}
+.WebButton004 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: radial-gradient(rgba(241, 242, 241, 1) 0%, rgba(255, 255, 255, 1) 99%);
+	background-image: -moz-radial-gradient(rgba(241, 242, 241, 1) 0%, rgba(255, 255, 255, 1) 99%);
+	background-image: -webkit-radial-gradient(rgba(241, 242, 241, 1) 0%, rgba(255, 255, 255, 1) 99%);
+	background-image: -o-radial-gradient(rgba(241, 242, 241, 1) 0%, rgba(255, 255, 255, 1) 99%);
+	background-image: -ms-radial-gradient(rgba(241, 242, 241, 1) 0%, rgba(255, 255, 255, 1) 99%);
+}
+.WebButton005 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 50%, rgba(239, 239, 239, 1) 97%, rgba(239, 239, 239, 1) 97%);
+	background-image: -moz-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 50%, rgba(239, 239, 239, 1) 97%, rgba(239, 239, 239, 1) 97%);
+	background-image: -webkit-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 50%, rgba(239, 239, 239, 1) 97%, rgba(239, 239, 239, 1) 97%);
+	background-image: -o-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 50%, rgba(239, 239, 239, 1) 97%, rgba(239, 239, 239, 1) 97%);
+	background-image: -ms-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 50%, rgba(239, 239, 239, 1) 97%, rgba(239, 239, 239, 1) 97%);
+}
+.WebButton006 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(237, 237, 237, 1) 47%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 96%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(237, 237, 237, 1) 47%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 96%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(237, 237, 237, 1) 47%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 96%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(237, 237, 237, 1) 47%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 96%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(237, 237, 237, 1) 47%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 96%);
+}
+.WebButton007 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(249, 249, 249, 1) 47%, rgba(237, 237, 237, 1) 71%, rgba(208, 208, 208, 1) 96%, rgba(207, 207, 207, 1) 97%);
+	background-image: -moz-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(249, 249, 249, 1) 47%, rgba(237, 237, 237, 1) 71%, rgba(208, 208, 208, 1) 96%, rgba(207, 207, 207, 1) 97%);
+	background-image: -webkit-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(249, 249, 249, 1) 47%, rgba(237, 237, 237, 1) 71%, rgba(208, 208, 208, 1) 96%, rgba(207, 207, 207, 1) 97%);
+	background-image: -o-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(249, 249, 249, 1) 47%, rgba(237, 237, 237, 1) 71%, rgba(208, 208, 208, 1) 96%, rgba(207, 207, 207, 1) 97%);
+	background-image: -ms-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(249, 249, 249, 1) 47%, rgba(237, 237, 237, 1) 71%, rgba(208, 208, 208, 1) 96%, rgba(207, 207, 207, 1) 97%);
+}
+.WebButton014 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 52%, rgba(228, 228, 228, 1) 93%, rgba(226, 226, 226, 1) 96%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 52%, rgba(228, 228, 228, 1) 93%, rgba(226, 226, 226, 1) 96%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 52%, rgba(228, 228, 228, 1) 93%, rgba(226, 226, 226, 1) 96%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 52%, rgba(228, 228, 228, 1) 93%, rgba(226, 226, 226, 1) 96%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 52%, rgba(228, 228, 228, 1) 93%, rgba(226, 226, 226, 1) 96%);
+}
+.WebButton012 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 60%, rgba(233, 233, 233, 1) 95%, rgba(232, 232, 232, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 60%, rgba(233, 233, 233, 1) 95%, rgba(232, 232, 232, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 60%, rgba(233, 233, 233, 1) 95%, rgba(232, 232, 232, 1) 98%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 60%, rgba(233, 233, 233, 1) 95%, rgba(232, 232, 232, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 60%, rgba(233, 233, 233, 1) 95%, rgba(232, 232, 232, 1) 98%);
+}
+.WebButton009 {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(254, 254, 255, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(242, 242, 242, 1) 96%, rgba(241, 241, 241, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(254, 254, 255, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(242, 242, 242, 1) 96%, rgba(241, 241, 241, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(254, 254, 255, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(242, 242, 242, 1) 96%, rgba(241, 241, 241, 1) 99%);
+	background-image: -o-linear-gradient(rgba(254, 254, 255, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(242, 242, 242, 1) 96%, rgba(241, 241, 241, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(254, 254, 255, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(242, 242, 242, 1) 96%, rgba(241, 241, 241, 1) 99%);
+}
+.WebButton008 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 44%, rgba(238, 238, 236, 1) 93%, rgba(237, 237, 235, 1) 96%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 44%, rgba(238, 238, 236, 1) 93%, rgba(237, 237, 235, 1) 96%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 44%, rgba(238, 238, 236, 1) 93%, rgba(237, 237, 235, 1) 96%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 44%, rgba(238, 238, 236, 1) 93%, rgba(237, 237, 235, 1) 96%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(249, 249, 249, 1) 44%, rgba(238, 238, 236, 1) 93%, rgba(237, 237, 235, 1) 96%);
+}
+.WebButton015 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(245, 245, 245, 1) 0%, rgba(250, 250, 250, 1) 48%, rgba(238, 238, 238, 1) 49%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(245, 245, 245, 1) 0%, rgba(250, 250, 250, 1) 48%, rgba(238, 238, 238, 1) 49%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(245, 245, 245, 1) 0%, rgba(250, 250, 250, 1) 48%, rgba(238, 238, 238, 1) 49%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 99%);
+	background-image: -o-linear-gradient(rgba(245, 245, 245, 1) 0%, rgba(250, 250, 250, 1) 48%, rgba(238, 238, 238, 1) 49%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(245, 245, 245, 1) 0%, rgba(250, 250, 250, 1) 48%, rgba(238, 238, 238, 1) 49%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 99%);
+}
+.WebButton016 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 3px;
+	background-image: linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(251, 251, 251, 1) 47%, rgba(242, 242, 242, 1) 48%, rgba(255, 255, 255, 1) 100%);
+	background-image: -moz-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(251, 251, 251, 1) 47%, rgba(242, 242, 242, 1) 48%, rgba(255, 255, 255, 1) 100%);
+	background-image: -webkit-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(251, 251, 251, 1) 47%, rgba(242, 242, 242, 1) 48%, rgba(255, 255, 255, 1) 100%);
+	background-image: -o-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(251, 251, 251, 1) 47%, rgba(242, 242, 242, 1) 48%, rgba(255, 255, 255, 1) 100%);
+	background-image: -ms-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(251, 251, 251, 1) 47%, rgba(242, 242, 242, 1) 48%, rgba(255, 255, 255, 1) 100%);
+}
+.WebButton017 {
+	background-color: #ffffff;
+	border-color: #f5f5f5;
+	border-width: 5px;
+}
+.WebButton018 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 100%);
+	background-image: -moz-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 100%);
+	background-image: -webkit-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 100%);
+	background-image: -o-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 100%);
+	background-image: -ms-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 100%);
+}
+.azul_claro {
+	background-color: #0071b2;
+}
+.Estilo3 {
+	background-color: #43bd14;
+}
+.Estilo4 {
+	background-color: #ffffff;
+}
+.WebButton034 {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -o-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+}
+.buttongreen {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -o-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+}
+.buttonblue {
+	background-color: #0088c9;
+	background-image: linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -o-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+}
+.buttonorange {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(254, 158, 34, 1) 0%, rgba(254, 158, 34, 1) 4%, rgba(248, 136, 0, 1) 16%, rgba(245, 127, 0, 1) 53%, rgba(244, 124, 0, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(254, 158, 34, 1) 0%, rgba(254, 158, 34, 1) 4%, rgba(248, 136, 0, 1) 16%, rgba(245, 127, 0, 1) 53%, rgba(244, 124, 0, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(254, 158, 34, 1) 0%, rgba(254, 158, 34, 1) 4%, rgba(248, 136, 0, 1) 16%, rgba(245, 127, 0, 1) 53%, rgba(244, 124, 0, 1) 99%);
+	background-image: -o-linear-gradient(rgba(254, 158, 34, 1) 0%, rgba(254, 158, 34, 1) 4%, rgba(248, 136, 0, 1) 16%, rgba(245, 127, 0, 1) 53%, rgba(244, 124, 0, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(254, 158, 34, 1) 0%, rgba(254, 158, 34, 1) 4%, rgba(248, 136, 0, 1) 16%, rgba(245, 127, 0, 1) 53%, rgba(244, 124, 0, 1) 99%);
+}
+.WebButton182 {
+	background-color: #ffffff;
+	border-color: #ff8900;
+	border-width: 3px;
+	background-image: linear-gradient(rgba(255, 196, 124, 1) 0%, rgba(255, 196, 124, 1) 9%, rgba(255, 150, 19, 1) 50%, rgba(255, 137, 0, 1) 51%, rgba(255, 150, 32, 1) 90%, rgba(255, 150, 32, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(255, 196, 124, 1) 0%, rgba(255, 196, 124, 1) 9%, rgba(255, 150, 19, 1) 50%, rgba(255, 137, 0, 1) 51%, rgba(255, 150, 32, 1) 90%, rgba(255, 150, 32, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(255, 196, 124, 1) 0%, rgba(255, 196, 124, 1) 9%, rgba(255, 150, 19, 1) 50%, rgba(255, 137, 0, 1) 51%, rgba(255, 150, 32, 1) 90%, rgba(255, 150, 32, 1) 98%);
+	background-image: -o-linear-gradient(rgba(255, 196, 124, 1) 0%, rgba(255, 196, 124, 1) 9%, rgba(255, 150, 19, 1) 50%, rgba(255, 137, 0, 1) 51%, rgba(255, 150, 32, 1) 90%, rgba(255, 150, 32, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(255, 196, 124, 1) 0%, rgba(255, 196, 124, 1) 9%, rgba(255, 150, 19, 1) 50%, rgba(255, 137, 0, 1) 51%, rgba(255, 150, 32, 1) 90%, rgba(255, 150, 32, 1) 98%);
+}
+.WebButton183 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(250, 204, 59, 1) 0%, rgba(244, 145, 23, 1) 44%, rgba(239, 91, 5, 1) 97%, rgba(239, 89, 4, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(250, 204, 59, 1) 0%, rgba(244, 145, 23, 1) 44%, rgba(239, 91, 5, 1) 97%, rgba(239, 89, 4, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(250, 204, 59, 1) 0%, rgba(244, 145, 23, 1) 44%, rgba(239, 91, 5, 1) 97%, rgba(239, 89, 4, 1) 99%);
+	background-image: -o-linear-gradient(rgba(250, 204, 59, 1) 0%, rgba(244, 145, 23, 1) 44%, rgba(239, 91, 5, 1) 97%, rgba(239, 89, 4, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(250, 204, 59, 1) 0%, rgba(244, 145, 23, 1) 44%, rgba(239, 91, 5, 1) 97%, rgba(239, 89, 4, 1) 99%);
+}
+.WebButton191 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(254, 153, 53, 1) 0%, rgba(255, 129, 6, 1) 50%, rgba(255, 127, 0, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(254, 153, 53, 1) 0%, rgba(255, 129, 6, 1) 50%, rgba(255, 127, 0, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(254, 153, 53, 1) 0%, rgba(255, 129, 6, 1) 50%, rgba(255, 127, 0, 1) 98%);
+	background-image: -o-linear-gradient(rgba(254, 153, 53, 1) 0%, rgba(255, 129, 6, 1) 50%, rgba(255, 127, 0, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(254, 153, 53, 1) 0%, rgba(255, 129, 6, 1) 50%, rgba(255, 127, 0, 1) 98%);
+}
+.WebButton187 {
+	background-color: #f2eee9;
+	background-image: linear-gradient(rgba(255, 155, 0, 1) 0%, rgba(255, 155, 0, 1) 17%, rgba(255, 120, 0, 1) 24%, rgba(255, 189, 0, 1) 81%, rgba(255, 189, 0, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(255, 155, 0, 1) 0%, rgba(255, 155, 0, 1) 17%, rgba(255, 120, 0, 1) 24%, rgba(255, 189, 0, 1) 81%, rgba(255, 189, 0, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(255, 155, 0, 1) 0%, rgba(255, 155, 0, 1) 17%, rgba(255, 120, 0, 1) 24%, rgba(255, 189, 0, 1) 81%, rgba(255, 189, 0, 1) 98%);
+	background-image: -o-linear-gradient(rgba(255, 155, 0, 1) 0%, rgba(255, 155, 0, 1) 17%, rgba(255, 120, 0, 1) 24%, rgba(255, 189, 0, 1) 81%, rgba(255, 189, 0, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(255, 155, 0, 1) 0%, rgba(255, 155, 0, 1) 17%, rgba(255, 120, 0, 1) 24%, rgba(255, 189, 0, 1) 81%, rgba(255, 189, 0, 1) 98%);
+}
+.WebButton186 {
+	background-color: #ff6203;
+	background-image: linear-gradient(rgba(249, 206, 98, 1) 0%, rgba(255, 167, 70, 1) 48%, rgba(255, 141, 22, 1) 49%, rgba(255, 156, 49, 1) 81%, rgba(255, 156, 49, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(249, 206, 98, 1) 0%, rgba(255, 167, 70, 1) 48%, rgba(255, 141, 22, 1) 49%, rgba(255, 156, 49, 1) 81%, rgba(255, 156, 49, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(249, 206, 98, 1) 0%, rgba(255, 167, 70, 1) 48%, rgba(255, 141, 22, 1) 49%, rgba(255, 156, 49, 1) 81%, rgba(255, 156, 49, 1) 99%);
+	background-image: -o-linear-gradient(rgba(249, 206, 98, 1) 0%, rgba(255, 167, 70, 1) 48%, rgba(255, 141, 22, 1) 49%, rgba(255, 156, 49, 1) 81%, rgba(255, 156, 49, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(249, 206, 98, 1) 0%, rgba(255, 167, 70, 1) 48%, rgba(255, 141, 22, 1) 49%, rgba(255, 156, 49, 1) 81%, rgba(255, 156, 49, 1) 99%);
+}
+.WebButton044 {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(240, 241, 241, 1) 51%, rgba(228, 230, 231, 1) 93%, rgba(227, 229, 230, 1) 96%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(240, 241, 241, 1) 51%, rgba(228, 230, 231, 1) 93%, rgba(227, 229, 230, 1) 96%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(240, 241, 241, 1) 51%, rgba(228, 230, 231, 1) 93%, rgba(227, 229, 230, 1) 96%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(240, 241, 241, 1) 51%, rgba(228, 230, 231, 1) 93%, rgba(227, 229, 230, 1) 96%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(240, 241, 241, 1) 51%, rgba(228, 230, 231, 1) 93%, rgba(227, 229, 230, 1) 96%);
+}
+.WebButton045 {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(247, 247, 247, 1) 0%, rgba(213, 211, 212, 1) 97%, rgba(213, 211, 212, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(247, 247, 247, 1) 0%, rgba(213, 211, 212, 1) 97%, rgba(213, 211, 212, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(247, 247, 247, 1) 0%, rgba(213, 211, 212, 1) 97%, rgba(213, 211, 212, 1) 98%);
+	background-image: -o-linear-gradient(rgba(247, 247, 247, 1) 0%, rgba(213, 211, 212, 1) 97%, rgba(213, 211, 212, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(247, 247, 247, 1) 0%, rgba(213, 211, 212, 1) 97%, rgba(213, 211, 212, 1) 98%);
+}
+.WebButton036 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(250, 250, 250, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(250, 250, 250, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(250, 250, 250, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -o-linear-gradient(rgba(250, 250, 250, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(250, 250, 250, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+}
+.WebButton033 {
+	background-color: #dbdbdb;
+	background-image: linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(240, 240, 240, 1) 47%, rgba(227, 227, 227, 1) 48%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(240, 240, 240, 1) 47%, rgba(227, 227, 227, 1) 48%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(240, 240, 240, 1) 47%, rgba(227, 227, 227, 1) 48%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 99%);
+	background-image: -o-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(240, 240, 240, 1) 47%, rgba(227, 227, 227, 1) 48%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(253, 253, 253, 1) 0%, rgba(240, 240, 240, 1) 47%, rgba(227, 227, 227, 1) 48%, rgba(242, 242, 242, 1) 99%, rgba(242, 242, 242, 1) 99%);
+}
+.WebButton001 {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
+}
+.WebButton010 {
+	background-color: #77a2e9;
+	background-image: linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 45%, rgba(224, 224, 224, 1) 95%, rgba(222, 222, 222, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 45%, rgba(224, 224, 224, 1) 95%, rgba(222, 222, 222, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 45%, rgba(224, 224, 224, 1) 95%, rgba(222, 222, 222, 1) 99%);
+	background-image: -o-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 45%, rgba(224, 224, 224, 1) 95%, rgba(222, 222, 222, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(247, 247, 247, 1) 45%, rgba(224, 224, 224, 1) 95%, rgba(222, 222, 222, 1) 99%);
+}
+.WebButton032 {
+	background-color: #77a2e9;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 98%, rgba(229, 229, 229, 1) 98%);
+}
+.WebButton031 {
+	background-color: #77a2e9;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-image: linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(246, 247, 247, 1) 46%, rgba(242, 243, 243, 1) 70%, rgba(229, 231, 230, 1) 96%, rgba(227, 229, 228, 1) 100%);
+	background-image: -moz-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(246, 247, 247, 1) 46%, rgba(242, 243, 243, 1) 70%, rgba(229, 231, 230, 1) 96%, rgba(227, 229, 228, 1) 100%);
+	background-image: -webkit-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(246, 247, 247, 1) 46%, rgba(242, 243, 243, 1) 70%, rgba(229, 231, 230, 1) 96%, rgba(227, 229, 228, 1) 100%);
+	background-image: -o-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(246, 247, 247, 1) 46%, rgba(242, 243, 243, 1) 70%, rgba(229, 231, 230, 1) 96%, rgba(227, 229, 228, 1) 100%);
+	background-image: -ms-linear-gradient(rgba(254, 254, 254, 1) 0%, rgba(246, 247, 247, 1) 46%, rgba(242, 243, 243, 1) 70%, rgba(229, 231, 230, 1) 96%, rgba(227, 229, 228, 1) 100%);
+}
+.buttongrey {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(255, 255, 255, 1) 16%, rgba(238, 238, 238, 1) 53%, rgba(221, 221, 221, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(255, 255, 255, 1) 16%, rgba(238, 238, 238, 1) 53%, rgba(221, 221, 221, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(255, 255, 255, 1) 16%, rgba(238, 238, 238, 1) 53%, rgba(221, 221, 221, 1) 99%);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(255, 255, 255, 1) 16%, rgba(238, 238, 238, 1) 53%, rgba(221, 221, 221, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(255, 255, 255, 1) 16%, rgba(238, 238, 238, 1) 53%, rgba(221, 221, 221, 1) 99%);
+}
+.buttongreen1 {
+	background-color: #ffffff;
+	background-image: linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -o-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+}
+.Estilo5 {
+	border-color: #ff3f3f;
+}
+.Estilo6 {
+	color: #000000;
+	font-family: Arial;
+	font-size: 20px;
+}
+.Estilo7 {
+	color: #999999;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+.Estilo8 {
+	color: #656565;
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+.Estilo9 {
+	background-color: #0077b7;
+}
+.Estilo10 {
+	background-color: #00a1fe;
+}
+.Estilo11 {
+	background-color: #ffffff;
+}
