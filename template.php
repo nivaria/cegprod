@@ -76,6 +76,7 @@ function cegprod_preprocess_node(&$vars) {
             $submitted = ($author->uid && user_access('access user profiles')) ? l($picture, "user/{$author->uid}", array('html' => TRUE)) : $picture;
         }
         $vars['submitted_name'] = (module_exists('contributors') && _check_contributors_ctype_enabled($vars['node']->type)) ? $vars['node']->content['contributors']['#value'] : theme('username', $author);
+        unset($vars['node']->content['contributors']);
 
         // Author information
         $submitted .= '<span class="submitted-by">';
@@ -130,4 +131,57 @@ function cegprod_og_subscribe_link($node) {
     if (isset($txt)) {
         return l($txt, "og/subscribe/$node->nid", array('attributes' => array('rel' => 'nofollow', 'class' => $class), 'query' => drupal_get_destination()));
     }
+}
+
+
+/**
+ *
+ * @ingroup themeable
+ */
+function cegprod_tidy_node_links_list_item($link_title, $link, $first, $last, $ref) {
+  $output = '';
+
+  //dropdown
+  $title_tag = strip_tags($link_title);
+  if ($first) {
+    $output .= '<li class="node_link_style-dropdown-main">';
+    $title_tag = '<span>' . $title_tag . '</span>';
+  }
+  else $output .= '<li class="node_link_style-dropdown-item">';
+
+  if (isset($link)) {
+    if (isset($link['href'])) {
+  
+      $output .= l($title_tag, $link['href'], $link);
+  
+    }
+    else {
+      //try to extract href from title
+      $path = $ref->extract_href($link['title']);
+      if ($path != $link['title']) {
+        $output .= '<a href="' . $path . '">' . $title_tag . '</a>';
+      } else {
+        $output .= '<span>' . $title_tag . '</span>';
+      }
+    }
+  }
+
+  if (!$first) {
+
+
+    $output .= '</li>';
+
+
+  }
+  if ($first && !$last) {
+    $output .= '<ul>';
+  }
+  elseif ($last && !$first) {
+      $output .= '</ul>';
+  }
+  if ($last) {
+    $output .= '</li>';
+  }
+
+  return $output;
 }
