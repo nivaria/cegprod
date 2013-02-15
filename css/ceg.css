@@ -20,6 +20,9 @@ body{
     padding:0;
     background-image:none;
 }
+#page #main #content-group-inner{
+    margin:0 20px 0 0;
+}
 #content-inner{
     overflow:visible;
 }
@@ -28,9 +31,7 @@ body{
 #main .inner{
     padding:0;
 }
-#content-inner-inner{
-    margin: 0 20px 0 0;
-}
+
 #content-group-inner{
     margin:0;
 }
@@ -107,7 +108,7 @@ tr.first.last, tr.first.last td {
     margin-bottom:4em;
     float:right;
 }
-h1 {
+#page h1 {
     color: #0088c9;
     font-size: 32px;
     font-weight: bold;
@@ -118,7 +119,33 @@ h1 {
     font-weight: bold;
     margin:0 0 8px;
 }
+
+/* BEGIN tables */
+#page thead th{
+    background-color: #0088C9;
+    border: 0 none;
+    color: #FFFFFF;
+    float: none;
+    margin: 0;
+    padding: 4px 8px;
+    width: auto;
+    font-weight:bold;
+    font-size:13px;
+}
+#page thead th a{
+    color: #FFFFFF;
+}
+#page table td{
+    float: none;
+    margin: 0;
+    font-size:13px;
+    padding: 4px 8px;
+    width: auto;
+}
+/* END tables */
+
 /* BEGIN blocks */
+.node-type-question > .inner,
 #group-header,
 #main .block{
     background-color: #FFFFFF;
@@ -148,7 +175,7 @@ h1 {
 body.not-front #content-inner-inner{
     position:relative;
 }
-body.not-front #content-inner-inner h1{
+body.node-type-group #content-inner-inner h1{
     left: 20px;
     position: absolute;
     top: 20px;
@@ -189,10 +216,11 @@ body.not-front #content-inner-inner h1{
 #edit-keys{
     width:157px;
 }
-#page .views-exposed-form .form-text{    
+#page textarea,
+#page .form-text{    
     border:1px solid #ccc;
 }
- .views-exposed-form .form-text{
+.form-item .form-text{
     background-image:none;
  }
  #page .views-exposed-form .form-submit{
@@ -208,6 +236,10 @@ body.not-front #content-inner-inner h1{
     width: 44px;
  }
 /* END exposed view filter */
+
+.view-all-questions{
+    background-color:#fff;
+}
 
 /* BEGIN header stuff */
 .view-user-meta .views-field-name .welcome-text {
@@ -251,7 +283,7 @@ body.not-front #content-inner-inner h1{
 #search-box .form-text{
     background-color: transparent;
 }
-#search-box .form-submit{
+#page #search-box .form-submit{
    background-color: transparent;
     background-image: none;
     border: 0 none;
@@ -350,16 +382,17 @@ body.not-front #content-inner-inner h1{
 /* END header stuff */
 
 /* BEGIN block siguenos */
-.view .view-content .item-list li.views-row,
+#page .view .view-content .item-list li.views-row,
 #page .block_lists li{
     margin:0;
     border:0 none;
+    padding:0;
     
     border-top: 1px solid #DBDBDB;
     margin-top: 10px;
     padding-top: 10px;
 }
-#page .block_lists li{
+#page #main .block_lists li{
     padding-left:16px;
     background-position:-321px -357px;
     background-repeat:no-repeat;
@@ -391,6 +424,9 @@ body.not-front #content-inner-inner h1{
 }
 
 /* BEGIN groups box */
+#page #block-views-groups_featured_groups-block_1{
+    padding-bottom:20px;
+}
 .view-subgroups-main-listing{
     
 }
@@ -437,7 +473,7 @@ body.not-front #content-inner-inner h1{
     height:248px;
     position:relative;
 }
-.views_slideshow_previous{
+#page #main .views_slideshow_previous{
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
     background-position:-97px -75px;
@@ -449,7 +485,7 @@ body.not-front #content-inner-inner h1{
     top:100px;
     left:12px;
 }
-.views_slideshow_next{
+#page #main .views_slideshow_next{
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
     background-position:-97px -190px;
@@ -461,7 +497,7 @@ body.not-front #content-inner-inner h1{
     top:100px;
     right:12px;
 }
-.views_slideshow_pause{
+#page #main .views_slideshow_pause{
     display:none;
 }
 /* END home slideshow */
@@ -536,7 +572,13 @@ body.not-front #content-inner-inner h1{
 }
 /* END images */
 
+body.page-groups .inner.content{
+    background-color:#fff;
+}
+
 /* BEGIN buttons */
+#page .node-type-answer .comment_clear_style a,
+#page .form-submit,
 #edit-fbss-submit,
 .share-content,
 #page .views-field-subscribe a,
@@ -778,6 +820,14 @@ body.not-front #content-inner-inner h1{
 }
 /* END fake tabs */
 
+/* BEGIN page groups */
+#page #main #block-views-groups_featured_groups-block_1 .inner{
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    margin: 0;
+    width: auto;
+}
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
 	background-color: #ffffff;
