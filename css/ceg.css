@@ -122,6 +122,9 @@ h1 {
     width:auto;
     overflow:visible;
 }
+#page #block-commons_nivaria-1 h2{
+    margin-bottom:20px;
+}
 #block-views-29a6f88b4b3b4e056713daa56b994c9e{
     width:49%;
 }
@@ -243,6 +246,31 @@ h1 {
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
     background-position:-262px -117px;
+}
+#nav-group ul.menu li ul.menu{
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    margin: 0;
+    top: 71px;
+    width: 300px;
+}
+#nav-group ul.menu li ul.menu li{
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 20px;
+    padding-right: 1em;
+    width: auto;
+}
+#nav-group ul.menu li ul.menu li a{
+     background-image: none;
+    color: #FFFFFF;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 1em 0 0;
+    border:0 none;
 }
 /* END header stuff */
 
@@ -424,6 +452,7 @@ h1 {
 /* END images */
 
 /* BEGIN buttons */
+#edit-fbss-submit,
 .share-content,
 #page .views-field-subscribe a,
 .buttongreen1 {
@@ -475,6 +504,37 @@ h1 {
 /* END buttons */
 
 /* BEGIN que esta pasando */
+.facebook-status-update{
+        background-color: #F3F3F3;
+    float: left;
+    padding: 8px;
+    width: 464px;
+    height:120px;
+}
+.facebook-status-textarea-wrapper {
+    border: 0 none;
+}
+.view-activity-log-stream{
+    clear:both;
+}
+.facebook-status-submit.button.primary {
+    background-color: green;
+    background-image: none;
+    border: 0 none;
+}
+.fbsmp-plugin-icon,
+.fbsmp-icon-list {
+    border:0 none;
+}
+.fbsmp-icon-list {
+    top:0;
+}
+.fbsmp-icon-list #edit-photo-icon, .fbsmp-icon-list #edit-link-icon {
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    color: #F35810;
+}
 .share-expanded{
     display:none;
     box-shadow: 2px 4px 4px #D6D6D6;
@@ -493,6 +553,13 @@ h1 {
 .share-content,
 .share-content-block{
     float:right;
+}
+#edit-fbss-submit{
+    top:36px;
+}
+.fbsmp-inner-collapsed {
+   position: relative;
+    right: -110px;
 }
 #page .share-expanded .item-list{
     padding:14px;
@@ -514,6 +581,20 @@ h1 {
 #page .share-expanded .item-list li .content-description{
       clear: both;
     display: block;
+}
+.activity-log-content{
+    color:#000;
+}
+/*.activity-log-content a:first-child{
+     color: #FF4339;
+    font-size: 14px;
+}
+.activity-log-content a{
+    font-size: 16px;
+}*/
+.activity-log-time a{
+     color: #999999;
+    font-style: italic;
 }
 /* END que esta pasando */
 
