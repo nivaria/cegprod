@@ -11,4 +11,5 @@ jQuery(document).ready(function($){
             jQuery(this).addClass("third");
         }
     });
+    jQuery(".pager-current").addClass("pager-item");
 });

@@ -50,6 +50,7 @@ a:visited{
 a:hover{
     text-decoration:underline;
 }
+.group-members-link,
 .view div.more-link,
 .view .view-footer,
 .heartbeat-more-messages-wrapper {
@@ -83,12 +84,28 @@ tr.first.last, tr.first.last td {
 .sidebar-last .block .content {
     padding: 0;
 }
+.group-managers-label,
+.group-members-label{
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+}
+.view-group-tab-content .views-field-title{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.views-field-name a{
+    color:#f77f00;
+    font-size:14px;
+}
 #powered_by{
     background-image:url('../images/sprites.png');
     background-position:-288px -75px;
     width:110px;
     height:24px;
     background-repeat:no-repeat;
+    margin-bottom:4em;
+    float:right;
 }
 h1 {
     color: #0088c9;
@@ -102,6 +119,7 @@ h1 {
     margin:0 0 8px;
 }
 /* BEGIN blocks */
+#group-header,
 #main .block{
     background-color: #FFFFFF;
     display: block;
@@ -113,9 +131,30 @@ h1 {
     border:0 none;
     margin-bottom:20px;
 }
+#block-views-group_tab_content-block_1{
+    width:auto;
+}
+#group-header,
 #page #sidebar-last.nested .inner .block .inner,
 #main .block .inner{
     padding:20px;	
+}
+.group-header-text {
+    font-family: arial;
+    font-style: normal;
+    margin-left: 0;
+    text-indent: 0;
+}
+body.not-front #content-inner-inner{
+    position:relative;
+}
+body.not-front #content-inner-inner h1{
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+#group-header{
+    padding-top:60px;
 }
 #page #block-commons_nivaria-1{
     float:none;
@@ -133,6 +172,30 @@ h1 {
     width: 48%;
 }
 /* END blocks */
+
+/* BEGIN exposed view filter */
+#page .views-exposed-form{
+    background-color: transparent;
+    border: 0 none;
+}
+#page .views-exposed-widgets-group-search{
+    margin: 0;
+    width: 526px;
+}
+.views-exposed-widget-group-search {
+    float: left;
+    margin: 2px 8px 8px 0;
+}
+#edit-keys{
+    width:157px;
+}
+#page .views-exposed-form .form-text{    
+    border:1px solid #ccc;
+}
+ .views-exposed-form .form-text{
+    background-image:none;
+ }
+/* END exposed view filter */
 
 /* BEGIN header stuff */
 .view-user-meta .views-field-name .welcome-text {
@@ -276,7 +339,7 @@ h1 {
 
 /* BEGIN block siguenos */
 .view .view-content .item-list li.views-row,
-#block-block-1 li{
+#page .block_lists li{
     margin:0;
     border:0 none;
     
@@ -284,27 +347,36 @@ h1 {
     margin-top: 10px;
     padding-top: 10px;
 }
-#block-block-1 li{
+#page .block_lists li{
     padding-left:16px;
     background-position:-321px -357px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
 }
+#page .view-group-block-events-upcoming li,
 #page .view-content-event-page li{
     padding-left:22px;
     background-position:-320px -399px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');    
 }
+#page .view-group-block-events-upcoming li .views-field-field-date-value,
 #page .view-content-event-page li .views-field-field-date-value{
     display:none;
 }
 .view .view-content .item-list li.views-row:first-child,
-#block-block-1 li:first-child{
+#page .block_lists li:first-child{
     border:0 none;
     margin:0;
 }
 /* END block siguenos */
+.tagadelic_views{
+    text-align:center;
+    line-height:2em;
+}
+.tagadelic_views a{
+    
+}
 
 /* BEGIN groups box */
 .view-subgroups-main-listing{
@@ -314,8 +386,8 @@ h1 {
     padding-top:1em;
 }
 #page #block-views-subgroups_main_listing-block_1 .content{
-    margin-left:-20px;
-    margin-right:-20px;
+    margin-left:-30px;
+    margin-right:-30px;
 }
 .view-subgroups-main-listing .views-field-title a{
     font-size:13px;
@@ -334,6 +406,7 @@ h1 {
 }
 #page .view-subgroups-main-listing .views-row{
     padding:14px 10px;
+    margin:0;
 }
 #page .view-subgroups-main-listing .views-row-odd{
     background-color:#f5f5f5;
@@ -433,8 +506,8 @@ h1 {
 }
 #page .block-views .views-field-picture{
     border-radius:8px;
-    float:none;
-    margin:0;
+    /*float:none;
+    margin:0;*/
     width:auto;
     background-color:#fff;
     padding:3px;
@@ -592,11 +665,88 @@ h1 {
 .activity-log-content a{
     font-size: 16px;
 }*/
+.views-field-created span,
 .activity-log-time a{
-     color: #999999;
+    color: #999999;
+    font-size: 14px;
     font-style: italic;
 }
+.view-group-tab-content span.views-field-name,
+.view-group-tab-content .views-field-tid,
+.view-group-tab-content .views-field-created {
+    font-size: 14px;
+}
 /* END que esta pasando */
+
+/* BEGIN pager */
+#page ul.pager{
+    margin-bottom:0;
+}
+#page ul.pager li{
+    border:0 none;
+    background-color: transparent;    
+    border-radius: 0 0 0 0;
+    color: #444444;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 6px;
+}
+#page ul.pager li.pager-item{
+    border-left: 1px solid #444444;
+}
+#page ul.pager li.pager-item:first-child{
+    border:0 none;
+}
+#page ul.pager li a{
+    border:0 none;
+    background-color: transparent;
+    color: #444444;
+    font-size: 14px;
+    line-height: 14px;
+    padding:0;
+    font-weight:bold;
+}
+#page ul.pager li a.active{
+    color: #F77F00;
+}
+#page ul.pager li.pager-first a,
+#page ul.pager li.pager-previous a,
+#page ul.pager li.pager-last a,
+#page ul.pager li.pager-next a{
+    color:#0085cc;
+}
+/* END pager */
+
+/* BEGIN fake tabs */
+#page #content-tabs{
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+}
+#page #content-tabs-inner{
+    padding:0;
+}
+#page #content-tabs  .tabs{
+    margin:0;
+    margin-bottom:8px;
+}
+#page #content-tabs  .tabs li{
+    padding:0;   
+}
+#page #content-tabs  .tabs li a{
+    background-color: #999999;
+    border: 0 none;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom:1em;
+    margin-right:1em;
+}
+#page #content-tabs  .tabs li.active a{
+    background-color:#0086cc;   
+}
+/* END fake tabs */
 
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
