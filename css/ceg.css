@@ -57,12 +57,18 @@ a:hover{
     margin: 0;
     padding: 0;
 }
+.sidebar-last .block {
+    font-size: 100%;
+    font-weight: normal;
+}
 .item-list ul li,
 .node .inner ul li,
 .panel-pane .inner ul li,
 .block .content ul li{
     list-style:none;
     background-image:none;
+    margin:0;
+    padding:0;
 }
 .sidebar-first .block .content,
 .sidebar-last .block .content {
@@ -222,6 +228,22 @@ h1 {
     background-position:-262px -117px;
 }
 /* END header stuff */
+
+/* BEGIN block siguenos */
+#block-block-1 li{
+        border-top: 1px solid #DBDBDB;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left:16px;
+    background-position:-321px -357px;
+    background-repeat:no-repeat;
+    background-image:url('../images/sprites.png');
+}
+#block-block-1 li:first-child{
+    border:0 none;
+    margin:0;
+}
+/* END block siguenos */
 
 /* BEGIN groups box */
 .view-subgroups-main-listing{
