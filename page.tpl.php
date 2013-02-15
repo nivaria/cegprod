@@ -152,6 +152,9 @@
               </div><!-- /main-group-inner -->
             </div><!-- /main-group -->
           </div><!-- /main-inner -->
+          
+          <div id="powered_by"></div>
+          
         </div><!-- /main -->
       </div><!-- /main-wrapper -->
 
@@ -160,6 +163,8 @@
 
       <!-- footer row: width = grid_width -->
       <?php print $pre_footer; ?>
+
+      
 
     </div><!-- /page-inner -->
   </div><!-- /page -->

@@ -74,6 +74,13 @@ a:hover{
 .sidebar-last .block .content {
     padding: 0;
 }
+#powered_by{
+    background-image:url('../images/sprites.png');
+    background-position:-288px -75px;
+    width:110px;
+    height:24px;
+    background-repeat:no-repeat;
+}
 h1 {
     color: #0088c9;
     font-size: 32px;
@@ -230,15 +237,31 @@ h1 {
 /* END header stuff */
 
 /* BEGIN block siguenos */
+.view .view-content .item-list li.views-row,
 #block-block-1 li{
-        border-top: 1px solid #DBDBDB;
+    margin:0;
+    border:0 none;
+    
+    border-top: 1px solid #DBDBDB;
     margin-top: 10px;
     padding-top: 10px;
+}
+#block-block-1 li{
     padding-left:16px;
     background-position:-321px -357px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
 }
+#page .view-content-event-page li{
+    padding-left:22px;
+    background-position:-320px -399px;
+    background-repeat:no-repeat;
+    background-image:url('../images/sprites.png');    
+}
+#page .view-content-event-page li .views-field-field-date-value{
+    display:none;
+}
+.view .view-content .item-list li.views-row:first-child,
 #block-block-1 li:first-child{
     border:0 none;
     margin:0;
