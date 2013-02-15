@@ -20,6 +20,9 @@ body{
     padding:0;
     background-image:none;
 }
+#content-inner{
+    overflow:visible;
+}
 #page #content-inner-inner,
 #page #sidebar-last.nested .inner,
 #main .inner{
@@ -56,6 +59,12 @@ a:hover{
     border: 0 none;
     margin: 0;
     padding: 0;
+}
+tr td,
+tr.views-row-first.views-row-last,
+tr.views-row-first.views-row-last td,
+tr.first.last, tr.first.last td {
+    border:0 none;
 }
 .sidebar-last .block {
     font-size: 100%;
@@ -108,9 +117,10 @@ h1 {
 #main .block .inner{
     padding:20px;	
 }
-#block-commons_nivaria-1{
+#page #block-commons_nivaria-1{
     float:none;
     width:auto;
+    overflow:visible;
 }
 #block-views-29a6f88b4b3b4e056713daa56b994c9e{
     width:49%;
@@ -464,6 +474,48 @@ h1 {
 }
 /* END buttons */
 
+/* BEGIN que esta pasando */
+.share-expanded{
+    display:none;
+    box-shadow: 2px 4px 4px #D6D6D6;
+    -webkit-box-shadow: 2px 4px 4px #D6D6D6;
+    -moz-box-shadow: 2px 4px 4px #D6D6D6;
+    background-color: #FBFBFB;
+    clear: both;
+    width:220px;
+    border:1px solid #D6D6D6;
+    border-radius:8px;
+    position: absolute;
+    right: 20px;
+    z-index:10;
+    margin-top:28px;
+}
+.share-content,
+.share-content-block{
+    float:right;
+}
+#page .share-expanded .item-list{
+    padding:14px;
+}
+#page .share-expanded .item-list li{
+    border-top: 1px solid #DBDBDB;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#page .share-expanded .item-list li:first-child{
+    border:0 none;
+    margin:0;
+}
+#page .share-expanded .item-list li a{
+    display: block;
+    float: left;
+    font-size: 15px;
+}
+#page .share-expanded .item-list li .content-description{
+      clear: both;
+    display: block;
+}
+/* END que esta pasando */
 
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
