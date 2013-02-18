@@ -678,6 +678,11 @@ body.page-groups .inner.content{
     padding: 0 14px;
     width: auto;
 }
+#page #edit-fbss-submit{
+    /*background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-501px -75px;*/
+}
 /* END buttons */
 
 /* BEGIN que esta pasando */
