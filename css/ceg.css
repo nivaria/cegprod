@@ -124,6 +124,10 @@ body.hastabs.not-front #page h1{
       margin-bottom: 20px;
     padding-bottom: 20px;
 }
+body.node-type-group #page #page-inner h1{
+    margin-bottom:0;
+    padding-bottom:0;
+}
 #page h2{
     color: #656565;
     font-size: 18px;
@@ -451,7 +455,7 @@ body.not-front #content-inner-inner{
 #page .view-content-event-page li .views-field-field-date-value{
     display:none;
 }
-.view .view-content .item-list li.views-row:first-child,
+#page .view .view-content .item-list li.views-row:first-child,
 #page .block_lists li:first-child{
     border:0 none;
     margin:0;
