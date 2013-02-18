@@ -443,6 +443,8 @@ body.not-front #content-inner-inner{
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
 }
+#page .view-group-block-events-past .view-content .item-list li.views-row,
+#page .view-event-past-events .view-content .item-list li.views-row,
 #page .view-event-latest .view-content .item-list li.views-row,
 #page .view-upcoming-events .view-content .item-list li.views-row,
 #page .view-group-block-events-upcoming .view-content .item-list li.views-row,
@@ -452,6 +454,8 @@ body.not-front #content-inner-inner{
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');    
 }
+#page .view-group-block-events-past li .views-field-field-date-value,
+#page .view-event-past-events li .views-field-field-date-value,
 #page .view-event-latest li .views-field-field-date-value,
 #page .view-upcoming-events li .views-field-field-date-value,
 #page .view-group-block-events-upcoming li .views-field-field-date-value,
@@ -646,6 +650,7 @@ body.page-groups .inner.content{
 }
 
 /* BEGIN buttons */
+ .node .inner .links .comment_clear_style a,
 #page .node-type-answer .comment_clear_style a,
 #page .form-submit,
 #edit-fbss-submit,
@@ -966,7 +971,15 @@ body.page-user-1 #block-facebook_status-facebook_status{
     background-color: #0088C9;
     color: #FFFFFF;
 }
-
+.view-user-meta .user-field-options div {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.view-user-meta .user-field-options div a {
+    color:#1B80C9;
+}
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
 	background-color: #ffffff;
