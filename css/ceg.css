@@ -161,7 +161,7 @@ body.node-type-group #page #page-inner h1{
 /* END tables */
 
 /* BEGIN blocks */
-#content-top,
+body.not-front #content-top,
 body.not-front #content-content,
 body.not-front #group-header,
 #sidebar-first .block,
@@ -565,6 +565,35 @@ body.not-front #content-inner-inner{
     display:none;
 }
 /* END home slideshow */
+
+/* BEGIN front anonymous content */
+#block-boxes-homepage_info_box h2.block-title{
+    font-size:18px;
+}
+#block-boxes-homepage_info_box.block .inner,
+#block-views-groups_featured_groups-block_1.block .inner,
+#block-views-group_node-block_1.block .inner {
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    margin: 0;
+    padding: 0;
+}
+#block-boxes-homepage_info_box .intro-textblock h3{
+    color: #656565;
+    font-size: 18px;
+    font-weight: bold;
+    margin:0 0 8px;
+}
+#block-boxes-homepage_info_box a.intro-morebutton {
+    background-image: none;
+    color: #1B80C9;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+/* END front anonymous content */
 
 /* BEGIN metagroups view */
 #block-views-metagroups-block_1{
