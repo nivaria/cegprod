@@ -12,4 +12,7 @@ jQuery(document).ready(function($){
         }
     });
     jQuery(".pager-current").addClass("pager-item");
+    if( jQuery("#content-tabs-inner .tabs li").length > 0 ){
+        jQuery("body").addClass("hastabs");
+    }
 });
