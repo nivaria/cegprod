@@ -19,6 +19,7 @@ body{
     box-shadow: none;
     padding:0;
     background-image:none;
+    overflow:visible;
 }
 #page #main #content-group-inner{
     margin:0 20px 0 0;
@@ -684,7 +685,7 @@ body.page-groups .inner.content{
         background-color: #F3F3F3;
     float: left;
     padding: 8px;
-    width: 464px;
+    width: 444px;
     height:120px;
 }
 .facebook-status-textarea-wrapper {
@@ -722,13 +723,29 @@ body.page-groups .inner.content{
     border:1px solid #D6D6D6;
     border-radius:8px;
     position: absolute;
-    right: 20px;
+    right: 0;
     z-index:10;
     margin-top:28px;
 }
 .share-content,
 .share-content-block{
     float:right;
+}
+.share-content{
+    padding-right: 28px;
+    position: relative;
+}
+.share-content .expand{
+    display:block;
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-421px -75px;
+    width:17px;
+    height:17px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    text-indent:-9999px;
 }
 #edit-fbss-submit{
     top:36px;
@@ -744,10 +761,14 @@ body.page-groups .inner.content{
     border-top: 1px solid #DBDBDB;
     margin-top: 10px;
     padding-top: 10px;
+    
+    position:relative;
+    padding-left:20px;
 }
 #page .share-expanded .item-list li:first-child{
     border:0 none;
     margin:0;
+    padding-top:0;
 }
 #page .share-expanded .item-list li a{
     display: block;
@@ -761,13 +782,39 @@ body.page-groups .inner.content{
 .activity-log-content{
     color:#000;
 }
-/*.activity-log-content a:first-child{
-     color: #FF4339;
-    font-size: 14px;
+.content-icon{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:16px;
+    height:16px;
+    display:block;
+    left: 0;
+    position: absolute;
+    top: 12px;
 }
-.activity-log-content a{
-    font-size: 16px;
-}*/
+#page .share-expanded .item-list li:first-child .content-icon{
+    top:2px;
+}
+.icon_blog{
+    background-position:-611px -13px;    
+}
+.icon_poll{
+    background-position:-611px -244px;    
+}
+.icon_question{
+    background-position:-611px -300px;    
+}
+.icon_event{
+    background-position:-611px -183px;    
+}
+.icon_wiki{
+    background-position:-611px -67px;    
+}
+.icon_group{
+    background-position:-611px -124px;    
+}
+/*nuevo desde un modelo 360*/
+
 .views-field-created span,
 .activity-log-time a{
     color: #999999;
