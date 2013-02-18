@@ -36,9 +36,6 @@ body{
 #content-group-inner{
     margin:0;
 }
-#content-messages{
-    display:none !important;
-}
 #site-name-wrapper,
 .sidebar-last-cap {
     display: none;
@@ -48,6 +45,7 @@ a:link,
 a:visited{
     color: #1b80c9;
     text-decoration:none;
+    outline:none;
 }
 a:hover{
     text-decoration:underline;
@@ -135,7 +133,9 @@ body.node-type-group #page #page-inner h1{
     font-weight: bold;
     margin:0 0 8px;
 }
-
+#page a h2{
+    color:#1B80C9;
+}
 /* BEGIN tables */
 #page thead th{
     background-color: #0088C9;
@@ -355,7 +355,7 @@ body.not-front #content-inner-inner{
     background-color: transparent;
     background-image: none;
     border: 0 none;
-    left: 202px;
+    left: 306px;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -443,6 +443,7 @@ body.not-front #content-inner-inner{
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
 }
+#page .view-event-latest .view-content .item-list li.views-row,
 #page .view-upcoming-events .view-content .item-list li.views-row,
 #page .view-group-block-events-upcoming .view-content .item-list li.views-row,
 #page .view-content-event-page .view-content .item-list li.views-row{
@@ -451,6 +452,7 @@ body.not-front #content-inner-inner{
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');    
 }
+#page .view-event-latest li .views-field-field-date-value,
 #page .view-upcoming-events li .views-field-field-date-value,
 #page .view-group-block-events-upcoming li .views-field-field-date-value,
 #page .view-content-event-page li .views-field-field-date-value{
@@ -478,7 +480,7 @@ body.not-front #content-inner-inner{
     
 }
 #page .view-subgroups-main-listing .more-link{
-    padding-top:1em 20px 0;
+    padding:1em 20px 0;
 }
 #page #block-views-subgroups_main_listing-block_1 .content{
     margin-left:-30px;
@@ -514,6 +516,12 @@ body.not-front #content-inner-inner{
     float:none;
     width:100%;
 }
+#block-views-home_slideshow-block_1 .views-field-field-group-image-fid a{
+    display:block;
+    width:352px;
+    height:248px;
+    float:right;
+}
 #block-views-home_slideshow-block_1 .inner{
     background-color: #FFFFFF;
     padding: 42px 20px;
@@ -532,7 +540,8 @@ body.not-front #content-inner-inner{
     height:50px;
     text-indent:-9999px;
     position:absolute;
-    top:100px;
+    top:140px;
+    z-index:10;
     left:12px;
 }
 #page #page-inner .views_slideshow_next{
@@ -544,7 +553,8 @@ body.not-front #content-inner-inner{
     height:50px;
     text-indent:-9999px;
     position:absolute;
-    top:100px;
+    top:140px;
+    z-index:10;
     right:12px;
 }
 #page #page-inner .views_slideshow_pause{
@@ -555,16 +565,17 @@ body.not-front #content-inner-inner{
 /* BEGIN metagroups view */
 #block-views-metagroups-block_1{
     float:none;
-    width:100%;
+    width:auto;
+    margin-left:24px;
 }
-#page .view-metagroups li.views-row{
+#page #page-inner .view-metagroups li.views-row{
     background-color: #FFFFFF;
     border: 0 none;
     display: block;
     float: left;
     height: 168px;
     list-style: none outside none;
-    margin: 0 30px 0 0;
+    margin: 0 0 0 30px;
     padding: 0;
     text-align: center;
     width: 200px;
@@ -573,23 +584,31 @@ body.not-front #content-inner-inner{
     -webkit-box-shadow: 2px 4px 4px #D6D6D6;
     -moz-box-shadow: 2px 4px 4px #D6D6D6;	
 }
-#page .view-metagroups li.views-row.views-row-1{
+#page #page-inner .view-metagroups li.views-row:first-child{
+    margin-left:0;
+}
+#page #page-inner .view-metagroups li.views-row.views-row-1{
     border-top: 4px solid #00A1FE;
 }
-#page .view-metagroups li.views-row.views-row-2{
+#page #page-inner .view-metagroups li.views-row.views-row-2{
     border-top: 4px solid #ffdc48;
 }
-#page .view-metagroups li.views-row.views-row-3{
+#page #page-inner .view-metagroups li.views-row.views-row-3{
     border-top: 4px solid #ff3f3f;
 }
-#page .view-metagroups li.views-row.views-row-4{
+#page #page-inner .view-metagroups li.views-row.views-row-4{
     border-top: 4px solid #74d898;
 }
-#page .view-metagroups li.views-row .views-field-title a{
+#page #page-inner .view-metagroups li.views-row .views-field-field-icon-fid a{
+    display:block;
+    margin-top:28px;
+    height:88px;
+}
+#page #page-inner .view-metagroups li.views-row .views-field-title a{
     color:#000;
     font-size:20px;
 }
-#page .view-metagroups li.views-row .views-field-field-tagline-value a{
+#page #page-inner .view-metagroups li.views-row .views-field-field-tagline-value a{
     color:#999;
     font-size:16px;
 }
@@ -942,6 +961,11 @@ body.page-user-1 #block-facebook_status-facebook_status{
     width:auto;
 }
 /* END user page */
+
+.block .calendar-calendar .month-view table tr td.today {
+    background-color: #0088C9;
+    color: #FFFFFF;
+}
 
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
