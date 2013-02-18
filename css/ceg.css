@@ -137,7 +137,7 @@ body.node-type-group #page #page-inner h1{
     color:#1B80C9;
 }
 /* BEGIN tables */
-#page thead th{
+#page #page-inner thead th{
     background-color: #0088C9;
     border: 0 none;
     color: #FFFFFF;
@@ -147,6 +147,8 @@ body.node-type-group #page #page-inner h1{
     width: auto;
     font-weight:bold;
     font-size:13px;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
 }
 #page thead th a{
     color: #FFFFFF;
@@ -190,9 +192,17 @@ body.front #main .block{
 #page #sidebar-last .block .inner,
 #page #sidebar-first .block .inner{
     padding:20px;
+    margin:0;
 }
 #block-views-group_tab_content-block_1{
     width:auto;
+}
+#view-id-groups_my_groups_listing-page_1 .views-field-field-group-image-fid{
+    margin-right:20px;
+}
+#view-id-groups_my_groups_listing-page_1 .views-field-description .title a{
+    font-size:18px;
+    font-weight:bold;
 }
 /*body.not-front #content-content,
 body.not-front #group-header,
@@ -428,6 +438,7 @@ body.not-front #content-inner-inner{
 
 /* BEGIN block siguenos */
 #page .view .view-content .item-list li.views-row,
+#page .block-lists li,
 #page .block_lists li{
     margin:0;
     border:0 none;
@@ -437,9 +448,10 @@ body.not-front #content-inner-inner{
     margin-top: 10px;
     padding-top: 10px;
 }
+#page #main .block-lists li,
 #page #main .block_lists li{
     padding-left:16px;
-    background-position:-321px -357px;
+    background-position:-274px -505px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
 }
@@ -463,6 +475,7 @@ body.not-front #content-inner-inner{
     display:none;
 }
 #page .view .view-content .item-list li.views-row:first-child,
+#page .block-lists li:first-child,
 #page .block_lists li:first-child{
     border:0 none;
     margin:0;
@@ -475,7 +488,23 @@ body.not-front #content-inner-inner{
 .tagadelic_views a{
     
 }
+fieldset {
+    background-color: transparent;
+    border: 0 none;
+    padding: 1em 0 0;
+}
+fieldset legend{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+}
+fieldset .form-item{
+    clear:both;
+}
 
+.fieldset-wrapper{
+    clear:both;
+}
 /* BEGIN groups box */
 #page #block-views-groups_featured_groups-block_1{
     padding-bottom:20px;
@@ -570,6 +599,9 @@ body.not-front #content-inner-inner{
 #block-boxes-homepage_info_box h2.block-title{
     font-size:18px;
 }
+.view-recent-notices .views-field-name {
+    margin-left: 0;
+}
 .view-homepage-group-showcase .views-row,
 #block-boxes-homepage_info_box.block .inner,
 #block-views-groups_featured_groups-block_1.block .inner,
@@ -609,9 +641,25 @@ body.not-logged-in.front #content-inner-inner{
 .view-homepage-group-showcase .views-row .views-field-title a{
     color:#000;
 }
+.view-homepage-group-showcase .views-row{
+    position:relative;
+    padding-top:30px;
+}
+.view-homepage-group-showcase .views-row .views-field-field-group-image-fid{
+      position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 10%;  
+}
 .view-homepage-group-showcase .views-row .view-homepage-group-showcase.view-display-id-block_2 {
     float: none;
     width: 100%;
+}
+.sidebar-last .block-views .views-field-field-group-image-fid img,
+.sidebar-last .block-views .views-field-picture img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
 }
 /* END front anonymous content */
 
@@ -667,12 +715,24 @@ body.not-logged-in.front #content-inner-inner{
 }
 /* END metagroups view */
 /* BEGIN images */
-.sidebar-last .block-views .views-field-field-group-image-fid,
+/*.sidebar-last .block-views .views-field-field-group-image-fid,
 .sidebar-last .block-views .views-field-picture,
 .sidebar-last .block-views .views-field-field-date-value {
     float: none;
     margin: 0;
     width: auto;
+}*/
+#block-views-29a6f88b4b3b4e056713daa56b994c9e .views-field-field-content-images-fid{
+  float: left;
+    margin-right: 10px;
+}
+
+#block-views-groups_featured_groups-block_1 .content .views-row .views-field-field-group-image-fid {
+    margin-right:20px;
+}
+#block-views-groups_featured_groups-block_1 .content .views-row .views-field-description .title a{
+    font-size: 18px;
+    font-weight: bold;
 }
 #page .block-views .views-field-picture{
     border-radius:8px;
@@ -693,13 +753,21 @@ body.not-logged-in.front #content-inner-inner{
     vertical-align:middle;
 }
 /* END images */
-
+#sidebar-first{
+    margin-right:20px;
+    width:220px;
+}
 body.page-groups .inner.content{
     background-color:#fff;
 }
-
+.block.block-commons_profile .links .ur_action {
+    text-align: left;
+}
 /* BEGIN buttons */
- .node .inner .links .comment_clear_style a,
+.block.block-commons_profile .links .ur_action a,
+#og-manage-form li a,
+#block-views-recent_notices-block_1 .view-header a,
+.node .inner .links .comment_clear_style a,
 #page .node-type-answer .comment_clear_style a,
 #page .form-submit,
 #edit-fbss-submit,
@@ -765,6 +833,9 @@ body.page-groups .inner.content{
     padding: 8px;
     width: 444px;
     height:120px;
+}
+body.page-stream .facebook-status-update{
+    width:584px;
 }
 .facebook-status-textarea-wrapper {
     border: 0 none;
@@ -922,7 +993,7 @@ body.page-groups .inner.content{
 #page ul.pager li.pager-item{
     border-left: 1px solid #444444;
 }
-#page ul.pager li.pager-item:first-child{
+#page ul.pager li.pager-item.first{
     border:0 none;
 }
 #page ul.pager li a{
