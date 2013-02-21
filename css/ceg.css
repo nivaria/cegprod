@@ -188,6 +188,7 @@ body.front #main .block{
 #page #sidebar-first .block{
     width:100%;
     padding:0;
+    overflow:visible;
 }
 #page #sidebar-last .block .inner,
 #page #sidebar-first .block .inner{
@@ -516,8 +517,8 @@ fieldset .form-item{
     padding:1em 20px 0;
 }
 #page #block-views-subgroups_main_listing-block_1 .content{
-    margin-left:-30px;
-    margin-right:-30px;
+    margin-left:-20px;
+    margin-right:-20px;
 }
 .view-subgroups-main-listing .views-field-title a{
     font-size:13px;
@@ -596,8 +597,26 @@ fieldset .form-item{
 /* END home slideshow */
 
 /* BEGIN front anonymous content */
+#page #block-boxes-homepage_info_box{
+    padding-bottom:0;
+}
 #block-boxes-homepage_info_box h2.block-title{
-    font-size:18px;
+    color: #0077B7;
+    font-size: 22px;
+    font-weight: normal;
+}
+#block-boxes-homepage_info_box p {
+   color: #999999;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 24px;
+}
+#block-boxes-homepage_info_box .intro-textblock p {
+    font-size:13px;
+    font-weight:normal;
+    margin:0;
+    color:#444;
 }
 .view-recent-notices .views-field-name {
     margin-left: 0;
@@ -614,10 +633,10 @@ fieldset .form-item{
     padding: 0;
 }
 #block-boxes-homepage_info_box .intro-textblock h3{
-    color: #656565;
+    color: #000;
     font-size: 18px;
-    font-weight: bold;
-    margin:0 0 8px;
+    font-weight: normal;
+    margin:0 0 12px;
 }
 #block-boxes-homepage_info_box a.intro-morebutton {
     background-image: none;
@@ -1056,15 +1075,15 @@ body.page-stream .facebook-status-update{
     margin:0;
 }
 #page #content-tabs  .tabs li a{
-    background-color: #999999;
+   background-color: #999999;
     border: 0 none;
-    border-radius: 6px 6px 6px 6px;
+    border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom:8px;
-    margin-right:1em;
-    padding:6px 16px;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-right: 0.5em;
+    padding: 5px 8px;
 }
 #page #content-tabs  .tabs li.active a{
     background-color:#0086cc;   
