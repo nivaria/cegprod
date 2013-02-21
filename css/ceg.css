@@ -813,6 +813,15 @@ body.page-groups .inner.content{
     padding: 0 14px;
     width: auto;
 }
+#page .views-field-subscribe a.og-request,
+.buttonblue {
+	background-color: #0088c9;
+	background-image: linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -moz-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -webkit-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -o-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+}
 #page .views-field-leave-group a,
 .WebButton001 {
 	background-color: #ffffff;
