@@ -111,8 +111,8 @@ tr.first.last, tr.first.last td {
 }
 #page h1 {
     color: #0088c9;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: normal;
 }
 body.node-type-group.full-node #page h1{
     background-color: #FFFFFF;
@@ -161,6 +161,9 @@ body.node-type-group #page #page-inner h1{
     font-size:13px;
     padding: 4px 8px;
     width: auto;
+}
+#page .view-user-directory table td{
+    padding:4px 0;
 }
 /* END tables */
 
@@ -512,12 +515,12 @@ body.not-front #content-inner-inner{
 #nav-group ul.menu li.second a{
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
-    background-position:-277px -184px;
+    background-position:-271px -184px;
 }
 #nav-group ul.menu li.third a{
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
-    background-position:-262px -117px;
+    background-position:-273px -117px;
 }
 #nav-group ul.menu li ul.menu{
     background-color: transparent;
@@ -635,6 +638,10 @@ fieldset .form-item{
     font-weight:normal;
     color:#000;
 }
+.view-subgroups-main-listing td.views-field-title a{
+    font-weight: bold;
+    color: #0077B7;
+}
 .view-subgroups-main-listing .views-field-title{
     width:120px;
     overflow:hidden;
@@ -643,7 +650,10 @@ fieldset .form-item{
 #page .view-subgroups-main-listing .views-field-subscribe a,
 #page .view-subgroups-main-listing .views-field-leave-group a{
     float:right;
-    width:82px;
+   font-size: 12px;
+    font-weight: normal;
+    white-space: nowrap;
+    width: 98px;
 }
 #page #page-inner .view-subgroups-main-listing .views-row{
     padding:14px 10px;
@@ -1026,7 +1036,7 @@ body.not-logged-in.front #content-inner-inner{
     font-weight: bold;
 }
 #page .block-views .views-field-picture{
-    border-radius:8px;
+    border-radius:3px;
     /*float:none;
     margin:0;*/
     width:auto;
@@ -1088,7 +1098,10 @@ body.page-groups .inner.content{
     background-color: transparent;
     background-image: none;
     color: #0099FF;
+    font-size:14px;
     font-weight: normal;
+    margin-left:40px;
+    float:right;
 }
 .node .inner .links .comment_clear_style a,
 #page .views-field-subscribe a.og-request,
@@ -1128,6 +1141,16 @@ body.page-groups .inner.content{
     min-height: 24px;
     padding: 0 14px;
     width: auto;
+}
+#page .form-submit#edit-preview-changes,
+#page .form-submit#edit-preview{
+    margin-left:40px;
+    float:right;
+}
+#page .form-submit#edit-submit{
+    margin-right:212px;
+    margin-left:40px;
+    float:right;
 }
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown li:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a{
@@ -1203,6 +1226,9 @@ body.full-node .submitted {
     color: #D2D2D2;
     font-size: 14px;
     font-weight: normal;
+    
+    color: #444444;
+    font-size: 13px;
 }
 .submitted .submitted-on {
     color: #999999;
@@ -1210,6 +1236,10 @@ body.full-node .submitted {
     font-size: 14px;
     font-weight: normal;
     padding-left: 1em;
+    font-style:italic;
+}
+#contributors a{
+    color: #FF4631;
 }
 .submitted,
 .terms {
@@ -1244,13 +1274,14 @@ body.full-node .submitted {
     display: inline-block;
     padding: 4px 8px;
     position: relative;
-    top: 7px;
+    float:right;
 }
 .fivestar-widget,
 form.fivestar-widget{
   float:right;
+  margin-bottom:7px;
 }
-.fivestar-summary:before{
+/*.fivestar-summary:before{
     background-image: url("../images/sprites.png");
     background-position: -9px -467px;
     background-repeat: no-repeat;
@@ -1261,7 +1292,7 @@ form.fivestar-widget{
     position: absolute;
     top: -6px;
     width: 12px;
-}
+}*/
 div.fivestar-widget .star{
   background-image:none;
 }
@@ -1274,10 +1305,24 @@ div.fivestar-widget .star a {
     margin-right: 2px;
     width: 16px !important;
 }
-div.fivestar-widget div.on a {
+div.fivestar-widget div.on.star-1 a,
+div.fivestar-widget div.hover.star-1 a {
   background-position: -9px -444px;
 }
-div.fivestar-widget div.hover a {
+div.fivestar-widget div.on.star-2 a,
+div.fivestar-widget div.hover.star-2 a {
+  background-position: -27px -444px;
+}
+div.fivestar-widget div.on.star-3 a,
+div.fivestar-widget div.hover.star-3 a {
+  background-position: -45px -444px;
+}
+div.fivestar-widget div.on.star-4 a,
+div.fivestar-widget div.hover.star-4 a {
+  background-position: -9px -444px;
+}
+div.fivestar-widget div.on.star-5 a,
+div.fivestar-widget div.hover.star-5 a {
   background-position: -9px -444px;
 }
 /* END default full node */
@@ -1397,10 +1442,13 @@ body.page-stream .facebook-status-update{
     display: block;
     float: left;
     font-size: 15px;
+    
+    color: #1C81C9;
 }
 #page .share-expanded .item-list li .content-description{
-      clear: both;
+    clear: both;
     display: block;
+    color: #999999;
 }
 .activity-log-content{
     color:#000;
@@ -1441,7 +1489,7 @@ body.page-stream .facebook-status-update{
 .views-field-created span,
 .activity-log-time a{
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
 }
 .view-group-tab-content span.views-field-name,
@@ -1573,6 +1621,18 @@ body.page-user-1 #block-facebook_status-facebook_status{
 }
 .view-user-meta .user-field-options div a {
     color:#1B80C9;
+}
+#block-views-most_active_users-block_2 .view-footer p{
+    margin:1em 0 0 0;
+}
+#block-views-most_active_users-block_2 .view-footer p a{
+    color:#00A3F9;
+}
+#page #block-views-most_active_users-block_2 table td {
+    padding: 0 0 8px;
+}
+#page #block-views-most_active_users-block_2 .block-views .views-field-picture {
+    margin:0;
 }
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
