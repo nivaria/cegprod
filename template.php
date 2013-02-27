@@ -48,7 +48,7 @@ function cegprod_preprocess_page(&$variables) {
     if (isset($variables['node'])) {
         $node = $variables['node'];
         if (og_is_group_type($node->type)) {
-            $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'groups_140_140_ceg');
+            $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'user_picture_meta_default');
 
             if (!empty($node->body)) {
                 $variables['group_header_text'] = check_markup($node->body, $node->format);
