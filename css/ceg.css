@@ -1233,11 +1233,17 @@ body.page-stream .facebook-status-update{
 .fbsmp-icon-list {
     top:0;
 }
+.fbsmp-inner-expanded {
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 10;
+}
 .fbsmp-icon-list #edit-photo-icon, .fbsmp-icon-list #edit-link-icon {
     background-color: transparent;
     background-image: none;
     border: 0 none;
     color: #F35810;
+    padding-left: 28px;
 }
 .share-expanded{
     display:none;
