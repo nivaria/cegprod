@@ -186,6 +186,14 @@ body.front #main .block{
 body.not-front #content-content{
   overflow:visible;
 }
+body.not-front #content-content:after{
+  content: ' ';
+  display: block;
+  clear: both;
+}
+.view-group-tab-content .views-field-teaser {
+    font-size: 13px;
+}
 #content-top{
     width:600px;
 }
@@ -255,6 +263,7 @@ body.not-front #content-inner-inner{
 .views-exposed-widget-group-search {
     float: left;
     margin: 2px 8px 8px 0;
+    padding: 0;
 }
 #edit-keys{
     width:157px;
@@ -302,10 +311,13 @@ body.not-front #content-inner-inner{
     padding-top: 4px;
     text-align: left;
 }
-.view-user-meta .views-field-name .welcome-text{
+#page .view-user-meta .views-field-name .welcome-text{
     border:1px solid #00538B;
     border-bottom:0 none;
     border-top: 0 none;
+    border-radius: 0 0 0 0;
+    padding-bottom: 0;
+    text-align: right;
 }
 .view-user-meta .views-field-name .welcome-text a{
     color: #00A5F1;
@@ -317,7 +329,7 @@ body.not-front #content-inner-inner{
     
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
-    background-position:-140px -141px;    
+    background-position:-130px -141px;    
 }
 .user-field-options {
     border:1px solid #00538B;
