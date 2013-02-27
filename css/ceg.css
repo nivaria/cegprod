@@ -132,7 +132,7 @@ body.node-type-group #page #page-inner h1{
 #page h2{
     color: #656565;
     font-size: 18px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin:0 0 8px;
 }
 #page a h2{
@@ -211,6 +211,7 @@ body.not-front #content-content:after{
 /* BEGIN view-group-tab-content */
 #block-views-group_tab_content-block_1{
     width:auto;
+    float:none;
 }
 .view-group-tab-content .views-field-title a{
   color: #0077B7;
@@ -229,6 +230,12 @@ body.not-front #group-header,
 #main .block .inner{
     padding:20px;	
 }*/
+#page label{
+    color:#999;
+    font-weight:bold;
+    font-size:12px;
+}
+
 p {
     margin: 0 0 1em;
 }
@@ -376,10 +383,22 @@ body.not-front #content-inner-inner{
     font-weight: bold;
     padding-left: 0;
     padding-right:17px;
+    
+    position:relative;
+}
+.view-user-meta .views-field-name .welcome-text a:after{
+    position:absolute;
+    display: block;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13px;
 
+    content:' ';
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
-    background-position:-133px -141px;
+    background-position:-234px -141px;
 }
 .user-field-options {
     border:1px solid #00538B;
@@ -1307,6 +1326,15 @@ body.page-stream .facebook-status-update{
     color: #F35810;
     padding-left: 28px;
 }
+#page form .fbsmp-inner-expanded input.fbsmp-cancel-button {
+    background-color: #CCCCCC;
+    background-image: none;
+    border-radius: 2px 2px 2px 2px;
+    color: #444444;
+    font-size: 10px;
+    min-height: 0;
+    padding: 2px 3px;
+}
 .share-expanded{
     display:none;
     box-shadow: 2px 4px 4px #D6D6D6;
@@ -1419,7 +1447,7 @@ body.page-stream .facebook-status-update{
 .view-group-tab-content span.views-field-name,
 .view-group-tab-content .views-field-tid,
 .view-group-tab-content .views-field-created {
-    font-size: 14px;
+    font-size: 12px;
 }
 /* END que esta pasando */
 
@@ -1452,7 +1480,7 @@ body.page-stream .facebook-status-update{
     font-weight:bold;
 }
 #page ul.pager li a.active{
-    color: #F77F00;
+    color: #00A1FE;
 }
 #page ul.pager li.pager-first a,
 #page ul.pager li.pager-previous a,
