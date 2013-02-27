@@ -32,7 +32,9 @@ body{
 #main .inner{
     padding:0;
 }
-
+#page #content-inner-inner{
+    margin: 0;
+}
 #content-group-inner{
     margin:0;
 }
@@ -359,6 +361,30 @@ body.not-front #content-inner-inner{
     left: 0;
     right: auto;
     top: 3px;
+    width: 144px;
+}
+#search-box .contextual-search-wrapper:after{
+    background-image: url('../images/sprites.png');
+    background-position: -6px -492px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 14px;
+    z-index: 20;
+}
+#search #edit-search-theme-form-1{
+    float: right;
+    height: 25px;
+    line-height: 25px;
+    min-width: 0;
+    width: 144px;
+}
+#search-box .contextual-search-wrapper .contextual-search-list{
+    width: 118px;
 }
 #search-box .contextual-search-wrapper a{
     background-color: transparent;
@@ -565,6 +591,7 @@ fieldset .form-item{
     box-shadow: 2px 4px 4px #D6D6D6;
     -webkit-box-shadow: 2px 4px 4px #D6D6D6;
     -moz-box-shadow: 2px 4px 4px #D6D6D6;
+    margin: 0;
 }
 #page #page-inner .views_slideshow_previous{
     background-image:url('../images/sprites.png');
@@ -847,7 +874,10 @@ body.not-logged-in.front #content-inner-inner{
 #block-views-metagroups-block_1{
     float:none;
     width:auto;
-    margin-left:24px;
+    margin-left:0;
+}
+#block-views-metagroups-block_1 .inner{
+    margin: 0;
 }
 #page #page-inner .view-metagroups li.views-row{
     background-color: #FFFFFF;
@@ -856,10 +886,10 @@ body.not-logged-in.front #content-inner-inner{
     float: left;
     height: 168px;
     list-style: none outside none;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 20px;
     padding: 0;
     text-align: center;
-    width: 200px;
+    width: 225px;
     background-image:none;	
     box-shadow: 2px 4px 4px #D6D6D6;
     -webkit-box-shadow: 2px 4px 4px #D6D6D6;
@@ -878,7 +908,7 @@ body.not-logged-in.front #content-inner-inner{
     border-top: 4px solid #ff3f3f;
 }
 #page #page-inner .view-metagroups li.views-row.views-row-4{
-    border-top: 4px solid #74d898;
+    border-top: 4px solid #41ca5a;
 }
 #page #page-inner .view-metagroups li.views-row .views-field-field-icon-fid a{
     display:block;
