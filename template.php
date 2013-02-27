@@ -48,7 +48,7 @@ function cegprod_preprocess_page(&$variables) {
     if (isset($variables['node'])) {
         $node = $variables['node'];
         if (og_is_group_type($node->type)) {
-            $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'user_picture_meta_default');
+            $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'groups_140_140_ceg_default');
 
             if (!empty($node->body)) {
                 $variables['group_header_text'] = check_markup($node->body, $node->format);
@@ -122,7 +122,7 @@ function cegprod_og_subscribe_link($node) {
         $txt = t('Request membership');
         $class = 'og-request';
         if (og_is_pending_member($node->nid)) {
-            return '<span class="og-awaiting">' . ('Awaiting approval') . '</span>';
+            return '<span class="og-awaiting">' . t('Awaiting approval') . '</span>';
         }
     } elseif ($node->og_selective == OG_OPEN) {
         $txt = t('Join');
