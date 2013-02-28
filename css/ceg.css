@@ -642,6 +642,10 @@ fieldset .form-item{
     font-weight: bold;
     color: #0077B7;
 }
+.view-subgroups-main-listing td.views-field-title a em{
+    font-weight: normal;
+    color: #000;
+}
 .view-subgroups-main-listing .views-field-title{
     width:120px;
     overflow:hidden;
@@ -716,6 +720,9 @@ fieldset .form-item{
 /* END home slideshow */
 
 /* BEGIN edit node */
+.node-form .standard {
+    margin-bottom: 2em;
+}
 .node-form fieldset.collapsible{
   border:1px solid #CCCCCC;
   padding:12px 24px;
@@ -1152,6 +1159,9 @@ body.page-groups .inner.content{
     margin-left:40px;
     float:right;
 }
+body.has_one_sidebar #page .form-submit#edit-submit{
+    margin-right:64px;
+}
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown li:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a{
   display:block;
@@ -1298,7 +1308,7 @@ div.fivestar-widget .star{
 }
 div.fivestar-widget .star a {
     background-image: url("../images/sprites.png");
-    background-position: -63px -444px;
+    background-position: -99px -444px;
     background-repeat: no-repeat;
     display: block;
     height: 14px;
@@ -1319,11 +1329,11 @@ div.fivestar-widget div.hover.star-3 a {
 }
 div.fivestar-widget div.on.star-4 a,
 div.fivestar-widget div.hover.star-4 a {
-  background-position: -9px -444px;
+  background-position: -63px -444px;
 }
 div.fivestar-widget div.on.star-5 a,
 div.fivestar-widget div.hover.star-5 a {
-  background-position: -9px -444px;
+  background-position: -81px -444px;
 }
 /* END default full node */
 

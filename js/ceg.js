@@ -15,6 +15,9 @@ jQuery(document).ready(function($){
     if( jQuery("#content-tabs-inner .tabs li").length > 0 ){
         jQuery("body").addClass("hastabs");
     }
+    if( jQuery("#sidebar-last").length > 0 || jQuery("#sidebar-first").length > 0 ){
+        jQuery("body").addClass("has_one_sidebar");
+    }
     jQuery("#page ul.pager li.pager-item").each( function(index){
         if(index==0){
             jQuery(this).addClass("first");
