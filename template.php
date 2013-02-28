@@ -219,7 +219,7 @@ function cegprod_preprocess_comment(&$vars) {
       $vars['comment']->picture = variable_get('user_picture_default', '');
     }
     if ($vars['comment']->picture) { 
-      $picture = theme_imagecache('user_picture_meta', $vars['comment']->picture, $vars['comment']->name, $vars['comment']->name);
+      $picture = theme_imagecache('users_50_50_ceg', $vars['comment']->picture, $vars['comment']->name, $vars['comment']->name);
       if (user_access('access user profiles')) {
         $vars['comment']->picture = l($picture, "user/{$vars['comment']->uid}", array('html' => TRUE));
       }
