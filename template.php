@@ -112,7 +112,7 @@ function cegprod_preprocess_node(&$vars) {
             }
         }
         // Created time
-        $submitted .= '<span class="submitted-on">';
+        $submitted .= '<span class="submitted-on">'. t('on ');
         $submitted .= format_date($vars['node']->created);
         $submitted .= '</span>';
 
