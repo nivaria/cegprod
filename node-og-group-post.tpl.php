@@ -70,7 +70,7 @@
     <?php endif; ?>
     
     <?php if ($node->og_groups && $page) {
-        print '<div class="groups">'. t('Groups'). ': ';
+        print '<div class="groups">'. t('In groups'). ': ';
         print '<div class="links">'.  $og_links['view']. '</div></div>';
     } ?>
 
@@ -80,7 +80,7 @@
     <?php endif; ?>
     <?php if ($terms): ?>
     <div class="terms">
-      Terms: <?php print $terms; ?>
+      Tags: <?php print $terms; ?>
     </div>
     <?php endif;?>
     
