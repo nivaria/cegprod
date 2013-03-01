@@ -42,6 +42,11 @@ body{
 .sidebar-last-cap {
     display: none;
 }
+p img{
+    height:auto !important;
+    width: auto !important;
+    max-width:100%;
+}
 a,
 a:link,
 a:visited{
