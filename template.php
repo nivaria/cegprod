@@ -94,7 +94,7 @@ function cegprod_preprocess_node(&$vars) {
             if ($author->uid && module_exists('userpoints')) {
                 $points = userpoints_get_current_points($author->uid);
                 $submitted .= '<span class="userpoints-value" title="' . t('!val user points', array('!val' => $points)) . '">';
-                $submitted .= "({$points})";
+                $submitted .= "{$points}". t('points');
                 $submitted .= '</span>';
             }
 
