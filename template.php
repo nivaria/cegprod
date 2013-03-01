@@ -71,8 +71,12 @@ function cegprod_preprocess_node(&$vars) {
 
         // Author picture
         if (theme_get_setting('toggle_node_user_picture')) {
+          if (isset($vars['picture'])) {
             $picture = $vars['picture'];
             unset($vars['picture']);
+          } else {
+            $picture = theme_imagecache('users_50_50_ceg', $author->picture);
+          }
             $submitted = ($author->uid && user_access('access user profiles')) ? l($picture, "user/{$author->uid}", array('html' => TRUE)) : $picture;
         }
         $vars['submitted_name'] = (module_exists('contributors') && _check_contributors_ctype_enabled($vars['node']->type)) ? $vars['node']->content['contributors']['#value'] : theme('username', $author);
