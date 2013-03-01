@@ -74,7 +74,7 @@ function cegprod_preprocess_node(&$vars) {
           if (isset($vars['picture'])) {
             $picture = $vars['picture'];
             unset($vars['picture']);
-          } else {
+          } else if (isset($author->picture) && ($author->picture!='')){
             $picture = theme_imagecache('users_50_50_ceg', $author->picture);
           }
             $submitted = ($author->uid && user_access('access user profiles')) ? l($picture, "user/{$author->uid}", array('html' => TRUE)) : $picture;
