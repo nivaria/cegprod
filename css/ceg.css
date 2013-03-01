@@ -966,6 +966,9 @@ body.not-logged-in.front #content-inner-inner{
     max-width: 100%;
     width: auto;
 }
+#block-views-latest_public_content-block_1{
+	width:auto;
+}
 /* END front anonymous content */
 
 /* BEGIN metagroups view */
