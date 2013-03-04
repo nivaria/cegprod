@@ -42,6 +42,9 @@ body{
 .sidebar-last-cap {
     display: none;
 }
+html.js fieldset.collapsed{
+    height:auto;
+}
 p img{
     height:auto !important;
     width: auto !important;
@@ -87,6 +90,40 @@ tr.first.last, tr.first.last td {
     margin:0;
     padding:0;
 }
+.node .inner .content ul{
+    padding-left:1em;
+}
+.node .inner .content ul li{
+    position:relative;
+    padding-left:20px;
+    padding-bottom:0.5em;
+}
+.node .inner .content ul li:before{
+    content:' ';
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position: -6px -529px;
+    width:14px;
+    height:14px;
+    display:block;
+    position:absolute;
+    left:0;
+    top:2px;
+}
+
+/* WEIRD taxonomy links are inside node content */
+.node .inner .content ul.links{
+    padding-left:0;
+}
+.node .inner .content ul.links li{
+    position:static;
+    padding:0;
+}
+.node .inner .content ul.links li:before{    
+    display:none;
+}
+
+
 .sidebar-first .block .content,
 .sidebar-last .block .content {
     padding: 0;
@@ -971,6 +1008,7 @@ body.not-logged-in.front #content-inner-inner{
     max-width: 100%;
     width: auto;
 }
+.block.block-views.grid16-11,
 #block-views-latest_public_content-block_1{
 	width:auto;
 }
@@ -1213,7 +1251,7 @@ body.full-node .content .terms{
       margin-bottom: 1em;
       padding-bottom: 1em;
 }
-body.full-node .submitted {
+body .submitted {
     background-clip: padding-box;
     border-radius: 0 0 0 0;
     box-shadow: none;
@@ -1267,6 +1305,11 @@ body.full-node .submitted {
 .node .groups {
     color: #444444;
     font-size: 13px;
+}
+div.node{
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 #page .node .terms li,
 #page .node .groups li{
