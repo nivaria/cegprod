@@ -1128,11 +1128,12 @@ body.page-groups .inner.content{
 #page .views-field-subscribe a,
 .buttongreen1 {
     background-color: #ffffff;
-    background-image: linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+    background-image: linear-gradient(rgba(105) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
     background-image: -moz-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
     background-image: -webkit-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
     background-image: -o-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
     background-image: -ms-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69CB45', endColorstr='#3AB000');
     
     border-radius: 4px 4px 4px 4px;
     box-shadow: none;
@@ -1165,6 +1166,7 @@ body.page-groups .inner.content{
 	background-image: -webkit-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
 	background-image: -o-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
 	background-image: -ms-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A1FE', endColorstr='#0089CE');
 }
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a,
@@ -1181,6 +1183,7 @@ body.page-groups .inner.content{
 	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
 	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#E1E1E1');
 	
     border-radius: 4px 4px 4px 4px;
     box-shadow: none;
@@ -1876,7 +1879,7 @@ body.page-user-1 #block-facebook_status-facebook_status{
 	background-image: -moz-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
 	background-image: -webkit-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
 	background-image: -o-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
-	background-image: -ms-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);
+	background-image: -ms-linear-gradient(rgba(105, 203, 69, 1) 0%, rgba(105, 203, 69, 1) 4%, rgba(91, 195, 43, 1) 16%, rgba(75, 185, 0, 1) 53%, rgba(58, 176, 0, 1) 99%);	
 }
 .buttonblue {
 	background-color: #0088c9;
