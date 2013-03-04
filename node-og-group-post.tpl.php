@@ -83,9 +83,9 @@
       Tags: <?php print $terms; ?>
     </div>
     <?php endif;?>
-    <?php if ($terms['5']): ?>
+    <?php if ($terms['areas_de_gestion']): ?>
     <div class="terms_area">
-      Area: <?php print $terms['5']; ?>
+      Area: <?php print $terms['areas_de_gestion']; ?>
     </div>
     <?php endif;?>
     
