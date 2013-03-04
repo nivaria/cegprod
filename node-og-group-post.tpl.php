@@ -83,13 +83,6 @@
       Tags: <?php print $terms; ?>
     </div>
     <?php endif;?>
-    <?php if ($terms): ?>
-    <div class="terms-area">
-      Area1: <?php print $terms[5]; ?>
-      Area2: <?php print $terms['5']; ?>
-      Area3: <?php print $terms['areas_de_gestion']; ?>
-    </div>
-    <?php endif;?>
     
       <?php print $content ?>
     </div>
