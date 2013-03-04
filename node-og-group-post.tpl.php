@@ -85,7 +85,7 @@
     <?php endif;?>
     <?php if ($terms['areas_de_gestion']): ?>
     <div class="terms_area">
-      Area: <?php print $terms['5']; ?>
+      Area: <?php print $terms[5]; ?>
     </div>
     <?php endif;?>
     
