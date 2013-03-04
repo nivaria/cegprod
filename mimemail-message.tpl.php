@@ -44,7 +44,7 @@ global $base_url;
       <table border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #DDDDDD;background-color: #FFFFFF;">
         <tr>
           <td align="center" valign="top">
-            <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #F57D0A; border-bottom: 4px solid #E65013;">
+            <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #008ac9; border-bottom: 4px solid #00a1fe;">
           <tr>
           <td class="logo">
             <?php if ($logo): ?>
@@ -67,10 +67,10 @@ global $base_url;
   </tr>
   <tr>
     <td align="center" valign="top">
-      <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #333333;border-top: 4px solid #E1E1E1;color: #FFFFFF;">
+      <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #00538b;border-top: 4px solid #00a1fe;color: #FFFFFF;">
         <tr>
           <td valign="top">
-            <a href="/home" style="color: #FFFFFF;">Nivaria KM</a> | <a href="/groups" style="color: #FFFFFF;">Community</a>
+            <a href="/home" style="color: #FFFFFF;">Club de excelencia de gestión</a> | <a href="/groups" style="color: #FFFFFF;">Comunidad</a>
           </td>
           <td align="right">
             <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws_by_nivaria.png" alt="Nivaria" /></a>
