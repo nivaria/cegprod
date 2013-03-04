@@ -195,3 +195,24 @@ function cegprod_preprocess_mimemail_message(&$variables) {
   $variables['logo'] = $base_url . theme_get_setting('logo');
   $variables['front_page'] = url();
 }
+
+/**
+ *  Theme from/to date combination on form.
+ */
+function cegprod_date_combo($element) {
+  $field = content_fields($element['#field_name'], $element['#type_name']);
+  if (!$field['todate']) {
+    return $element['#children'];
+  }
+
+  // Group from/to items together in fieldset.
+  $fieldset = array(
+    '#title' => check_plain(t($field['widget']['label'])) .' '. ($element['#delta'] > 0 ? intval($element['#delta'] + 1) : ''),
+    '#value' => $element['#children'],
+    '#collapsible' => FALSE,
+    '#collapsed' => FALSE,
+    '#description' => $element['#fieldset_description'],
+    '#attributes' => array(),
+  );
+  return theme('fieldset', $fieldset);
+}
