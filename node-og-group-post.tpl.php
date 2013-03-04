@@ -83,6 +83,11 @@
       Tags: <?php print $terms; ?>
     </div>
     <?php endif;?>
+    <?php if ($terms['5']): ?>
+    <div class="terms_area">
+      Area: <?php print $terms['5']; ?>
+    </div>
+    <?php endif;?>
     
       <?php print $content ?>
     </div>
