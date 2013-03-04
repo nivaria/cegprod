@@ -85,7 +85,7 @@
     <?php endif;?>
     <?php if ($terms['areas_de_gestion']): ?>
     <div class="terms_area">
-    <?php foreach ($terms AS $key => $vid) {?>
+    <?php foreach ($terms AS $key => $vid): ?>
       Area: <?php print $key; ?>
     <?php endforeach;?>
     </div>
