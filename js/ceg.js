@@ -18,9 +18,11 @@ jQuery(document).ready(function($){
     if( jQuery("#sidebar-last").length > 0 || jQuery("#sidebar-first").length > 0 ){
         jQuery("body").addClass("has_one_sidebar");
     }
-    jQuery("#page ul.pager li.pager-item").each( function(index){
-        if(index==0){
-            jQuery(this).addClass("first");
-        }
+    jQuery("#page ul.pager").each( function(index){
+        jQuery(this).children("li.pager-item").each( function(index2){
+            if(index2==0){
+                jQuery(this).addClass("first");
+            }
+        });
     });
 });
