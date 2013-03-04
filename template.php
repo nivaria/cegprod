@@ -190,3 +190,8 @@ function cegprod_tidy_node_links_list_item($link_title, $link, $first, $last, $r
   return $output;
 }
 
+function cegprod_preprocess_mimemail_message(&$variables) {
+  global $base_url;
+  $variables['logo'] = $base_url . theme_get_setting('logo');
+  $variables['front_page'] = url();
+}
