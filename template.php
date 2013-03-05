@@ -218,6 +218,32 @@ function cegprod_date_combo($element) {
 }
 
 /**
+ * Returns the taxonomy's url. If the taxonomy is one of the metagroups, returns the url of the metagroup content, otherwise, returns the taxonomy url
+ * @param type $term
+ * @return string 
+ */
+function _get_taxonomy_path($term) {
+    $url = taxonomy_term_path($term);
+    switch ($term->tid) {
+      case 14: 
+        $url = 'node/64';
+        break;
+      case 13:
+        $url = 'node/81';
+        break;
+      case 12:
+        $url = 'node/82';
+        break;
+      case 15:
+        $url = 'node/83';
+        break;
+      default:
+        break;
+    }
+    return $url;
+}
+
+/**
  * Theme to separate terms of taxonomy
  * @param type $node_taxonomy
  * @return type 
@@ -227,7 +253,7 @@ function cegprod_separate_terms($node_taxonomy) {
   //separating terms by vocabularies 
     foreach ($node_taxonomy AS $term) { 
       $links[$term->vid]['taxonomy_term_'. $term->tid] = 
-        l($term->name, taxonomy_term_path($term), array('attributes' => array(
+        l($term->name, _get_taxonomy_path($term), array('attributes' => array(
             'rel' => 'tag', 
             'title' => strip_tags($term->description)
             )
@@ -253,7 +279,7 @@ function cegprod_not_include_terms($node_taxonomy, $vid) {
   //separating terms by vocabularies 
     foreach ($node_taxonomy AS $term) {
       if ($term->vid != $vid) {
-        $links[] = l($term->name, taxonomy_term_path($term), array('attributes' => array(
+        $links[] = l($term->name, _get_taxonomy_path($term), array('attributes' => array(
             'rel' => 'tag', 
             'title' => strip_tags($term->description)
             )
