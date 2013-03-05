@@ -242,3 +242,29 @@ function cegprod_separate_terms($node_taxonomy) {
   } 
   return $terms; 
 }
+
+/**
+ * Theme to exclude a vocabulary from $node_taxonomy
+ * @param type $node_taxonomy
+ * @param type $vid
+ * @return type 
+ */
+function cegprod_not_include_terms($node_taxonomy, $vid) {
+  if ($node_taxonomy) { 
+  //separating terms by vocabularies 
+    foreach ($node_taxonomy AS $term) {
+      if ($term->vid != $vid) {
+        $links[] = l($term->name, taxonomy_term_path($term), array('attributes' => array(
+            'rel' => 'tag', 
+            'title' => strip_tags($term->description)
+            )
+          )
+        ); 
+      }
+   }
+  } 
+  $link = implode(', ', $links);
+  return $link;
+}
+
+
