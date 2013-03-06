@@ -251,6 +251,10 @@ body.not-front #content-content:after{
     padding:0;
     overflow:visible;
 }
+.sidebar-last .block h2.block-title,
+.sidebar-first .block h2.block-title {
+    padding: 0;
+}
 #page #sidebar-last .block .inner,
 #page #sidebar-first .block .inner{
     padding:20px;
@@ -362,6 +366,26 @@ body.not-front #content-inner-inner{
     width: 44px;
  }
 /* END exposed view filter */
+
+/* BEGIN block bookmarks */
+#block-views-bookmarks_your_group-block_1 h2.block-title{
+    padding-bottom: 1em;
+    padding-left: 27px;
+    position: relative;
+}
+#block-views-bookmarks_your_group-block_1 h2.block-title:before{
+    width:17px;
+    height: 27px;
+    background-image: url('../images/sprites.png');
+    background-repeat: no-repeat;
+    background-position: -423px -8px;
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+/* END block bookmarks */
 
 .view-all-questions{
     background-color:#fff;
@@ -1368,6 +1392,8 @@ div.node{
     position: relative;
     float:right;
 }
+.fivestar-widget-static,
+form.fivestar-widget-static,
 .fivestar-widget,
 form.fivestar-widget{
   float:right;
@@ -1385,9 +1411,11 @@ form.fivestar-widget{
     top: -6px;
     width: 12px;
 }*/
+div.fivestar-widget-static .star,
 div.fivestar-widget .star{
   background-image:none;
 }
+div.fivestar-widget-static .star a,
 div.fivestar-widget .star a {
     background-image: url("../images/sprites.png");
     background-position: -99px -444px;
@@ -1397,22 +1425,32 @@ div.fivestar-widget .star a {
     margin-right: 2px;
     width: 16px !important;
 }
+div.fivestar-widget-static div.on.star-1 a,
+div.fivestar-widget-static div.hover.star-1 a,
 div.fivestar-widget div.on.star-1 a,
 div.fivestar-widget div.hover.star-1 a {
   background-position: -9px -444px;
 }
+div.fivestar-widget-static div.on.star-2 a,
+div.fivestar-widget-static div.hover.star-2 a,
 div.fivestar-widget div.on.star-2 a,
 div.fivestar-widget div.hover.star-2 a {
   background-position: -27px -444px;
 }
+div.fivestar-widget-static div.on.star-3 a,
+div.fivestar-widget-static div.hover.star-3 a,
 div.fivestar-widget div.on.star-3 a,
 div.fivestar-widget div.hover.star-3 a {
   background-position: -45px -444px;
 }
+div.fivestar-widget-static div.on.star-4 a,
+div.fivestar-widget-static div.hover.star-4 a,
 div.fivestar-widget div.on.star-4 a,
 div.fivestar-widget div.hover.star-4 a {
   background-position: -63px -444px;
 }
+div.fivestar-widget-static div.on.star-5 a,
+div.fivestar-widget-static div.hover.star-5 a,
 div.fivestar-widget div.on.star-5 a,
 div.fivestar-widget div.hover.star-5 a {
   background-position: -81px -444px;
