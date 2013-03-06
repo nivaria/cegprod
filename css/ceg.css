@@ -134,7 +134,7 @@ tr.first.last, tr.first.last td {
     font-size: 13px;
     font-weight: bold;
 }
-.view-group-tab-content .views-field-title{
+#content-content .views-field-title{
     font-size: 16px;
     margin-bottom: 0;
 }
@@ -205,7 +205,10 @@ body.node-type-group #page #page-inner h1{
     width: auto;
 }
 #page .view-user-directory table td{
-    padding:4px 0;
+    padding:4px 4px;;
+}
+td .views-field-picture {
+    text-align: center;
 }
 /* END tables */
 
@@ -760,6 +763,18 @@ fieldset .form-item{
     display:none;
 }
 /* END home slideshow */
+
+/* BEGIN metagroup related_content */
+.view-metagroup-related-content .views-row .views-field-name,
+.view-metagroup-related-content .views-row .views-field-created,
+.view-metagroup-related-content .views-row .views-field-timestamp{
+    display:inline;
+}
+.view-metagroup-related-content .views-row .views-field-teaser{
+    padding-top:1em;
+}
+/* END metagroup related_content */
+ 
 
 /* BEGIN edit node */
 .node-form .standard {
