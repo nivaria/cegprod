@@ -1391,6 +1391,7 @@ div.node{
     padding: 4px 8px;
     position: relative;
     float:right;
+    clear: both;
 }
 #page .fivestar-widget-static,
 #page form.fivestar-widget-static,
@@ -1451,6 +1452,17 @@ div.node{
   background-position: -81px -444px;
 }
 /* END default full node */
+
+/* BEGIN home no logged user que esta pasando */
+#block-views-latest_public_content-block_1 .views-field-name,
+#block-views-latest_public_content-block_1 .views-field-created,
+#block-views-latest_public_content-block_1 .views-field-timestamp{
+    display: inline;
+}
+#block-views-latest_public_content-block_1 .views-field-teaser{
+    padding-top: 1em;
+}
+/* END home no logged user que esta pasando */
 
 /* BEGIN que esta pasando */
 .facebook-status-update{
