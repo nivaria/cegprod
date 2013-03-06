@@ -1,7 +1,6 @@
 <?php
 // $Id: node.tpl.php 7510 2010-06-15 19:09:36Z sheena $
-  $terms = cegprod_not_include_terms($node->taxonomy, '5');
-  $area_terms = cegprod_separate_terms($node->taxonomy);
+
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">

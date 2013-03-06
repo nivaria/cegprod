@@ -47,7 +47,7 @@ function cegprod_preprocess_page(&$variables) {
     //show group description if group node present
     if (isset($variables['node'])) {
         $node = $variables['node'];
-        if (og_is_group_type($node->type)) {
+        if (og_is_group_type($node->type) || $node->type = 'metagroup') {
             $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'groups_140_140_ceg_default');
 
             if (!empty($node->body)) {
@@ -118,7 +118,15 @@ function cegprod_preprocess_node(&$vars) {
         $submitted .= '</span>';
 
         $vars['submitted'] = $submitted;
+        
     }
+    $vars['terms'] = cegprod_not_include_terms($vars['node']->taxonomy, '5');
+    $vars['area_terms'] = cegprod_separate_terms($vars['node']->taxonomy);
+    if ($vars['node']->type == 'metagroup') {
+            unset($vars['content']);
+            unset($vars['taxonomy']);
+            unset($vars['terms']);
+        }
 }
 
 function cegprod_og_subscribe_link($node) {
