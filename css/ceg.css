@@ -407,7 +407,8 @@ body.not-front #content-inner-inner{
   color: #00A3F9;
 }
 #block-views-user_meta-block_1{
-    width:172px;
+    width:184px;
+    width:165px;
 }
 #block-views-user_meta-block_1 .view .picture{
     margin: 3px 0 0;
@@ -430,6 +431,8 @@ body.not-front #content-inner-inner{
     padding-bottom: 0;
     text-align: right;
     padding-left:0;
+    width:134px;
+    width:114px;
 }
 .view-user-meta .views-field-name .welcome-text a{
     color: #00A5F1;
@@ -440,6 +443,7 @@ body.not-front #content-inner-inner{
     padding-right:17px;
     
     position:relative;
+    background-image:none;
 }
 .view-user-meta .views-field-name .welcome-text a:after{
     position:absolute;
@@ -458,6 +462,8 @@ body.not-front #content-inner-inner{
 .user-field-options {
     border:1px solid #00538B;
     border-top:0 none;
+    width:116px !important;
+    width:96px !important;
 }
 #search-box{
     background-image:url('../images/sprites.png');
