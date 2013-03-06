@@ -36,15 +36,15 @@ global $base_url;
   table td {border-collapse: collapse;}
   </style>
 </head>
-<body style="color: #666666;font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;font-size: 14px;">
+<body style="color: #444444;font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;font-size: 13px;">
 <center>
 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="wrapper">
   <tr>
     <td align="center" valign="top">
-      <table border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #DDDDDD;background-color: #FFFFFF;">
+      <table border="0" cellpadding="0" cellspacing="0" width="600" style="border: 0px solid #DDDDDD;background-color: #FFFFFF;">
         <tr>
           <td align="center" valign="top">
-            <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #008ac9; border-bottom: 4px solid #00a1fe;">
+            <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #0091D3; border-bottom: 4px solid #0077B7;">
           <tr>
           <td class="logo">
             <?php if ($logo): ?>
@@ -67,7 +67,7 @@ global $base_url;
   </tr>
   <tr>
     <td align="center" valign="top">
-      <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #00538b;border-top: 4px solid #00a1fe;color: #FFFFFF;">
+      <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #0077B7;border-top: 4px solid #009EFF;color: #FFFFFF;">
         <tr>
           <td valign="top">
             <a href="/home" style="color: #FFFFFF;">Club de excelencia de gestión</a> | <a href="/groups" style="color: #FFFFFF;">Comunidad</a>

@@ -295,3 +295,9 @@ function cegprod_not_include_terms($node_taxonomy, $vid) {
 }
 
 
+/**
+ * Single line of text
+ */
+function cegprod_notifications_digest_short_line($line, $group) {
+  return $line;
+}
