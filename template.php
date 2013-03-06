@@ -79,8 +79,9 @@ function cegprod_preprocess_node(&$vars) {
           }
             $submitted = ($author->uid && user_access('access user profiles')) ? l($picture, "user/{$author->uid}", array('html' => TRUE)) : $picture;
         }
-        $vars['submitted_name'] = (module_exists('contributors') && _check_contributors_ctype_enabled($vars['node']->type)) ? $vars['node']->content['contributors']['#value'] : theme('username', $author);
-        unset($vars['node']->content['contributors']);
+        //$vars['submitted_name'] = (module_exists('contributors') && _check_contributors_ctype_enabled($vars['node']->type)) ? $vars['node']->content['contributors']['#value'] : theme('username', $author);
+        //unset($vars['node']->content['contributors']);
+        $vars['submitted_name'] = theme('username', $author);
 
         // Author information
         $submitted .= '<span class="submitted-by">';
