@@ -70,7 +70,7 @@ global $base_url;
       <table border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #0077B7;border-top: 4px solid #009EFF;color: #FFFFFF;">
         <tr>
           <td valign="top">
-            <a href="/home" style="color: #FFFFFF;">Club de excelencia de gestión</a> | <a href="/groups" style="color: #FFFFFF;">Comunidad</a>
+            <a href="/home" style="color: #FFFFFF;">Club Excelencia en Gestión</a> | <a href="/groups" style="color: #FFFFFF;">Comunidad</a>
           </td>
           <td align="right">
             <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws_by_nivaria.png" alt="Nivaria" /></a>
