@@ -483,6 +483,9 @@ body.not-front #content-inner-inner{
     background-repeat:no-repeat;
     background-position:-234px -141px;
 }
+.view-user-meta .views-field-name span.username a{
+    white-space: nowrap;
+}
 .user-field-options {
     border:1px solid #00538B;
     border-top:0 none;
@@ -1463,6 +1466,16 @@ div.node{
     padding-top: 1em;
 }
 /* END home no logged user que esta pasando */
+
+/* BEGIN comments */
+#comment-form{
+    background-color: #f9f9f9;
+    padding: 10px 18px;
+}
+#comment-form label{
+    color: #666;
+}
+/* END comments */
 
 /* BEGIN que esta pasando */
 .facebook-status-update{
