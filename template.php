@@ -47,7 +47,7 @@ function cegprod_preprocess_page(&$variables) {
     //show group description if group node present
     if (isset($variables['node'])) {
         $node = $variables['node'];
-        if (og_is_group_type($node->type) || $node->type = 'metagroup') {
+        if (og_is_group_type($node->type) || $node->type == 'metagroup') {
             $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'groups_140_140_ceg_default');
 
             if (!empty($node->body)) {
