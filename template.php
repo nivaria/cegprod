@@ -45,7 +45,7 @@ function cegprod_preprocess_page(&$variables) {
     $variables['pre_footer'] = theme('grid_row', $variables['footer'] . $variables['footer_message'], 'footer', 'full-width', $variables['grid_width']);
 
     //show group description if group node present
-    if (isset($variables['node'])) {
+     if (isset($variables['node'])) {
         $node = $variables['node'];
         if (og_is_group_type($node->type) || $node->type == 'metagroup') {
             $variables['group_header_image'] = content_format('field_group_image', $node->field_group_image[0], 'groups_140_140_ceg_default');
@@ -309,4 +309,14 @@ function cegprod_not_include_terms($node_taxonomy, $vid) {
  */
 function cegprod_notifications_digest_short_line($line, $group) {
   return $line;
+}
+
+
+/**
+ * Return the realname/username from $uid
+ */
+function cegprod_apachesolr_breadcrumb_uid($uid) {
+  $user = user_load($uid);
+  return $user->realname ? $user->realname : $user->name;
+  
 }
