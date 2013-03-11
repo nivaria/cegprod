@@ -448,7 +448,7 @@ body.not-front #content-inner-inner{
     left: 8px;
     margin: 0;
     position: absolute;
-    top: 0;
+    top: 2px;
 }
 .view-user-meta .views-field-name .welcome-text {
     background-color: transparent;
