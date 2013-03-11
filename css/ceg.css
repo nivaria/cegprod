@@ -141,6 +141,9 @@ tr.first.last, tr.first.last td {
 .views-field-name a{
     color: #FF4631;
     font-size:14px;
+    
+    color:#00A3F9;
+    font-size:13px;
 }
 #powered_by{
     background-image:url('../images/sprites.png');
@@ -230,6 +233,12 @@ body.front #main .block{
     margin-bottom:20px;
 
 	padding:20px;
+}
+#page #block-commons_core-create_group h2.block-title{
+    float:left;
+}
+#page #block-commons_core-create_group .content{
+    float:right;
 }
 body.not-front #content-content{
   overflow:visible;
@@ -430,12 +439,16 @@ body.not-front #content-inner-inner{
 #block-commons_core-header_login a{
   color: #00A3F9;
 }
-#block-views-user_meta-block_1{
-    width:184px;
+#block-views-user_meta-block_1{    
     width:165px;
+    z-index:30;
 }
 #block-views-user_meta-block_1 .view .picture{
-    margin: 3px 0 0;
+    display: block;
+    left: 8px;
+    margin: 0;
+    position: absolute;
+    top: 0;
 }
 .view-user-meta .views-field-name .welcome-text {
     background-color: transparent;
@@ -448,15 +461,20 @@ body.not-front #content-inner-inner{
     text-align: left;
 }
 #page .view-user-meta .views-field-name .welcome-text{
-    border:1px solid #00538B;
-    border-bottom:0 none;
-    border-top: 0 none;
     border-radius: 0 0 0 0;
     padding-bottom: 0;
     text-align: right;
     padding-left:0;
-    width:134px;
-    width:114px;
+    width:auto;
+    padding:0;
+}
+#page .view-user-meta {
+    float: right;
+    width: 200px;
+}
+.view-user-meta .views-field-name span {
+    padding: 0;
+    width: auto;
 }
 .view-user-meta .views-field-name .welcome-text a{
     color: #00A5F1;
@@ -486,11 +504,23 @@ body.not-front #content-inner-inner{
 .view-user-meta .views-field-name span.username a{
     white-space: nowrap;
 }
-.user-field-options {
+.user-dropdown-open .user-field-options {
+    width:96px;
+    padding:0;
+    border:0 none;
+}
+#page .view-user-meta .views-row{
+    position:relative;
+    padding: 3px 18px 9px;
+    border:1px solid transparent;
+    border-top: 0 none;
+}
+.user-dropdown-open #page .view-user-meta .views-row{
+    background-color:#fff;
     border:1px solid #00538B;
-    border-top:0 none;
-    width:116px !important;
-    width:96px !important;
+    border-top: 0 none;
+    border-radius:0 0 7px 7px;
+    z-index:30;
 }
 #search-box{
     background-image:url('../images/sprites.png');
@@ -823,6 +853,7 @@ fieldset .form-item{
 .node-form fieldset.collapsible{
   border:1px solid #CCCCCC;
   padding:12px 24px;
+  overflow:visible;
 }
 .node-form .taxonomy-super-select-checkboxes fieldset.collapsible{
   border:0 none;
@@ -1324,7 +1355,7 @@ body .submitted {
     color: #A4A4A4;
     font-size: 13px;
     font-style: normal;
-    left: 24px;
+    left: 36px;
     position: absolute;
     top: 32px;
 }
