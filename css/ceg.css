@@ -470,7 +470,7 @@ body.not-front #content-inner-inner{
 }
 #page .view-user-meta {
     float: right;
-    width: 200px;
+    width: auto;
 }
 .view-user-meta .views-field-name span {
     padding: 0;
@@ -505,13 +505,13 @@ body.not-front #content-inner-inner{
     white-space: nowrap;
 }
 .user-dropdown-open .user-field-options {
-    width:96px;
-    padding:0;
+    width:auto !important;
+    padding:0 18px 0 0;
     border:0 none;
 }
 #page .view-user-meta .views-row{
     position:relative;
-    padding: 3px 18px 9px;
+    padding: 3px 18px 9px 52px;
     border:1px solid transparent;
     border-top: 0 none;
 }
