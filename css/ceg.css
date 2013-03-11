@@ -476,7 +476,7 @@ body.not-front #content-inner-inner{
     padding: 0;
     width: auto;
 }
-.view-user-meta .views-field-name .welcome-text a{
+#page .view-user-meta .views-field-name .welcome-text a{
     color: #00A5F1;
     display: block;
     font-size: 13px;
@@ -486,6 +486,9 @@ body.not-front #content-inner-inner{
     
     position:relative;
     background-image:none;
+}
+.user-dropdown-open #page .view-user-meta .views-field-name .welcome-text{
+    color: #00A5F1;
 }
 .view-user-meta .views-field-name .welcome-text a:after{
     position:absolute;
