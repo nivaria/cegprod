@@ -1371,6 +1371,7 @@ body .submitted {
     max-width: 700px;
     overflow: hidden;
     padding: 0;
+    min-height:40px;
 }
 body .submitted img{
     padding-right:1em;
