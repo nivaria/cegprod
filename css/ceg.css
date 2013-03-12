@@ -139,9 +139,6 @@ tr.first.last, tr.first.last td {
     margin-bottom: 0;
 }
 .views-field-name a{
-    color: #FF4631;
-    font-size:14px;
-    
     color:#00A3F9;
     font-size:13px;
 }
@@ -1387,7 +1384,8 @@ body .submitted {
     font-style:italic;
 }
 #contributors a{
-    color: #FF4631;
+    color:#00A3F9;
+    font-size:13px;
 }
 .submitted,
 .terms {
