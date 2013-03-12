@@ -1307,6 +1307,9 @@ body.page-groups .inner.content{
     margin-left:40px;
     float:right;
 }
+.block .calendar-calendar .month-view table tr td.today, .block .calendar-calendar .month-view table tr td.today a {
+    color: #FFFFFF;
+}
 #page .form-submit#edit-submit{
     margin-right:212px;
     margin-left:40px;
