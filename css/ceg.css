@@ -151,6 +151,18 @@ tr.first.last, tr.first.last td {
     margin-bottom:4em;
     float:right;
 }
+body#linkit{
+    background-image:none;
+}
+#linkit fieldset{
+    padding:0;
+    margin:0;
+}
+#linkit h1{
+    color: #0088c9;
+    font-size: 28px;
+    font-weight: normal;    
+}
 #page h1 {
     color: #0088c9;
     font-size: 30px;
@@ -920,6 +932,7 @@ fieldset .form-item{
 }
 #edit_og_groups_chzn{
   width:auto !important;
+  border:1px solid #ccc;
 }
 .chzn-container-multi .chzn-choices{
     background-color: transparent;
@@ -950,7 +963,7 @@ fieldset .form-item{
     display: block;
     float: left;
     font-size: 11px;
-    margin: 0 1em 0 0;
+    margin: 5px 1em 0 0;
     padding: 2px 22px 2px 6px;
     position: relative;
 }
@@ -1204,6 +1217,7 @@ body.page-groups .inner.content{
     text-align: left;
 }
 /* BEGIN buttons */
+#linkit .form-submit,
 .block.block-commons_profile .links .ur_action a,
 #og-manage-form li a,
 #block-views-recent_notices-block_1 .view-header a,
@@ -1284,10 +1298,17 @@ body.page-groups .inner.content{
     padding: 0 14px;
     width: auto;
 }
+#page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
+#page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a{
+    border:0 none;
+}
 #page .form-submit#edit-preview-changes,
 #page .form-submit#edit-preview{
     margin-left:40px;
     float:right;
+}
+.block .calendar-calendar .month-view table tr td.today, .block .calendar-calendar .month-view table tr td.today a {
+    color: #FFFFFF;
 }
 #page .form-submit#edit-submit{
     margin-right:212px;
@@ -1349,21 +1370,30 @@ body .submitted {
     margin-bottom: 10px;
     max-width: 700px;
     overflow: hidden;
-    padding: 0 0 32px;
+    padding: 0;
+    min-height:40px;
+}
+body .submitted img{
+    padding-right:1em;
+    vertical-align:top;
+}
+body .submitted img.badge.contributor{
+    padding:0;
+    vertical-align:top;
 }
 .submitted .userpoints-value {
     color: #A4A4A4;
     font-size: 13px;
     font-style: normal;
-    left: 36px;
+    left: 92px;
     position: absolute;
-    top: 32px;
+    top: 25px;
 }
 .submitted .user_badges {
-    left: 0;
+    left: 54px;
     padding: 0;
     position: absolute;
-    top: 32px;
+    top: 24px;
 }
 .submitted-by,
 .submitted-by span a,
@@ -1374,6 +1404,9 @@ body .submitted {
     
     color: #444444;
     font-size: 13px;
+}
+.submitted-by span.username a {
+    color: #00A3F9;
 }
 .submitted .submitted-on {
     color: #999999;
