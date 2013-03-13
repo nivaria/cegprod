@@ -83,6 +83,11 @@ function cegprod_preprocess_node(&$vars) {
         //unset($vars['node']->content['contributors']);
         $vars['submitted_name'] = theme('username', $author);
 
+        // Node type
+        $submitted .= '<span class="type-' . $vars['node']->type . '">';
+        $submitted .= node_get_types($op = 'name', $vars['node']);
+        $submitted .= '</span>';
+        
         // Author information
         $submitted .= '<span class="submitted-by">';
         $submitted .= t('Submitted by !name', array('!name' => $vars['submitted_name']));
