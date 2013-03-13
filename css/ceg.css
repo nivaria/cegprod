@@ -350,6 +350,14 @@ body.not-front #content-inner-inner{
 }
 /* END blocks */
 
+/* BEGIN taxonomy pages */
+.page-taxonomy .node .meta {
+    float: none;
+    margin-right: 0;
+    width: auto;
+}
+/* END taxonomy pages */
+
 /* BEGIN exposed view filter */
 #page .views-exposed-form{
     background-color: transparent;
@@ -1407,6 +1415,9 @@ body .submitted img.badge.contributor{
     padding: 0;
     position: absolute;
     top: 24px;
+}
+.submitted-by{
+    padding-left:0.5em;
 }
 .submitted-by,
 .submitted-by span a,
