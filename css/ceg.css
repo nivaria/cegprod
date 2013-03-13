@@ -42,6 +42,12 @@ body{
 .sidebar-last-cap {
     display: none;
 }
+#content-group{
+    float:left;
+}
+#sidebar-last{
+    float:right;
+}
 html.js fieldset.collapsed{
     height:auto;
 }
@@ -815,6 +821,9 @@ fieldset .form-item{
     -moz-box-shadow: 2px 4px 4px #D6D6D6;
     margin: 0;
 }
+#block-views-home_slideshow-block_1 .views-slideshow-controls-top{
+    display:none;
+}
 #page #page-inner .views_slideshow_previous{
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
@@ -1354,6 +1363,10 @@ body.has_one_sidebar #page .form-submit#edit-submit{
     font-weight: bold;
 }    
 /* END comments */
+
+#page #block-commons_nivaria-0 h2{
+    float:left;
+}
 
 /* BEGIN default full node */
 body.full-node .content .terms{
