@@ -97,7 +97,7 @@
                 <div id="main-content" class="main-content row nested">
                   <div id="main-content-inner" class="main-content-inner inner">
                     <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
-                    <div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
+                    <div id="content-group" class="content-group row  <?php print $content_group_width; ?>">
                       <div id="content-group-inner" class="content-group-inner inner">
                     
 

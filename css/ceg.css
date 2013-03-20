@@ -42,6 +42,12 @@ body{
 .sidebar-last-cap {
     display: none;
 }
+#content-group{
+    float:left;
+}
+#sidebar-last{
+    float:right;
+}
 html.js fieldset.collapsed{
     height:auto;
 }
@@ -343,6 +349,14 @@ body.not-front #content-inner-inner{
     width: 42%;
 }
 /* END blocks */
+
+/* BEGIN taxonomy pages */
+.page-taxonomy .node .meta {
+    float: none;
+    margin-right: 0;
+    width: auto;
+}
+/* END taxonomy pages */
 
 /* BEGIN exposed view filter */
 #page .views-exposed-form{
@@ -814,6 +828,9 @@ fieldset .form-item{
     -webkit-box-shadow: 2px 4px 4px #D6D6D6;
     -moz-box-shadow: 2px 4px 4px #D6D6D6;
     margin: 0;
+}
+#block-views-home_slideshow-block_1 .views-slideshow-controls-top{
+    display:none;
 }
 #page #page-inner .views_slideshow_previous{
     background-image:url('../images/sprites.png');
@@ -1355,6 +1372,10 @@ body.has_one_sidebar #page .form-submit#edit-submit{
 }    
 /* END comments */
 
+#page #block-commons_nivaria-0 h2{
+    float:left;
+}
+
 /* BEGIN default full node */
 body.full-node .content .terms{
       border-bottom: 1px solid #D3D3D3;
@@ -1394,6 +1415,9 @@ body .submitted img.badge.contributor{
     padding: 0;
     position: absolute;
     top: 24px;
+}
+.submitted-by{
+    padding-left:0.5em;
 }
 .submitted-by,
 .submitted-by span a,

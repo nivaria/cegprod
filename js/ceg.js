@@ -25,4 +25,10 @@ jQuery(document).ready(function($){
             }
         });
     });
+    jQuery("#block-views-home_slideshow-block_1").bind(
+        "mouseenter",function(){
+            jQuery(this).find(".views-slideshow-controls-top").show();
+        }).bind("mouseleave",function(){
+            jQuery(this).find(".views-slideshow-controls-top").hide();
+        });
 });

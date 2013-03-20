@@ -39,7 +39,7 @@ function cegprod_preprocess_page(&$variables) {
     $variables['pre_messages'] = theme('grid_block', $variables['messages'], 'content-messages');
     $variables['pre_tabs'] = theme('grid_block', $variables['tabs'], 'content-tabs');
     $variables['pre_content_bottom'] = theme('grid_row', $variables['content_bottom'], 'content-bottom', 'nested');
-    $variables['pre_sidebar_last'] = theme('grid_row', $variables['sidebar_last'], 'sidebar-last', 'nested', $variables['sidebar_last_width']);
+    $variables['pre_sidebar_last'] = theme('grid_row', $variables['sidebar_last'], 'sidebar-last', ' ', $variables['sidebar_last_width']);
     $variables['pre_postscript_top'] = theme('grid_row', $variables['postscript_top'], 'postscript-top', 'nested');
     $variables['pre_postscript_bottom'] = theme('grid_row', $variables['postscript_bottom'], 'postscript-bottom', 'full-width', $variables['grid_width']);
     $variables['pre_footer'] = theme('grid_row', $variables['footer'] . $variables['footer_message'], 'footer', 'full-width', $variables['grid_width']);
