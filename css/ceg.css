@@ -48,7 +48,7 @@ body{
 #sidebar-last{
     float:right;
 }
-html.js fieldset.collapsed{
+html.js #page fieldset.collapsed{
     height:auto;
 }
 p img{
@@ -576,10 +576,13 @@ body.not-front #content-inner-inner{
     cursor: pointer;
     display: block;
     float: right;
-    margin-top: -21px;
+    margin-top: 0;
     padding: 0;
     text-indent: -9999px;
     width: 40px;
+    position: absolute;
+    right: 0;
+    top:2px;
 }
 #search-box .contextual-search-wrapper{
     border: 0 none;
@@ -615,6 +618,8 @@ body.not-front #content-inner-inner{
     background-color: transparent;
     background-image: none;
     color: #0077B7;
+    position:relative;
+    z-index:30;
 }
 #nav-group{
     background-color: transparent;
@@ -1300,7 +1305,7 @@ body.page-groups .inner.content{
 	background-image: -o-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
 	background-image: -ms-linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(225, 225, 225, 1) 100%, rgba(225, 225, 225, 1) 100%);
 
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#E1E1E1');
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#E1E1E1');
 	
     border-radius: 4px 4px 4px 4px;
     box-shadow: none;

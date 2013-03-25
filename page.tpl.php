@@ -8,6 +8,9 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $setting_styles; ?>
+  <!--[if IE 9]>
+    <link type="text/css" rel="stylesheet" media="all" href="<?php print base_path() . path_to_theme() ?>/css/ie9-fixes.css" />
+  <![endif]-->
   <!--[if IE 8]>
   <?php print $ie8_styles; ?>
   <![endif]-->

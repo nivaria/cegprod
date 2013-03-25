@@ -1,0 +1,6 @@
+.block.breadcrumbs .breadcrumbs-inner,
+#sidebar-last.nested,
+#page #search-box .form-submit,
+#page .view-user-meta .views-field-name .welcome-text{
+    filter:none;
+}
