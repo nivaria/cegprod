@@ -1184,6 +1184,7 @@ body.not-logged-in.front #content-inner-inner{
     color:#000;
     font-size:20px;
 }
+#page #page-inner .view-metagroups li.views-row .views-field-field-tagline-value,
 #page #page-inner .view-metagroups li.views-row .views-field-field-tagline-value a{
     color:#999;
     font-size:16px;
