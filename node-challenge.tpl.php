@@ -50,7 +50,6 @@
  * @see template_preprocess()
  * @see template_preprocess_node()
  */
-  $terms = cegprod_not_include_terms($node->taxonomy, '5');
   $area_terms = cegprod_separate_terms($node->taxonomy);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
@@ -87,9 +86,15 @@
     <?php endif;?>
     <?php if ($area_terms[5]): ?>
     <div class="area_terms">
-      Area de Gestión:<?php print $area_terms[5]; ?>
+      <?php print t('Area de Gestión') ?>: <?php print $area_terms[5]; ?>
     </div>
     <?php endif;?>
+    <?php if ($area_terms[7]): ?>
+    <div class="challenge_clas">
+      <?php print $area_terms[7]; ?>
+    </div>
+    <?php endif;?>
+    
     <?php print $node->classify_challenge; ?>
     
       <?php print $content ?>

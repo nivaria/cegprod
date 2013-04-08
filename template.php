@@ -125,7 +125,7 @@ function cegprod_preprocess_node(&$vars) {
         $vars['submitted'] = $submitted;
         
     }
-    $vars['terms'] = cegprod_not_include_terms($vars['node']->taxonomy, '5');
+    $vars['terms'] = cegprod_not_include_terms($vars['node']->taxonomy, array(5, 7, 8));
     $vars['area_terms'] = cegprod_separate_terms($vars['node']->taxonomy);
     if ($vars['node']->type == 'metagroup') {
             unset($vars['content']);
@@ -271,7 +271,8 @@ function cegprod_separate_terms($node_taxonomy) {
       $links[$term->vid]['taxonomy_term_'. $term->tid] = 
         l($term->name, _get_taxonomy_path($term), array('attributes' => array(
             'rel' => 'tag', 
-            'title' => strip_tags($term->description)
+            'title' => strip_tags($term->name),
+            'class' => 'taxonomy_term_'. $term->tid,
             )
           )
        ); 
@@ -291,10 +292,13 @@ function cegprod_separate_terms($node_taxonomy) {
  * @return type 
  */
 function cegprod_not_include_terms($node_taxonomy, $vid) {
+  if (!is_array($vid)) {
+    $vid = array($vid);
+  }
   if ($node_taxonomy) { 
   //separating terms by vocabularies 
     foreach ($node_taxonomy AS $term) {
-      if ($term->vid != $vid) {
+      if (!in_array($term->vid, $vid)) {
         $links[] = l($term->name, _get_taxonomy_path($term), array('attributes' => array(
             'rel' => 'tag', 
             'title' => strip_tags($term->description)
