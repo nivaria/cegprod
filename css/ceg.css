@@ -1825,18 +1825,50 @@ body.page-stream .facebook-status-update{
 #page #content-tabs  .tabs li a{
    background-color: #999999;
     border: 0 none;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 4px;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: normal;
     margin-bottom: 8px;
     margin-right: 0.5em;
     padding: 5px 8px;
+    
+    font-weight:bold;
+    font-size:14px;
+    padding:5px 16px;
+}
+#page #content-tabs  .tabs.secondary li a{
+    padding:3px 16px;
+    border-radius: 6px;
 }
 #page #content-tabs  .tabs li.active a{
     background-color:#0086cc;   
 }
 /* END fake tabs */
+
+
+/* BEGIN profile links block */
+#block-commons_profile-image_links{
+    position:relative;
+}
+#page #main #block-commons_profile-image_links .userpoints span,    
+#page #main #block-commons_profile-image_links .user_badges img{
+    margin:0px;
+    padding:0px;
+    background-image:none;
+}
+#block-commons_profile-image_links .userpoints span{
+    left: 108px;
+    position: absolute;
+    top: 20px;
+}
+#block-commons_profile-image_links .user_badges img{
+    left: 108px;
+    margin: 0;
+    position: absolute;
+    top: 46px;
+}
+/* END profile links block */
 
 /* BEGIN page groups */
 #page #main #block-views-groups_featured_groups-block_1 .inner{
@@ -2217,3 +2249,4 @@ body.page-user-1 #block-facebook_status-facebook_status{
 .Estilo11 {
 	background-color: #ffffff;
 }
+
