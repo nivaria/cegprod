@@ -1852,6 +1852,36 @@ body.page-stream .facebook-status-update{
 }
 /* END fake tabs */
 
+/* BEGIN tabla ideas */
+#page .view-user-challenges table tr,
+#page .view-user-ideas table tr{
+    border:0 none;
+}
+#page .view-user-challenges table tr td,
+#page .view-user-ideas table tr td{
+    font-size:13px;
+    color:#999;
+    border:0 none;
+    padding: 8px 10px;
+}
+/*TODO aprobado/pospuesto/premiado #page .view-user-ideas table tr td{
+    font-size:12px;
+    color:#444;
+}*/
+#page .view-user-challenges table tr td a,
+#page .view-user-ideas table tr td a{
+    font-size:13px;
+    color:#1B80C9;
+}
+#page .view-user-challenges table tr.odd td,
+#page .view-user-ideas table tr.odd td{
+    background-color:#F4F5F5;
+}
+#page .view-user-challenges table tr.even td,
+#page .view-user-ideas table tr.even td{
+    background-color:#Fefefe;
+}
+/* END tabla ideas */
 
 /* BEGIN profile links block */
 #block-commons_profile-image_links{
