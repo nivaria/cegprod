@@ -1837,12 +1837,18 @@ body.page-stream .facebook-status-update{
     font-size:14px;
     padding:5px 16px;
 }
-#page #content-tabs  .tabs.secondary li a{
+#page #content-tabs .tabs.secondary li a{
     padding:3px 16px;
     border-radius: 6px;
+    background-color:#bcbdbd;
+    border:1px solid #999;
 }
-#page #content-tabs  .tabs li.active a{
-    background-color:#0086cc;   
+#page #content-tabs .tabs li.active a{
+    background-color:#0086cc;
+}
+#page #content-tabs .tabs.secondary li.active a{
+    background-color:#60B0DD;
+    border:1px solid #0184CF;
 }
 /* END fake tabs */
 
