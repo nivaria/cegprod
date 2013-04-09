@@ -1833,22 +1833,31 @@ body.page-stream .facebook-status-update{
     margin-right: 0.5em;
     padding: 5px 8px;
     
-    font-weight:bold;
     font-size:14px;
     padding:5px 16px;
 }
 #page #content-tabs .tabs.secondary li a{
     padding:3px 16px;
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
     background-color:#bcbdbd;
     border:1px solid #999;
+    
+    background-color:#60B0DD;
+    border:1px solid #0184CF;
+    border-bottom:0 none;
+    margin-bottom:0;
 }
 #page #content-tabs .tabs li.active a{
     background-color:#0086cc;
 }
 #page #content-tabs .tabs.secondary li.active a{
-    background-color:#60B0DD;
-    border:1px solid #0184CF;
+    /*background-color:#60B0DD;
+    border:1px solid #0184CF;*/
+    
+    color:#0085CC;
+    background-color:#fff;
+    border:1px solid #dcdcdc;
+    border-bottom:0 none;    
 }
 /* END fake tabs */
 
