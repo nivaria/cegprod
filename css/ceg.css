@@ -1913,17 +1913,19 @@ body.page-stream .facebook-status-update{
 /* BEGIN detalle de idea */
 body.node-type-idea p{
     clear:both;
+    margin:0;
+    padding:1em 0;
 }
 body.node-type-idea .full-node .username a{
     color:#F2570E;
     font-size:14px;
 }
-body.node-type-idea .full-node .submitted .user_badges {
+/*body.node-type-idea .full-node .submitted .user_badges {
     left: 0;
 }
 body.node-type-idea .full-node .submitted .userpoints-value {
     left:42px;
-}
+}*/
 body.node-type-idea .field-field-idea-challenge{
     background-image:url('../images/sprites.png');
     background-position: -97px -535px;
