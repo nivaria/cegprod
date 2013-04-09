@@ -25,6 +25,12 @@
       <?php print $terms; ?>
     </div>
     <?php endif;?>
+    <!-- Idea classifiction -->
+    <?php if ($area_terms[8]): ?>
+    <div class="idea_clas">
+      <?php print $area_terms[8]; ?>
+    </div>
+    <?php endif;?>
     <?php print $node->classify_challenge; ?>
     <div class="content clearfix">
       <?php print $content ?>

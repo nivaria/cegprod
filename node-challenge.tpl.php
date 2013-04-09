@@ -89,6 +89,7 @@
       <?php print t('Area de Gestión') ?>: <?php print $area_terms[5]; ?>
     </div>
     <?php endif;?>
+    <!-- Challenge classifiction -->
     <?php if ($area_terms[7]): ?>
     <div class="challenge_clas">
       <?php print $area_terms[7]; ?>
