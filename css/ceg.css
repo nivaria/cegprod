@@ -56,6 +56,8 @@ p img{
     width: auto !important;
     max-width:100%;
 }
+a.active,
+li a.active,
 a,
 a:link,
 a:visited{
@@ -711,9 +713,20 @@ body.not-front #content-inner-inner{
 #page #main .block-lists li,
 #page #main .block_lists li{
     padding-left:16px;
-    background-position:-274px -505px;
+    position:relative;
+}
+#page #main .block-lists li:before,
+#page #main .block_lists li:before{
+    content:' ';
+    display:block;
+    position:absolute;
+    background-position:-275px -518px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
+    width:8px;
+    height:12px;
+    top:12px;
+    left:0;
 }
 #page .view-group-block-events-past .view-content .item-list li.views-row,
 #page .view-event-past-events .view-content .item-list li.views-row,
@@ -1872,7 +1885,7 @@ body.page-stream .facebook-status-update{
     color:#444;
 }
 .vud-widget .voted-how{
-    
+    padding:0;
 }
 .vote-current-score{
     padding:0;
@@ -1883,6 +1896,9 @@ body.page-stream .facebook-status-update{
     border:0 none;
     display:block;
     float:left;
+}
+.vud-widget .vote-current-score{
+    padding:0;
 }
 #page .up-active,
 #page .vud-link-up{
@@ -1910,12 +1926,14 @@ body.page-stream .facebook-status-update{
 /* END vud-widget */
 
 
-/* BEGIN detalle de idea */
+/* BEGIN detalle de idea y de reto */
+body.node-type-challenge p,
 body.node-type-idea p{
     clear:both;
     margin:0;
     padding:1em 0;
 }
+body.node-type-challege .full-node .username a,
 body.node-type-idea .full-node .username a{
     color:#F2570E;
     font-size:14px;
@@ -1963,9 +1981,92 @@ body.node-type-idea .field-field-idea-challenge a{
     font-weight: normal;
 }
 .challenge-selector-link{
-   font-weight: bold;
-    margin-left: 1em;
-    vertical-align: top;
+   font-weight: normal;
+   
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+body.node-type-challenge .full-node .content,
+body.node-type-idea .full-node .content{
+    padding-top: 32px;
+    position: relative;
+}
+body.node-type-challenge .full-node .content select,
+body.node-type-idea .full-node .content select{
+    display: block;
+    position: absolute;
+    right: 56px;
+    top: 0;
+}
+body.node-type-challenge .field-field-valid-date{
+    margin-bottom:1em;
+}
+body.node-type-challenge .node-type-idea.teaser{
+    border-top:1px solid #d3d3d3;
+    margin-top:0;
+    padding-top:1em;
+    
+    border-bottom:0 none;
+    margin-bottom:0;
+    padding-bottom:1em;
+}
+body.node-type-challenge .attachment-after{
+    border-top:1px solid #d3d3d3;
+    margin-top:1em;
+    padding-top:1em;
+}
+body.node-type-challenge .node-type-idea.teaser h2.title a{
+    font-weight:normal;
+    font-size:16px;
+}
+body.node-type-challenge .node-type-idea.teaser .username a{
+    color: #F2570E;
+    font-size: 14px; 
+}
+body.node-type-challenge .node-type-idea.teaser .submitted img{
+    margin-right:14px;
+}
+body.node-type-challenge .node-type-idea.teaser .submitted .user_badges,
+body.node-type-challenge .node-type-idea.teaser .submitted .userpoints-value{
+    top:52px;
+}
+body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a{
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    box-shadow: none;
+    color: #009FFE;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0 3px;
+    position: relative;
+}
+body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a:before{
+    background-image:url('../images/sprites.png');
+    background-position: -275px -518px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 8px;
+}
+body.node-type-challenge .node-type-idea.teaser select{
+    right:0;
+    top:82px;
+}
+body.node-type-challenge .node-type-idea.teaser .challenge-selector-link{
+    right: 34px;
+    top: 116px;
+}
+body.node-type-challenge .node-type-idea.teaser .content{
+    position:static;
+    padding:1em 0;
 }
 body.node-type-idea div.node{
     border: 0 none;
