@@ -1280,7 +1280,7 @@ body.page-groups .inner.content{
     margin-left:40px;
     float:right;
 }
-.node .inner .links .comment_clear_style a,
+#page .node .inner .links .comment_clear_style a,
 #page .views-field-subscribe a.og-request,
 .buttonblue {
 	background-color: #0088c9;
@@ -1290,6 +1290,7 @@ body.page-groups .inner.content{
 	background-image: -o-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
 	background-image: -ms-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A1FE', endColorstr='#0089CE');
+	color:#fff;
 }
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a,
@@ -1443,7 +1444,7 @@ body .submitted img.badge.contributor{
     display: inline-block;
     font-size: 14px;
     font-weight: normal;
-    padding-left: 1em;
+    padding-left: 0.5em;
     font-style:italic;
 }
 #contributors a{
@@ -1913,6 +1914,16 @@ body.page-stream .facebook-status-update{
 body.node-type-idea p{
     clear:both;
 }
+body.node-type-idea .full-node .username a{
+    color:#F2570E;
+    font-size:14px;
+}
+body.node-type-idea .full-node .submitted .user_badges {
+    left: 0;
+}
+body.node-type-idea .full-node .submitted .userpoints-value {
+    left:42px;
+}
 body.node-type-idea .field-field-idea-challenge{
     background-image:url('../images/sprites.png');
     background-position: -97px -535px;
@@ -1948,6 +1959,21 @@ body.node-type-idea .field-field-idea-challenge a{
     color:#009EFF;
     font-size: 16px;
     font-weight: normal;
+}
+.challenge-selector-link{
+   font-weight: bold;
+    margin-left: 1em;
+    vertical-align: top;
+}
+body.node-type-idea div.node{
+    border: 0 none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+body.node-type-idea .links{
+    border-top: 1px solid #D3D3D3;
+    margin-top: 2em;
+    padding-top: 2em; 
 }
 /* END detalle de idea */
 
