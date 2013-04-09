@@ -1906,9 +1906,13 @@ body.page-stream .facebook-status-update{
     background-repeat:no-repeat;
     width:25px;
     height:37px;
-    background-position:-9px -555px;
+    background-position:-9px -597px;
     display:block;
     margin-right:18px;
+}
+#page .up-active,
+#page .vud-link-up:hover{
+    background-position:-9px -555px;
 }
 #page .down-active,
 #page .vud-link-down{
@@ -1918,6 +1922,10 @@ body.page-stream .facebook-status-update{
     height:37px;
     background-position:-55px -566px;
     display:block;
+}
+#page .down-active,
+#page .vud-link-down:hover{
+    background-position:-55px -607px;
 }
 #page .vud-link-up div,
 #page .vud-link-down div{
@@ -1958,6 +1966,26 @@ body.node-type-idea .field-field-idea-challenge{
     width: auto;
     float:left;
 }
+
+body.node-type-idea .field-field-idea-challenge {
+    background-image: url("../images/sprites.png");
+    background-position: -97px -535px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    line-height: 20px;
+    margin-left: -26px;
+    margin-top: 20px;
+    max-width: 450px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    width: auto;
+}
+
 body.node-type-idea .field-field-idea-challenge:after{
     background-image:url('../images/sprites.png');
     background-position: -600px -453px;
@@ -1987,21 +2015,45 @@ body.node-type-idea .field-field-idea-challenge a{
     position: absolute;
     right: 0;
     top: 0;
+    
+    top:86px;
+}
+body.node-type-challenge .full-node,
+body.node-type-idea .full-node{
+    position:relative;
 }
 body.node-type-challenge .full-node .content,
 body.node-type-idea .full-node .content{
-    padding-top: 32px;
-    position: relative;
+    padding-top: 60px;    
 }
-body.node-type-challenge .full-node .content select,
-body.node-type-idea .full-node .content select{
+body.node-type-challenge .full-node select,
+body.node-type-idea .full-node select{
     display: block;
     position: absolute;
     right: 56px;
     top: 0;
+    
+    top:86px;
 }
 body.node-type-challenge .field-field-valid-date{
-    margin-bottom:1em;
+    background-image:url('../images/sprites.png');
+    background-position: -127px -612px;
+    background-repeat: no-repeat;
+    height: 66px;
+    overflow: hidden;
+    width: 154px;    
+    color: #444444;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 18px;
+    position: absolute;
+    right: -29px;
+    top: 0;
+}
+body.node-type-challenge .field-field-valid-date .field-label{
+    font-weight:normal;
 }
 body.node-type-challenge .node-type-idea.teaser{
     border-top:1px solid #d3d3d3;
@@ -2011,6 +2063,9 @@ body.node-type-challenge .node-type-idea.teaser{
     border-bottom:0 none;
     margin-bottom:0;
     padding-bottom:1em;
+}
+body.node-type-challenge .node-type-idea.teaser .field-field-idea-challenge{
+    max-width:80%;
 }
 body.node-type-challenge .attachment-after{
     border-top:1px solid #d3d3d3;
