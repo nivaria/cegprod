@@ -1861,6 +1861,96 @@ body.page-stream .facebook-status-update{
 }
 /* END fake tabs */
 
+/* BEGIN vud-widget */
+.vud-widget{
+    width:90px;
+}
+.vud-widget,
+.vud-widget .voted-how{
+    font-size:11px;
+    color:#444;
+}
+.vud-widget .voted-how{
+    
+}
+.vote-current-score{
+    padding:0;
+}
+.vud-widget-thumbs .up-score,
+.vud-widget-thumbs .down-score{
+    padding:0;
+    border:0 none;
+    display:block;
+    float:left;
+}
+#page .up-active,
+#page .vud-link-up{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:25px;
+    height:37px;
+    background-position:-9px -555px;
+    display:block;
+    margin-right:18px;
+}
+#page .down-active,
+#page .vud-link-down{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:25px;
+    height:37px;
+    background-position:-55px -566px;
+    display:block;
+}
+#page .vud-link-up div,
+#page .vud-link-down div{
+    display:none;
+}
+/* END vud-widget */
+
+
+/* BEGIN detalle de idea */
+body.node-type-idea p{
+    clear:both;
+}
+body.node-type-idea .field-field-idea-challenge{
+    background-image:url('../images/sprites.png');
+    background-position: -97px -535px;
+    background-repeat: no-repeat;
+    height: 61px;
+    line-height: 61px;
+    margin-left: -26px;
+    margin-top: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
+    position: relative;
+    width: auto;
+    float:left;
+}
+body.node-type-idea .field-field-idea-challenge:after{
+    background-image:url('../images/sprites.png');
+    background-position: -600px -453px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 82px;
+    position: absolute;
+    right: -107px;
+    top: 0;
+    width: 107px;
+}
+body.node-type-idea .field-field-idea-challenge .field-label-inline-first{
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+}
+body.node-type-idea .field-field-idea-challenge a{
+    color:#009EFF;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* END detalle de idea */
+
 /* BEGIN tabla ideas */
 #page .view-user-challenges table tr,
 #page .view-user-ideas table tr{
@@ -2294,4 +2384,3 @@ body.page-user-1 #block-facebook_status-facebook_status{
 .Estilo11 {
 	background-color: #ffffff;
 }
-
