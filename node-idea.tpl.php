@@ -32,6 +32,8 @@
     </div>
     <?php endif;?>
     <?php print $node->classify_challenge; ?>
+    <?php print $ongoing ?>
+    <?php print $challenge_date ?>
     <div class="content clearfix">
       <?php print $content ?>
     </div>

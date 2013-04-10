@@ -131,15 +131,22 @@ function cegprod_preprocess_node(&$vars) {
       unset($vars['content']);
       unset($vars['taxonomy']);
       unset($vars['terms']);
-    }
-    if ($vars['node']->type == 'challenge') {
+    } else if ($vars['node']->type == 'challenge') {
       if (!$vars['node']->field_challenge_locked_p[0]['value']) {
-        $vars['ongoing'] = '<span class="challenge-state">' . t('Ongoing challenge') . '</span>';
+        $vars['ongoing'] = '<span class="challenge-state">' . t('Ongoing challenge!!') . '</span>';
       }
+    } else if ($vars['node']->type == 'idea') {
+      $challenge = node_load($vars['node']->field_idea_challenge [0]['nid']);
+      $challenge->build_mode = 'teaser';
       
-      unset($vars['taxonomy']);
-      unset($vars['terms']);
+      $challenge = node_build_content($challenge);
+      if (!$challenge->field_challenge_locked_p[0]['value']) {
+        $vars['ongoing'] = '<span class="challenge-state">' . t('Ongoing challenge!!') . '</span>';
+      }
+      $vars['challenge_date'] = drupal_render($challenge->content['field_valid_date']);
     }
+    
+    
 }
 
 function cegprod_og_subscribe_link($node) {
