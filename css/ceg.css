@@ -2077,6 +2077,10 @@ body.node-type-challenge .field-field-valid-date{
 body.node-type-challenge .field-field-valid-date .field-label{
     font-weight:normal;
 }
+body.node-type-challenge .node-type-idea.teaser .challenge-state,
+body.node-type-challenge .node-type-idea.teaser .field-field-valid-date{
+    display:none;
+}
 body.node-type-idea .challenge-state-wrapper{
     display: block;
     position: absolute;
@@ -2120,8 +2124,11 @@ body.node-type-challenge .attachment-after{
     padding-top:1em;
 }
 body.node-type-challenge .node-type-idea.teaser h2.title a{
-    font-weight:normal;
-    font-size:16px;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 140%;
+    max-width: 80%;
 }
 body.node-type-challenge .node-type-idea.teaser .username a{
     color: #F2570E;
@@ -2130,9 +2137,13 @@ body.node-type-challenge .node-type-idea.teaser .username a{
 body.node-type-challenge .node-type-idea.teaser .submitted img{
     margin-right:14px;
 }
+body.node-type-challenge .node-type-idea.teaser .submitted{
+    position:relative;
+}
 body.node-type-challenge .node-type-idea.teaser .submitted .user_badges,
 body.node-type-challenge .node-type-idea.teaser .submitted .userpoints-value{
     top:52px;
+    top:24px;
 }
 body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a{
     background-color: transparent;
