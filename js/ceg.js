@@ -37,4 +37,13 @@ jQuery(document).ready(function($){
             jQuery("body.node-type-idea .field-field-valid-date")
         )
     )
+    if( jQuery("body.node-type-idea .submitted a img").length==0 || jQuery("body.node-type-challenge .submitted a img").length==0 ){
+        jQuery("body .submitted a").each( function(){
+            if( jQuery(this).parent(".username").length==0 ){
+                jQuery(this).append(
+                    jQuery( "<img width='40' height='40' class='imagecache imagecache-users_40_40_ceg' src='/system/files/imagecache/users_cabecera_ceg/default-user.png' />" )
+                )
+            }
+        });
+    }
 });
