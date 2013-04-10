@@ -56,6 +56,8 @@ p img{
     width: auto !important;
     max-width:100%;
 }
+a.active,
+li a.active,
 a,
 a:link,
 a:visited{
@@ -711,9 +713,20 @@ body.not-front #content-inner-inner{
 #page #main .block-lists li,
 #page #main .block_lists li{
     padding-left:16px;
-    background-position:-274px -505px;
+    position:relative;
+}
+#page #main .block-lists li:before,
+#page #main .block_lists li:before{
+    content:' ';
+    display:block;
+    position:absolute;
+    background-position:-275px -518px;
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
+    width:8px;
+    height:12px;
+    top:12px;
+    left:0;
 }
 #page .view-group-block-events-past .view-content .item-list li.views-row,
 #page .view-event-past-events .view-content .item-list li.views-row,
@@ -1280,7 +1293,7 @@ body.page-groups .inner.content{
     margin-left:40px;
     float:right;
 }
-.node .inner .links .comment_clear_style a,
+#page .node .inner .links .comment_clear_style a,
 #page .views-field-subscribe a.og-request,
 .buttonblue {
 	background-color: #0088c9;
@@ -1290,6 +1303,7 @@ body.page-groups .inner.content{
 	background-image: -o-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
 	background-image: -ms-linear-gradient(rgba(0, 161, 254, 1) 0%, rgba(0, 161, 254, 1) 4%, rgba(0, 161, 254, 1) 16%, rgba(0, 149, 237, 1) 53%, rgba(0, 137, 206, 1) 99%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A1FE', endColorstr='#0089CE');
+	color:#fff;
 }
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a,
@@ -1443,7 +1457,7 @@ body .submitted img.badge.contributor{
     display: inline-block;
     font-size: 14px;
     font-weight: normal;
-    padding-left: 1em;
+    padding-left: 0.5em;
     font-style:italic;
 }
 #contributors a{
@@ -1825,18 +1839,355 @@ body.page-stream .facebook-status-update{
 #page #content-tabs  .tabs li a{
    background-color: #999999;
     border: 0 none;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 4px;
     color: #FFFFFF;
     font-size: 13px;
     font-weight: normal;
     margin-bottom: 8px;
     margin-right: 0.5em;
     padding: 5px 8px;
+    
+    font-size:14px;
+    padding:5px 16px;
 }
-#page #content-tabs  .tabs li.active a{
-    background-color:#0086cc;   
+#page #content-tabs .tabs.secondary li a{
+    padding:3px 16px;
+    border-radius: 6px 6px 0 0;
+    background-color:#bcbdbd;
+    border:1px solid #999;
+    
+    background-color:#60B0DD;
+    border:1px solid #0184CF;
+    border-bottom:0 none;
+    margin-bottom:0;
+}
+#page #content-tabs .tabs li.active a{
+    background-color:#0086cc;
+}
+#page #content-tabs .tabs.secondary li.active a{
+    /*background-color:#60B0DD;
+    border:1px solid #0184CF;*/
+    
+    color:#0085CC;
+    background-color:#fff;
+    border:1px solid #dcdcdc;
+    border-bottom:0 none;    
 }
 /* END fake tabs */
+
+/* BEGIN vud-widget */
+.vud-widget{
+    width:90px;
+}
+.vud-widget,
+.vud-widget .voted-how{
+    font-size:11px;
+    color:#444;
+}
+.vud-widget .voted-how{
+    padding:0;
+}
+.vote-current-score{
+    padding:0;
+}
+.vud-widget-thumbs .up-score,
+.vud-widget-thumbs .down-score{
+    padding:0;
+    border:0 none;
+    display:block;
+    float:left;
+}
+.vud-widget .vote-current-score{
+    padding:0;
+}
+#page .up-active,
+#page .vud-link-up{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:25px;
+    height:37px;
+    background-position:-9px -597px;
+    display:block;
+    margin-right:18px;
+}
+#page .up-active,
+#page .vud-link-up:hover{
+    background-position:-9px -555px;
+}
+#page .down-active,
+#page .vud-link-down{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:25px;
+    height:37px;
+    background-position:-55px -566px;
+    display:block;
+}
+#page .down-active,
+#page .vud-link-down:hover{
+    background-position:-55px -607px;
+}
+#page .vud-link-up div,
+#page .vud-link-down div{
+    display:none;
+}
+/* END vud-widget */
+
+
+/* BEGIN detalle de idea y de reto */
+body.node-type-challenge p,
+body.node-type-idea p{
+    clear:both;
+    margin:0;
+    padding:1em 0;
+}
+body.node-type-challege .full-node .username a,
+body.node-type-idea .full-node .username a{
+    color:#F2570E;
+    font-size:14px;
+}
+/*body.node-type-idea .full-node .submitted .user_badges {
+    left: 0;
+}
+body.node-type-idea .full-node .submitted .userpoints-value {
+    left:42px;
+}*/
+body.node-type-idea .field-field-idea-challenge{
+    background-image:url('../images/sprites.png');
+    background-position: -97px -535px;
+    background-repeat: no-repeat;
+    height: 61px;
+    line-height: 61px;
+    margin-left: -26px;
+    margin-top: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
+    position: relative;
+    width: auto;
+    float:left;
+}
+
+body.node-type-idea .field-field-idea-challenge {
+    background-image: url("../images/sprites.png");
+    background-position: -97px -535px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    line-height: 20px;
+    margin-left: -26px;
+    margin-top: 20px;
+    max-width: 450px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    width: auto;
+}
+
+body.node-type-idea .field-field-idea-challenge:after{
+    background-image:url('../images/sprites.png');
+    background-position: -600px -453px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 82px;
+    position: absolute;
+    right: -107px;
+    top: 0;
+    width: 107px;
+}
+body.node-type-idea .field-field-idea-challenge .field-label-inline-first{
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+}
+body.node-type-idea .field-field-idea-challenge a{
+    color:#009EFF;
+    font-size: 16px;
+    font-weight: normal;
+}
+.challenge-selector-link{
+   font-weight: normal;
+   
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    top:86px;
+}
+body.node-type-challenge .full-node,
+body.node-type-idea .full-node{
+    position:relative;
+}
+body.node-type-challenge .full-node .content,
+body.node-type-idea .full-node .content{
+    padding-top: 60px;    
+}
+body.node-type-challenge .full-node select,
+body.node-type-idea .full-node select{
+    display: block;
+    position: absolute;
+    right: 56px;
+    top: 0;
+    
+    top:86px;
+}
+body.node-type-challenge .field-field-valid-date{
+    background-image:url('../images/sprites.png');
+    background-position: -127px -612px;
+    background-repeat: no-repeat;
+    height: 66px;
+    overflow: hidden;
+    width: 154px;    
+    color: #444444;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 18px;
+    position: absolute;
+    right: -29px;
+    top: 0;
+}
+body.node-type-challenge .field-field-valid-date .field-label{
+    font-weight:normal;
+}
+body.node-type-challenge .node-type-idea.teaser{
+    border-top:1px solid #d3d3d3;
+    margin-top:0;
+    padding-top:1em;
+    
+    border-bottom:0 none;
+    margin-bottom:0;
+    padding-bottom:1em;
+}
+body.node-type-challenge .node-type-idea.teaser .field-field-idea-challenge{
+    max-width:80%;
+}
+body.node-type-challenge .attachment-after{
+    border-top:1px solid #d3d3d3;
+    margin-top:1em;
+    padding-top:1em;
+}
+body.node-type-challenge .node-type-idea.teaser h2.title a{
+    font-weight:normal;
+    font-size:16px;
+}
+body.node-type-challenge .node-type-idea.teaser .username a{
+    color: #F2570E;
+    font-size: 14px; 
+}
+body.node-type-challenge .node-type-idea.teaser .submitted img{
+    margin-right:14px;
+}
+body.node-type-challenge .node-type-idea.teaser .submitted .user_badges,
+body.node-type-challenge .node-type-idea.teaser .submitted .userpoints-value{
+    top:52px;
+}
+body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a{
+    background-color: transparent;
+    background-image: none;
+    border: 0 none;
+    box-shadow: none;
+    color: #009FFE;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0 3px;
+    position: relative;
+}
+body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a:before{
+    background-image:url('../images/sprites.png');
+    background-position: -275px -518px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: 0;
+    position: absolute;
+    top: 6px;
+    width: 8px;
+}
+body.node-type-challenge .node-type-idea.teaser select{
+    right:0;
+    top:82px;
+}
+body.node-type-challenge .node-type-idea.teaser .challenge-selector-link{
+    right: 34px;
+    top: 116px;
+}
+body.node-type-challenge .node-type-idea.teaser .content{
+    position:static;
+    padding:1em 0;
+}
+body.node-type-idea div.node{
+    border: 0 none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+body.node-type-idea .links{
+    border-top: 1px solid #D3D3D3;
+    margin-top: 2em;
+    padding-top: 2em; 
+}
+/* END detalle de idea */
+
+/* BEGIN tabla ideas */
+#page .view-user-challenges table tr,
+#page .view-user-ideas table tr{
+    border:0 none;
+}
+#page .view-user-challenges table tr td,
+#page .view-user-ideas table tr td{
+    font-size:13px;
+    color:#999;
+    border:0 none;
+    padding: 8px 10px;
+}
+/*TODO aprobado/pospuesto/premiado #page .view-user-ideas table tr td{
+    font-size:12px;
+    color:#444;
+}*/
+#page .view-user-challenges table tr td a,
+#page .view-user-ideas table tr td a{
+    font-size:13px;
+    color:#1B80C9;
+}
+#page .view-user-challenges table tr.odd td,
+#page .view-user-ideas table tr.odd td{
+    background-color:#F4F5F5;
+}
+#page .view-user-challenges table tr.even td,
+#page .view-user-ideas table tr.even td{
+    background-color:#Fefefe;
+}
+/* END tabla ideas */
+
+/* BEGIN profile links block */
+#block-commons_profile-image_links{
+    position:relative;
+}
+#page #main #block-commons_profile-image_links .userpoints span,    
+#page #main #block-commons_profile-image_links .user_badges img{
+    margin:0px;
+    padding:0px;
+    background-image:none;
+}
+#block-commons_profile-image_links .userpoints span{
+    left: 108px;
+    position: absolute;
+    top: 20px;
+}
+#block-commons_profile-image_links .user_badges img{
+    left: 108px;
+    margin: 0;
+    position: absolute;
+    top: 46px;
+}
+/* END profile links block */
 
 /* BEGIN page groups */
 #page #main #block-views-groups_featured_groups-block_1 .inner{
