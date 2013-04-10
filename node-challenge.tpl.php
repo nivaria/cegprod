@@ -97,8 +97,9 @@
     <?php endif;?>
     
     <?php print $node->classify_challenge; ?>
+    <?php print $ongoing ?>
+    <?php print $content ?>
     
-      <?php print $content ?>
     </div>
 
    

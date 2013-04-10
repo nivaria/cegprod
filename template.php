@@ -128,10 +128,18 @@ function cegprod_preprocess_node(&$vars) {
     $vars['terms'] = cegprod_not_include_terms($vars['node']->taxonomy, array(5, 7, 8));
     $vars['area_terms'] = cegprod_separate_terms($vars['node']->taxonomy);
     if ($vars['node']->type == 'metagroup') {
-            unset($vars['content']);
-            unset($vars['taxonomy']);
-            unset($vars['terms']);
-        }
+      unset($vars['content']);
+      unset($vars['taxonomy']);
+      unset($vars['terms']);
+    }
+    if ($vars['node']->type == 'challenge') {
+      if (!$vars['node']->field_challenge_locked_p[0]['value']) {
+        $vars['ongoing'] = '<span class="challenge-state">' . t('Ongoing challenge') . '</span>';
+      }
+      
+      unset($vars['taxonomy']);
+      unset($vars['terms']);
+    }
 }
 
 function cegprod_og_subscribe_link($node) {
