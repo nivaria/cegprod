@@ -31,4 +31,10 @@ jQuery(document).ready(function($){
         }).bind("mouseleave",function(){
             jQuery(this).find(".views-slideshow-controls-top").hide();
         });
+    jQuery("body.node-type-idea .field-field-idea-challenge" ).append(
+        jQuery("<div class='challenge-state-wrapper'></div>").append(
+            jQuery("body.node-type-idea .challenge-state"),
+            jQuery("body.node-type-idea .field-field-valid-date")
+        )
+    )
 });

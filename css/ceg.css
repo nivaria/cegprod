@@ -1941,7 +1941,7 @@ body.node-type-idea p{
     margin:0;
     padding:1em 0;
 }
-body.node-type-challege .full-node .username a,
+body.node-type-challenge .full-node .username a,
 body.node-type-idea .full-node .username a{
     color:#F2570E;
     font-size:14px;
@@ -2002,11 +2002,22 @@ body.node-type-idea .field-field-idea-challenge .field-label-inline-first{
     color: #000000;
     font-size: 16px;
     font-weight: normal;
+    
+    
+    display: block;
+    float: left;
 }
 body.node-type-idea .field-field-idea-challenge a{
     color:#009EFF;
     font-size: 16px;
     font-weight: normal;
+    
+    display: block;
+    float: left;
+    max-width: 68%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
 }
 .challenge-selector-link{
    font-weight: normal;
@@ -2065,6 +2076,31 @@ body.node-type-challenge .field-field-valid-date{
 }
 body.node-type-challenge .field-field-valid-date .field-label{
     font-weight:normal;
+}
+body.node-type-idea .challenge-state-wrapper{
+    display: block;
+    position: absolute;
+    left: 26px;
+    top: 30px;
+    z-index: 10;
+}
+body.node-type-idea .challenge-state{
+    color: #52BD12;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display:inline;
+    padding-right:1em;
+}
+body.node-type-idea .field-field-valid-date .field-label,
+body.node-type-idea .field-field-valid-date{
+    font-size:13px;
+    color:#444;
+    font-weight:normal;
+    display:inline;
+}
+body.node-type-idea .field-field-valid-date div{
+    display:inline;
 }
 body.node-type-challenge .node-type-idea.teaser{
     border-top:1px solid #d3d3d3;
