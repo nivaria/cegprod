@@ -134,6 +134,8 @@ function cegprod_preprocess_node(&$vars) {
     } else if ($vars['node']->type == 'challenge') {
       if (!$vars['node']->field_challenge_locked_p[0]['value']) {
         $vars['ongoing'] = '<span class="challenge-state">' . t('Ongoing challenge!!') . '</span>';
+      } else {
+        $vars['ongoing'] = '<span class="challenge-state challenge-state-closed">' . t('Closed challenge') . '</span>';
       }
     } else if ($vars['node']->type == 'idea') {
       $challenge = node_load($vars['node']->field_idea_challenge [0]['nid']);
@@ -142,6 +144,8 @@ function cegprod_preprocess_node(&$vars) {
       $challenge = node_build_content($challenge);
       if (!$challenge->field_challenge_locked_p[0]['value']) {
         $vars['ongoing'] = '<span class="challenge-state">' . t('Ongoing challenge!!') . '</span>';
+      } else {
+        $vars['ongoing'] = '<span class="challenge-state challenge-state-closed">' . t('Closed challenge') . '</span>';
       }
       $vars['challenge_date'] = drupal_render($challenge->content['field_valid_date']);
     }
