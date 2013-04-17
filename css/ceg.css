@@ -2260,6 +2260,45 @@ body.page-user-1 #block-facebook_status-facebook_status {
 #page #block-views-most_active_users-block_2 .block-views .views-field-picture {
   margin: 0;
 }
+
+.opened-challenges a{
+    font-size:12px;
+    color:#444;
+    position:relative;
+    padding: 0.5em 0 0.5em 2em;
+    display:block;
+}
+.opened-challenges a:before{
+    display:block;
+    position:absolute;
+    content:' ';
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:14px;
+    height:22px;
+    background-position:-583px -8px;
+    left:0;
+}
+.finished-challenges a{
+    font-size:12px;
+    color:#444;
+    position:relative;    
+    display:block;
+    padding: 0.5em 0 0.5em 2em;
+}
+.finished-challenges a:before{
+    display:block;
+    left:0;
+    position:absolute;
+    content:' ';
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    width:14px;
+    height:22px;
+    background-position:-298px -8px;
+}
+
+
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
   background-color: #ffffff;
