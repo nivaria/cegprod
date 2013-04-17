@@ -1847,6 +1847,7 @@ body.page-stream .facebook-status-update {
 }
 .vud-widget .voted-how {
   padding: 0;
+  white-space:nowrap;
 }
 .vote-current-score {
   padding: 0;
