@@ -2030,7 +2030,8 @@ body.node-type-challenge .field-field-valid-date {
   width: 154px;
   color: #444444;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: bold;
+  text-align:center;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 28px;
@@ -2039,7 +2040,7 @@ body.node-type-challenge .field-field-valid-date {
   top: 0;
 }
 body.node-type-challenge .field-field-valid-date .field-label {
-  font-weight: normal;
+  font-weight: bold;
 }
 body.node-type-challenge .node-type-idea.teaser .challenge-state,
 body.node-type-challenge .node-type-idea.teaser .field-field-valid-date {
