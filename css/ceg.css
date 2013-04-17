@@ -2363,6 +2363,7 @@ body.page-comment .box h2.title{
     max-width: 100%;
     width: 99%;
 }
+#commons-answers-add-question-form .resizable-textarea,
 #comment-form .resizable-textarea {
     width: 100%;
 }
