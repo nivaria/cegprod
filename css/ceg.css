@@ -2088,9 +2088,11 @@ body.node-type-challenge .node-type-idea.teaser .field-field-idea-challenge {
   max-width: 80%;
 }
 body.node-type-challenge .attachment-after {
-  border-top: 1px solid #d3d3d3;
+  /*border-top: 1px solid #d3d3d3;
   margin-top: 1em;
-  padding-top: 1em;
+  padding-top: 1em;*/
+  
+  margin-top:3em;
 }
 body.node-type-challenge .node-type-idea.teaser h2.title a {
   display: block;
@@ -2319,6 +2321,57 @@ h3.view-challenge-ideas-title{
     margin-bottom: 4px;
 }
 
+
+/* BEGIN comment boxes */
+#commons-ideas-add-challenge-form{
+    margin-top:3em;
+}
+#comment-form,
+#commons-ideas-add-challenge-form,
+#commons-ideas-add-idea-form{
+    background-color: #F9F9F9;
+    padding: 1px 16px 10px; 
+}
+#comment-form label,
+#commons-ideas-add-challenge-form label,
+#commons-ideas-add-idea-form label{
+    color:#666;
+}
+#comment-form .comment-author-title,
+#comment-form .comment-author-title a{
+    font-size: 18px;
+    font-weight: bold;
+    color:#000;
+}
+#comment-form #edit-subject,
+#comment-form #edit-title,
+#commons-ideas-add-challenge-form #edit-title,
+#commons-ideas-add-idea-form #edit-title{
+    max-width: 100%;
+    width: 99%;
+}
+#comment-form .resizable-textarea {
+    width: 100%;
+}
+#page span.cke_skin_kama {
+    border-radius: 0 0 0 0;
+    padding: 0;
+    border-color:#d5d5d5;
+    width:100% !important;
+}
+#page .cke_skin_kama .cke_wrapper {
+    background-image: none;
+    padding: 0;
+    border-radius:0;
+    background-color:transparent;
+}
+#page table td.cke_top{
+    padding:0;
+}
+#page .cke_skin_kama .cke_toolgroup {
+    border-radius:0;
+}
+/* END comment boxes */
 
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
