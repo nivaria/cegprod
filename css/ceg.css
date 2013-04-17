@@ -2323,6 +2323,11 @@ h3.view-challenge-ideas-title{
 
 
 /* BEGIN comment boxes */
+body.page-comment div.node{
+    padding:0;
+    margin:0;
+    border:0 none;
+}
 #commons-ideas-add-challenge-form{
     margin-top:3em;
 }
@@ -2342,6 +2347,9 @@ h3.view-challenge-ideas-title{
     font-size: 18px;
     font-weight: bold;
     color:#000;
+}
+body.page-comment .box h2.title{
+    display:none;
 }
 #comment-form #edit-subject,
 #comment-form #edit-title,
