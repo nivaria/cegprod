@@ -37,7 +37,13 @@ jQuery(document).ready(function($){
             jQuery("body.node-type-idea .field-field-valid-date")
         )
     )
-    if( jQuery("body").hasClass("node-type-idea") || jQuery("body").hasClass("node-type-challenge") ) {
+    jQuery("body.page-comment .node-type-idea .field-field-idea-challenge" ).append(
+        jQuery("<div class='challenge-state-wrapper'></div>").append(
+            jQuery("body.page-comment .node-type-idea .challenge-state"),
+            jQuery("body.page-comment .node-type-idea .field-field-valid-date")
+        )
+    )
+    if( jQuery("body").hasClass("node-type-idea") || jQuery("body").hasClass("node-type-challenge") || jQuery("body").hasClass("page-comment") ) {
         jQuery("body .submitted a").each( function(){
             if( jQuery(this).parent(".username").length==0  && jQuery(this).find("img").length==0 ){
                 jQuery(this).append(
