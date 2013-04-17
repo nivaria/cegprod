@@ -52,4 +52,8 @@ jQuery(document).ready(function($){
             }
         });
     }
+    jQuery("body.node-type-challenge #content-content").after(
+        jQuery("<h3 class='view-challenge-ideas-title' >Ideas propuestas</h3>"),
+        jQuery(".view-challenge-ideas")
+    );
 });

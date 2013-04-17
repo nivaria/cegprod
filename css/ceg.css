@@ -2104,7 +2104,7 @@ body.node-type-challenge .node-type-idea.teaser .username a {
   font-size: 14px;
 }
 body.node-type-challenge .node-type-idea.teaser .submitted img {
-  margin-right: 14px;
+  /*margin-right: 14px;*/
 }
 body.node-type-challenge .node-type-idea.teaser .submitted {
   position: relative;
@@ -2141,6 +2141,7 @@ body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-c
 body.node-type-challenge .node-type-idea.teaser select {
   right: 0;
   top: 82px;
+  position:absolute;
 }
 body.node-type-challenge .node-type-idea.teaser .challenge-selector-link {
   right: 34px;
@@ -2296,6 +2297,26 @@ body.page-user-1 #block-facebook_status-facebook_status {
     width:14px;
     height:22px;
     background-position:-298px -8px;
+}
+
+body.node-type-challenge .full-node{
+    padding:0;
+    margin:0;
+    border:0 none;
+}
+body.node-type-challenge .view-challenge-ideas{
+    background-color: #FFFFFF;
+    border: 0 none;
+    box-shadow: 2px 4px 4px #D6D6D6;
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+h3.view-challenge-ideas-title{
+    color: #000000;
+    font-size: 20px;
+    margin-bottom: 4px;
 }
 
 
