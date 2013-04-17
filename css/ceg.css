@@ -2337,7 +2337,8 @@ body.page-comment div.node{
 #commons-ideas-add-challenge-form,
 #commons-ideas-add-idea-form{
     background-color: #F9F9F9;
-    padding: 1px 16px 10px; 
+    padding: 1px 16px 10px;
+    margin-top:3em;
 }
 #commons-answers-add-question-form label,
 #comment-form label,
