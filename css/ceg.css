@@ -2328,15 +2328,18 @@ body.page-comment div.node{
     margin:0;
     border:0 none;
 }
+#commons-answers-add-question-form,
 #commons-ideas-add-challenge-form{
     margin-top:3em;
 }
+#commons-answers-add-question-form,
 #comment-form,
 #commons-ideas-add-challenge-form,
 #commons-ideas-add-idea-form{
     background-color: #F9F9F9;
     padding: 1px 16px 10px; 
 }
+#commons-answers-add-question-form label,
 #comment-form label,
 #commons-ideas-add-challenge-form label,
 #commons-ideas-add-idea-form label{
@@ -2353,6 +2356,7 @@ body.page-comment .box h2.title{
 }
 #comment-form #edit-subject,
 #comment-form #edit-title,
+#commons-answers-add-question-form #edit-title,
 #commons-ideas-add-challenge-form #edit-title,
 #commons-ideas-add-idea-form #edit-title{
     max-width: 100%;
