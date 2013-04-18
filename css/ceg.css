@@ -2021,6 +2021,9 @@ body.node-type-challenge .challenge-state {
   top: 10px;
   z-index: 10;
 }
+body.node-type-challenge .challenge-state.challenge-state-closed {
+	color:#999;
+}
 body.node-type-challenge .field-field-valid-date {
   background-image: url('../images/sprites.png');
   background-position: -127px -612px;
