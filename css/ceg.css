@@ -2101,7 +2101,7 @@ body.node-type-idea .challenge-state {
   font-weight: bold;
   text-transform: uppercase;
   display: inline;
-  padding-right: 1em;
+  padding-right: 0.5em;
   white-space:nowrap;
 }
 body.page-comment .node-type-idea .field-field-valid-date .field-label,
