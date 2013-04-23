@@ -1858,10 +1858,11 @@ body.page-stream .facebook-status-update {
 /* BEGIN vud-widget */
 .vud-widget {
   width: 61px;
-  height:64px;
+  height:59px;
   background-image:url('../images/sprites.png');
   background-position: -355px -612px;
   background-repeat:no-repeat;
+  overflow:hidden;
 }
 .vud-widget-alternate .alternate-votes-display {
     border: 0 none;
@@ -2076,6 +2077,7 @@ body.node-type-challenge .field-field-valid-date {
   position: absolute;
   right: -29px;
   top: 0;
+  white-space:nowrap;
 }
 body.node-type-challenge .field-field-valid-date .field-label {
   font-weight: bold;
@@ -2165,6 +2167,7 @@ body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-c
   margin: 0;
   padding: 0 0 0 3px;
   position: relative;
+  filter:none;
 }
 body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a:before {
   background-image: url('../images/sprites.png');
