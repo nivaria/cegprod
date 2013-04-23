@@ -1,4 +1,11 @@
 jQuery(document).ready(function($){
+    if( jQuery("body").hasClass("node-type-challenge") ){
+        if( jQuery("body.node-type-challenge .field-field-valid-date").length==0 ){
+            jQuery("body.node-type-challenge .full-node").append(
+                jQuery("<div class='field-field-valid-date'></div>")
+            )
+        }
+    }
     jQuery(".imagecache-active_users_faces").each( function(){
        jQuery(this).attr("src","http://ceg/sites/default/files/imagecache/profile_pictures/default-user.png"); 
     });
