@@ -2102,6 +2102,7 @@ body.node-type-idea .challenge-state {
   text-transform: uppercase;
   display: inline;
   padding-right: 1em;
+  white-space:nowrap;
 }
 body.page-comment .node-type-idea .field-field-valid-date .field-label,
 body.page-comment .node-type-idea .field-field-valid-date,
