@@ -721,9 +721,25 @@ body.not-front #content-inner-inner {
 #page .view-group-block-events-upcoming .view-content .item-list li.views-row,
 #page .view-content-event-page .view-content .item-list li.views-row {
   padding-left: 22px;
+  position:relative;
+}
+#page .view-group-block-events-past .view-content .item-list li.views-row:before,
+#page .view-event-past-events .view-content .item-list li.views-row:before,
+#page .view-event-latest .view-content .item-list li.views-row:before,
+#page .view-upcoming-events .view-content .item-list li.views-row:before,
+#page .view-group-block-events-upcoming .view-content .item-list li.views-row:before,
+#page .view-content-event-page .view-content .item-list li.views-row:before {
   background-position: -320px -399px;
   background-repeat: no-repeat;
   background-image: url('../images/sprites.png');
+  
+  width:22px;
+  height:26px;
+  display:block;
+  content:' ';
+  top:0;
+  left:0;
+  position:absolute;
 }
 #page .view-group-block-events-past li .views-field-field-date-value,
 #page .view-event-past-events li .views-field-field-date-value,
