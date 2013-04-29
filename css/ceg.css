@@ -721,9 +721,25 @@ body.not-front #content-inner-inner {
 #page .view-group-block-events-upcoming .view-content .item-list li.views-row,
 #page .view-content-event-page .view-content .item-list li.views-row {
   padding-left: 22px;
+  position:relative;
+}
+#page .view-group-block-events-past .view-content .item-list li.views-row:before,
+#page .view-event-past-events .view-content .item-list li.views-row:before,
+#page .view-event-latest .view-content .item-list li.views-row:before,
+#page .view-upcoming-events .view-content .item-list li.views-row:before,
+#page .view-group-block-events-upcoming .view-content .item-list li.views-row:before,
+#page .view-content-event-page .view-content .item-list li.views-row:before {
   background-position: -320px -399px;
   background-repeat: no-repeat;
   background-image: url('../images/sprites.png');
+  
+  width:22px;
+  height:26px;
+  display:block;
+  content:' ';
+  top:0;
+  left:0;
+  position:absolute;
 }
 #page .view-group-block-events-past li .views-field-field-date-value,
 #page .view-event-past-events li .views-field-field-date-value,
@@ -1841,7 +1857,20 @@ body.page-stream .facebook-status-update {
 /* END fake tabs */
 /* BEGIN vud-widget */
 .vud-widget {
-  width: 90px;
+  width: 61px;
+  height:59px;
+  background-image:url('../images/sprites.png');
+  background-position: -355px -612px;
+  background-repeat:no-repeat;
+  overflow:hidden;
+}
+.vud-widget-alternate .alternate-votes-display {
+    border: 0 none;
+    color: #656565;
+    font-family: arial;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
 }
 .vud-widget,
 .vud-widget .voted-how {
@@ -1865,19 +1894,31 @@ body.page-stream .facebook-status-update {
 .vud-widget .vote-current-score {
   padding: 0;
 }
-#page .up-active,
 #page .vud-link-up {
-  background-image: url('../images/sprites.png');
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 37px;
-  background-position: -9px -597px;
-  display: block;
-  margin-right: 18px;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    background-image:none;
 }
 #page .up-active,
 #page .vud-link-up:hover {
-  background-position: -9px -555px;
+ 
+}
+#page .up-active{
+    display:none;
+}
+#page .vud-link-reset{
+   background-image: url("../images/sprites.png");
+    background-position: -356px -709px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 31px;
+    text-align: center;
+    width: 60px;
 }
 #page .down-active,
 #page .vud-link-down {
@@ -2036,6 +2077,7 @@ body.node-type-challenge .field-field-valid-date {
   position: absolute;
   right: -29px;
   top: 0;
+  white-space:nowrap;
 }
 body.node-type-challenge .field-field-valid-date .field-label {
   font-weight: bold;
@@ -2059,7 +2101,8 @@ body.node-type-idea .challenge-state {
   font-weight: bold;
   text-transform: uppercase;
   display: inline;
-  padding-right: 1em;
+  padding-right: 0.5em;
+  white-space:nowrap;
 }
 body.page-comment .node-type-idea .field-field-valid-date .field-label,
 body.page-comment .node-type-idea .field-field-valid-date,
@@ -2069,6 +2112,7 @@ body.node-type-idea .field-field-valid-date {
   color: #444;
   font-weight: normal;
   display: inline;
+  white-space:nowrap;
 }
 body.page-comment .node-type-idea .field-field-valid-date div,
 body.node-type-idea .field-field-valid-date div {
@@ -2125,6 +2169,7 @@ body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-c
   margin: 0;
   padding: 0 0 0 3px;
   position: relative;
+  filter:none;
 }
 body.node-type-challenge #page #main .node-type-idea.teaser .links .answer-add-comment a:before {
   background-image: url('../images/sprites.png');
