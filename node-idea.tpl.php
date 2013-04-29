@@ -38,16 +38,9 @@
       <?php print $content ?>
     </div>
     
-    <?php if ($node->links['comment_add']): ?>
+    <?php if ($links && $page ==1): ?>
     <div class="links">
-      <div class="comment_clear_style answer-add-comment">
-        <a href="<?php print base_path() . $node->links['comment_add']['href'] . '#' . $node->links['comment_add']['fragment']; ?>" title="Share your thoughts and opinions related to this posting.">Comment</a>
-      </div>
-      <?php if ($node->comment_count > 0): ?>
-      <div class="comment_clear_style answer-comment-count">
-         <a href="<?php print base_path() . $node->links['comment_add']['href'] . '#' . $node->links['comment_add']['fragment']; ?>" title="<?php print t('Share your thoughts and opinions related to this posting.') ?>"><?php print t('Comment') ?></a>
-      </div>
-      <?php endif; ?>
+      <?php print $links; ?>
     </div>
     <?php endif; ?>
 
