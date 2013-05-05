@@ -2291,6 +2291,24 @@ body.page-user-1 #block-facebook_status-facebook_status {
   background-color: #0088C9;
   color: #FFFFFF;
 }
+
+.calendar-calendar div.date-nav .date-prev a{
+    display: block;
+    font-size: 24px;
+    left: 0;
+    padding: 0.5em 2em;
+    position: absolute;
+    top: 8px;
+}
+.calendar-calendar div.date-nav .date-next a{
+    display: block;
+    font-size: 24px;
+    right: 0;
+    padding: 0.5em 2em;
+    position: absolute;
+    top: 8px;
+}
+
 .view-user-meta .user-field-options div {
   float: none;
   margin: 0;
