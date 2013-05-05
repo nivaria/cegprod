@@ -1727,8 +1727,14 @@ body.page-stream .facebook-status-update {
 .icon_wiki {
   background-position: -611px -67px;
 }
-.icon_group {
+.icon_challenge {
   background-position: -611px -124px;
+}
+.icon_group {
+ 
+}
+.icon_from_model{
+    
 }
 /*nuevo desde un modelo 360*/
 .views-field-created span,
