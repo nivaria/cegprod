@@ -50,7 +50,7 @@
  * @see template_preprocess()
  * @see template_preprocess_node()
  */
-  $terms = cegprod_not_include_terms($node->taxonomy, '5');
+  $terms = cegprod_not_include_terms($node->taxonomy, array(5,6));
   $area_terms = cegprod_separate_terms($node->taxonomy);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
@@ -79,6 +79,11 @@
         <?php if ($terms): ?>
         <div class="terms">
           Tags: <?php print $terms; ?>
+        </div>
+        <?php endif;?>
+        <?php if ($area_terms[6]): ?>
+        <div class="area_terms">
+          Organización: <?php print $area_terms[6]; ?>
         </div>
         <?php endif;?>
         <?php if ($area_terms[5]): ?>
