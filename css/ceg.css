@@ -1956,6 +1956,8 @@ body.page-stream .facebook-status-update {
     height: 29px;
     background-image:none;
     color:#fff;
+    float:none;
+    width:100%;
 }
 #page .vud-link-up:hover{
     color:#fff;
