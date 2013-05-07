@@ -2013,23 +2013,29 @@ body.page-stream .facebook-status-update {
 body.node-type-idea h1{
     padding-bottom: 36px;
 }
-body.node-type-idea .comment-count a{    
+body.node-type-idea .comment-count a{
+    display:none;
+}
+.node-type-idea.teaser h2.title{
+    float:left;
+}
+.node-type-idea.teaser .comment-count a{
     color: #000;
     display: block;
     font-size: 14px;
     font-weight: normal;
-    position: absolute;
-    top: -102px;
-    text-align:center;
+    float:left;
     
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
-    background-position:-83px -715px;
+    background-position:-44px -691px;
     width:36px;
     height:30px;
     line-height:31px;
 }
 /* END bocadillo comentarios */
+
+
 
 /* BEGIN detalle de idea y de reto */
 body.node-type-challenge p,
