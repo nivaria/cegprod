@@ -2008,6 +2008,25 @@ body.page-stream .facebook-status-update {
   display: none;
 }
 /* END vud-widget */
+
+/* BEGIN bocadillo comentarios */
+body.node-type-idea h1{
+    padding-bottom: 36px;
+}
+body.node-type-idea .comment-count a{
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px 20px 20px 20px;
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+    position: absolute;
+    top: -102px;
+}
+/* END bocadillo comentarios */
+
 /* BEGIN detalle de idea y de reto */
 body.node-type-challenge p,
 body.page-comment .node-type-idea p,
