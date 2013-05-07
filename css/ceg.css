@@ -1355,13 +1355,13 @@ body.page-groups .inner.content {
     margin-top:4px;
 }
 body.node-type-blog .links{
-    padding-bottom: 20px;
+    padding-bottom: 68px;
     position: relative;
 }
 body.node-type-blog .links .subscription_clear_style{
     position:absolute;
     right:0;
-    top:35px;
+    top:40px;
 }
 /* END enlaces favorito y modelo */
 
