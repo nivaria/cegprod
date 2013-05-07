@@ -1330,11 +1330,34 @@ body.page-groups .inner.content {
 }
 
 /* BEGIN enlaces favorito y modelo */
-.flag-bookmarks a{
-    
+.links .flag-bookmarks li,
+.links .flag-model li{
+    float:left;
+    margin-left:1em;
 }
+.links .flag-bookmarks li,
+.links .flag-model li,{
+    border:0 none;    
+}
+.flag-bookmarks a:hover,
+.flag-model a:hover,
+.flag-bookmarks a,
 .flag-model a{
-    
+  display: block;
+  color: #666 !important;    
+}
+.flag-bookmarks a,
+.flag-model a{
+    margin-top:4px;
+}
+body.node-type-blog .links{
+    padding-bottom: 20px;
+    position: relative;
+}
+body.node-type-blog .links .subscription_clear_style{
+    position:absolute;
+    right:0;
+    top:35px;
 }
 /* END enlaces favorito y modelo */
 
