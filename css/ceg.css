@@ -2017,7 +2017,7 @@ body.node-type-idea .comment-count a{
     color: #000;
     display: block;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: normal;
     position: absolute;
     top: -102px;
     text-align:center;
@@ -2026,8 +2026,8 @@ body.node-type-idea .comment-count a{
     background-repeat:no-repeat;
     background-position:-83px -715px;
     width:36px;
-    height:28px;
-    line-height:24px;
+    height:30px;
+    line-height:31px;
 }
 /* END bocadillo comentarios */
 
