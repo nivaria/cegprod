@@ -1244,6 +1244,7 @@ body.page-groups .inner.content {
   text-align: left;
 }
 /* BEGIN buttons */
+.add-challenge,
 #linkit .form-submit,
 .block.block-commons_profile .links .ur_action a,
 #og-manage-form li a,
