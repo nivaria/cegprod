@@ -1277,6 +1277,9 @@ body.page-groups .inner.content {
   padding: 0 14px;
   width: auto;
 }
+.add-challenge a{
+    color:#fff !important;
+}
 #page .form-submit#edit-delete {
   background-color: transparent;
   background-image: none;
