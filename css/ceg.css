@@ -1979,10 +1979,12 @@ body.page-stream .facebook-status-update {
 #page .vud-link-up .element-invisible{
     color: #FFFFFF;
     display: block;
-    line-height: 13px;
+    line-height: 26px;
     padding-top: 2px;
     position: static !important;
     text-align: center;
+    font-size:12px;
+    font-weight:bold;
 }
 #page .up-active,
 #page .vud-link-up:hover {
