@@ -1371,6 +1371,14 @@ body.node-type-blog .links .subscription_clear_style{
 }
 /* END enlaces favorito y modelo */
 
+body.node-type-challenge .view-challenge-ideas .view-content .views-row{
+    min-height:154px;
+}
+body.node-type-challenge .view-challenge-ideas .view-content .views-row .content p{
+    float:left;
+    width:78%;
+}
+
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a {
   border: 0 none;
