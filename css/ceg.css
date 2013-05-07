@@ -2378,7 +2378,16 @@ body.page-user-1 #block-facebook_status-facebook_status {
   background-color: #0088C9;
   color: #FFFFFF;
 }
-
+.block .calendar-calendar .month-view table tr td.has-events{
+    background-color: #00A3F9;
+}
+.block .calendar-calendar .month-view table tr td.has-events a{
+    color:#fff;
+    text-decoration:none;
+}
+.block .calendar-calendar .month-view table tr td.has-events a:hover{
+    text-decoration:underline;
+}
 .calendar-calendar div.date-nav .date-prev a{
     display: block;
     font-size: 24px;
@@ -2386,6 +2395,7 @@ body.page-user-1 #block-facebook_status-facebook_status {
     padding: 0.5em 2em;
     position: absolute;
     top: 8px;
+    color:#1B80C9;
 }
 .calendar-calendar div.date-nav .date-next a{
     display: block;
@@ -2394,6 +2404,7 @@ body.page-user-1 #block-facebook_status-facebook_status {
     padding: 0.5em 2em;
     position: absolute;
     top: 8px;
+    color:#1B80C9;
 }
 
 .view-user-meta .user-field-options div {
