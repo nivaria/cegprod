@@ -2320,6 +2320,18 @@ body.node-type-idea .links {
   margin-top: 2em;
   padding-top: 2em;
 }
+#page .comment-content-wrapper .links{
+    border:0 none;
+    margin:0;
+    padding:0;
+}
+#page .comment-content-wrapper ul.links{
+    margin-top:1em;
+}
+#page .comment-content-wrapper ul.links li{
+    margin: 0 6px 0 0;
+    padding: 0 6px 0 0;
+}
 /* END detalle de idea */
 /* BEGIN tabla ideas */
 #page .view-user-challenges table tr,
