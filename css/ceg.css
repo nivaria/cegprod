@@ -1354,10 +1354,16 @@ body.page-groups .inner.content {
 .flag-model a{
     margin-top:4px;
 }
+body.node-type-event .links,
+body.node-type-poll .links,
+body.node-type-wiki .links,
 body.node-type-blog .links{
     padding-bottom: 68px;
     position: relative;
 }
+body.node-type-event .links .subscription_clear_style,
+body.node-type-poll .links .subscription_clear_style,
+body.node-type-wiki .links .subscription_clear_style,
 body.node-type-blog .links .subscription_clear_style{
     position:absolute;
     right:0;
@@ -2010,28 +2016,28 @@ body.page-stream .facebook-status-update {
 /* END vud-widget */
 
 /* BEGIN bocadillo comentarios */
-body.node-type-idea h1{
-    padding-bottom: 36px;
-}
 body.node-type-idea .comment-count a{
     display:none;
 }
 .node-type-idea.teaser h2.title{
     float:left;
+    max-width:80%;
 }
 .node-type-idea.teaser .comment-count a{
-    color: #000;
+    background-image: url('../images/sprites.png');
+    background-position: -44px -691px;
+    background-repeat: no-repeat;
+    color: #000000;
     display: block;
+    float: left;
     font-size: 14px;
     font-weight: normal;
-    float:left;
-    
-    background-image:url('../images/sprites.png');
-    background-repeat:no-repeat;
-    background-position:-44px -691px;
-    width:36px;
-    height:30px;
-    line-height:31px;
+    height: 30px;
+    line-height: 27px;
+    margin-left: 0.6em;
+    margin-top: -8px;
+    text-align: center;
+    width: 36px;
 }
 /* END bocadillo comentarios */
 
@@ -2240,7 +2246,6 @@ body.node-type-challenge .node-type-idea.teaser h2.title a {
   font-size: 16px;
   font-weight: normal;
   line-height: 140%;
-  max-width: 80%;
 }
 body.node-type-challenge .node-type-idea.teaser .username a {
   color: #F2570E;
