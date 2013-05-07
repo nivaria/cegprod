@@ -2014,18 +2014,20 @@ body.node-type-idea h1{
     padding-bottom: 36px;
 }
 body.node-type-idea .comment-count a{    
-    color: #666666;
+    color: #000;
     display: block;
     font-size: 14px;
     font-weight: bold;
     position: absolute;
     top: -102px;
+    text-align:center;
     
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
-    background-position:-43px -692px;
+    background-position:-93px -691px;
     width:36px;
     height:28px;
+    line-height:24px;
 }
 /* END bocadillo comentarios */
 
