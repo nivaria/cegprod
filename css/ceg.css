@@ -1909,7 +1909,16 @@ body.page-stream .facebook-status-update {
   background-image:url('../images/sprites.png');
   background-position: -355px -612px;
   background-repeat:no-repeat;
-  overflow:hidden;
+  top:8px;
+  overflow:visible;
+}
+.vud-widget .voting-title{
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: -20px;
+    width:60px;
 }
 .vud-widget-alternate .alternate-votes-display {
     border: 0 none;
@@ -1946,6 +1955,18 @@ body.page-stream .facebook-status-update {
     display: block;
     height: 29px;
     background-image:none;
+    color:#fff;
+}
+#page .vud-link-up:hover{
+    color:#fff;
+}
+#page .vud-link-up .element-invisible{
+    color: #FFFFFF;
+    display: block;
+    line-height: 13px;
+    padding-top: 2px;
+    position: static !important;
+    text-align: center;
 }
 #page .up-active,
 #page .vud-link-up:hover {
