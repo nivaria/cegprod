@@ -2013,17 +2013,19 @@ body.page-stream .facebook-status-update {
 body.node-type-idea h1{
     padding-bottom: 36px;
 }
-body.node-type-idea .comment-count a{
-    background-color: #FFFFFF;
-    border: 2px solid #000000;
-    border-radius: 20px 20px 20px 20px;
+body.node-type-idea .comment-count a{    
     color: #666666;
     display: block;
     font-size: 14px;
     font-weight: bold;
-    padding: 0.5em 1.5em;
     position: absolute;
     top: -102px;
+    
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-43px -692px;
+    width:36px;
+    height:28px;
 }
 /* END bocadillo comentarios */
 
