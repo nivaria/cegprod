@@ -1297,6 +1297,9 @@ body.page-groups .inner.content {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A1FE', endColorstr='#0089CE');
   color: #fff;
 }
+
+.flag-bookmarks a,
+.flag-model a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a,
 #page .form-submit#edit-preview-changes,
@@ -1325,6 +1328,16 @@ body.page-groups .inner.content {
   padding: 0 14px;
   width: auto;
 }
+
+/* BEGIN enlaces favorito y modelo */
+.flag-bookmarks a{
+    
+}
+.flag-model a{
+    
+}
+/* END enlaces favorito y modelo */
+
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown:hover a,
 #page .node .inner .links > .subscription_clear_style ul.node_link_style-dropdown a {
   border: 0 none;
@@ -1749,6 +1762,7 @@ body.page-stream .facebook-status-update {
   font-size: 12px;
 }
 /* END que esta pasando */
+
 /* BEGIN pager */
 #page ul.pager {
   margin-bottom: 0;
