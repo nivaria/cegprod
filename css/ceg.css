@@ -2421,9 +2421,29 @@ body.page-user-1 #block-facebook_status-facebook_status {
 .block .calendar-calendar .month-view table tr td.has-events a:hover{
     text-decoration:underline;
 }
+
+.calendar-calendar td .inner div,
+.calendar-calendar td .inner div a{
+    background-color:transparent;
+}
+.calendar-calendar td div.day {
+    background-color: transparent;
+    border: 0 none;
+    margin-bottom: 2px;
+}
+.calendar-calendar td .inner div.calendar div,
+.calendar-calendar td .inner div.calendar div a {
+    background-color:transparent;
+    color:#fff;
+    font-weight:normal;
+}
 .calendar-calendar div.date-nav .date-prev a,
 .calendar-calendar div.date-nav .date-next a{
     font-size: 18px;
+}
+#content-content .calendar-calendar div.date-nav h3{
+    font-weight:normal;
+    font-size:18px;
 }
 #sidebar-last .calendar-calendar div.date-nav{
     position:relative;
