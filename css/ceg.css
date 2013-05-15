@@ -2421,10 +2421,14 @@ body.page-user-1 #block-facebook_status-facebook_status {
 .block .calendar-calendar .month-view table tr td.has-events a:hover{
     text-decoration:underline;
 }
-.calendar-calendar div.date-nav{
+.calendar-calendar div.date-nav .date-prev a,
+.calendar-calendar div.date-nav .date-next a{
+    font-size: 18px;
+}
+#sidebar-last .calendar-calendar div.date-nav{
     position:relative;
 }
-.calendar-calendar div.date-nav .date-prev a{
+#sidebar-last .calendar-calendar div.date-nav .date-prev a{
     display: block;
     font-size: 24px;
     left: 0;
@@ -2436,7 +2440,7 @@ body.page-user-1 #block-facebook_status-facebook_status {
     left:-20px;
     top:-12px;
 }
-.calendar-calendar div.date-nav .date-next a{
+#sidebar-last .calendar-calendar div.date-nav .date-next a{
     display: block;
     font-size: 24px;
     right: 0;
