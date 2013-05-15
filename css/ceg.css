@@ -2444,6 +2444,9 @@ body.page-user-1 #block-facebook_status-facebook_status {
 .calendar-calendar td span.date-display-separator {
     font-weight: normal;
 }
+.block .calendar-calendar .month-view table tr td.sun{
+    border-right:1px solid #CCCCCC;
+}
 .calendar-calendar div.date-nav .date-prev a,
 .calendar-calendar div.date-nav .date-next a{
     font-size: 18px;
