@@ -2436,6 +2436,13 @@ body.page-user-1 #block-facebook_status-facebook_status {
     background-color:transparent;
     color:#fff;
     font-weight:normal;
+    font-size:11px;
+}
+.calendar-calendar td span.date-display-single,
+.calendar-calendar td span.date-display-start,
+.calendar-calendar td span.date-display-end,
+.calendar-calendar td span.date-display-separator {
+    font-weight: normal;
 }
 .calendar-calendar div.date-nav .date-prev a,
 .calendar-calendar div.date-nav .date-next a{
