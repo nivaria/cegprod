@@ -805,7 +805,7 @@ fieldset .form-item {
   overflow: hidden;
   float: left;
 }
-#page .view-subgroups-main-listing .views-field-subscribe a,
+#page .view-subgroups-main-listing .views-field-subscribe .field-content *,
 #page .view-subgroups-main-listing .views-field-leave-group a {
   float: right;
   font-size: 12px;
