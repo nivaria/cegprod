@@ -812,6 +812,7 @@ fieldset .form-item {
   font-weight: normal;
   white-space: nowrap;
   width: 98px;
+  padding:0 14px;
 }
 #page #page-inner .view-subgroups-main-listing .views-row {
   padding: 14px 10px;
@@ -2438,7 +2439,7 @@ body.page-user-1 #block-facebook_status-facebook_status {
     font-weight:normal;
     font-size:11px;
     display:block;
-    padding:0,
+    padding:0;
 }
 .calendar-calendar td span.date-display-single,
 .calendar-calendar td span.date-display-start,
