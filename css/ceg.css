@@ -2421,6 +2421,9 @@ body.page-user-1 #block-facebook_status-facebook_status {
 .block .calendar-calendar .month-view table tr td.has-events a:hover{
     text-decoration:underline;
 }
+.calendar-calendar div.date-nav{
+    position:relative;
+}
 .calendar-calendar div.date-nav .date-prev a{
     display: block;
     font-size: 24px;
@@ -2429,6 +2432,9 @@ body.page-user-1 #block-facebook_status-facebook_status {
     position: absolute;
     top: 8px;
     color:#1B80C9;
+    
+    left:-20px;
+    top:-12px;
 }
 .calendar-calendar div.date-nav .date-next a{
     display: block;
@@ -2438,6 +2444,9 @@ body.page-user-1 #block-facebook_status-facebook_status {
     position: absolute;
     top: 8px;
     color:#1B80C9;
+    
+    right:-20px;
+    top:-12px;
 }
 
 .view-user-meta .user-field-options div {
