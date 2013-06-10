@@ -757,6 +757,11 @@ body.not-front #content-inner-inner {
   border: 0 none;
   margin: 0;
 }
+
+fieldset.group-promote-content{
+    margin-top:3em;
+}
+
 /* END block siguenos */
 .tagadelic_views {
   text-align: center;
@@ -1356,6 +1361,21 @@ body.page-groups .inner.content {
 .flag-bookmarks a,
 .flag-model a{
     margin-top:4px;
+}
+.flag-bookmarks a{
+    position:relative;
+}
+.flag-bookmarks a:after{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position:-423px -8px;
+    content:' ';
+    position:absolute;
+    display:block;
+    width:17px;
+    height:27px;
+    right:0;
+    top:0;
 }
 body.node-type-event .links,
 body.node-type-poll .links,
