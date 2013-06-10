@@ -573,6 +573,8 @@ body.not-front #content-inner-inner {
   position: absolute;
   right: 0;
   top: 2px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 #search-box .contextual-search-wrapper {
   border: 0 none;
