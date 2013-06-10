@@ -1364,6 +1364,7 @@ body.page-groups .inner.content {
 }
 .flag-bookmarks a{
     position:relative;
+    padding-right:28px;
 }
 .flag-bookmarks a:after{
     background-image:url('../images/sprites.png');
@@ -1374,8 +1375,23 @@ body.page-groups .inner.content {
     display:block;
     width:17px;
     height:27px;
-    right:0;
-    top:0;
+    right:8px;
+    top:-5px;
+}
+.flag-model a{
+    position:relative;
+    padding-right:28px;
+}
+.flag-model a:after{
+    background-position: -9px -693px;
+    background-image: url("../images/sprites.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 16px;
+    right: 0;
+    position: absolute;
+    top: 0px;
+    width: 16px;
 }
 body.node-type-event .links,
 body.node-type-poll .links,
