@@ -348,3 +348,7 @@ function cegprod_apachesolr_breadcrumb_uid($uid) {
   return $user->realname ? $user->realname : $user->name;
   
 }
+
+function cegprod_filter_tips($tips, $long = FALSE, $extra = '') {
+  return '';
+}
