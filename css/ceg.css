@@ -1388,10 +1388,11 @@ body.page-groups .inner.content {
     background-repeat: no-repeat;
     display: block;
     height: 16px;
-    right: 0;
+    right: 8px;
     position: absolute;
-    top: 0px;
+    top: 5px;
     width: 16px;
+    content:' ';
 }
 body.node-type-event .links,
 body.node-type-poll .links,
@@ -1461,7 +1462,7 @@ body.has_one_sidebar #page .form-submit#edit-submit {
   font-weight: normal;
 }
 #comments .comment-name a {
-  color: #FF4339;
+  color: #1B80C9;
   font-size: 13px;
   font-weight: normal;
 }
