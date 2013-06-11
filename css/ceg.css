@@ -1383,14 +1383,14 @@ body.page-groups .inner.content {
     padding-right:28px;
 }
 .flag-model a:after{
-    background-position: -9px -693px;
+    background-position: -633px -361px;
     background-image: url("../images/sprites.png");
     background-repeat: no-repeat;
     display: block;
     height: 16px;
     right: 8px;
     position: absolute;
-    top: 5px;
+    top: 3px;
     width: 16px;
     content:' ';
 }
@@ -1452,6 +1452,11 @@ body.has_one_sidebar #page .form-submit#edit-submit {
 
 }
 /* END buttons */
+
+#attachments{
+    margin-bottom:2em;
+}
+
 /* BEGIN comments */
 #comments {
   float: none;
