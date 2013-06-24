@@ -5,7 +5,10 @@
 <div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
   <div class="inner">
     <?php print $picture ?>
-
+    <?php if ($page == 0): ?>
+      <h2 class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+    <?php endif; ?>
+      <a href="<?php print $node_url ?>" title="<?php print $title ?>"></a>
     <?php if ($node_top && !$teaser): ?>
     <div id="node-top" class="node-top row nested">
       <div id="node-top-inner" class="node-top-inner inner">
@@ -13,30 +16,30 @@
       </div><!-- /node-top-inner -->
     </div><!-- /node-top -->
     <?php endif; ?>
-
+    <?php if ($submitted): ?>
+    <div class="meta">
+      <span class="submitted"><?php print $submitted ?></span>
+    </div>
+    <?php endif; ?>
     <?php if ($terms): ?>
     <div class="terms">
       <?php print $terms; ?>
     </div>
     <?php endif;?>
-    
+    <!-- Idea classifiction -->
+    <?php if ($area_terms[8]): ?>
+    <div class="answer_clas">
+      <?php print $area_terms[8]; ?>
+    </div>
+    <?php endif;?>
+    <?php print $ongoing ?>
     <div class="content clearfix">
       <?php print $content ?>
-      <?php if ($submitted_name): ?>
-        <span class="answer-by"><?php print $submitted_name; ?> el <a href="<?php print request_uri() . '#node-' . $node->nid; ?>" class="answer-time-date"><?php print $date; ?></a></span>
-      <?php endif; ?>
     </div>
     
-    <?php if ($node->links['comment_add']): ?>
+    <?php if ($links && $page ==1): ?>
     <div class="links">
-      <div class="comment_clear_style answer-add-comment">
-        <a href="<?php print base_path() . $node->links['comment_add']['href'] . '#' . $node->links['comment_add']['fragment']; ?>" title="Share your thoughts and opinions related to this posting.">Comment</a>
-      </div>
-      <?php if ($node->comment_count > 0): ?>
-      <div class="comment_clear_style answer-comment-count">
-         <a href="<?php print base_path() . $node->links['comment_add']['href'] . '#' . $node->links['comment_add']['fragment']; ?>" title="<?php print t('Share your thoughts and opinions related to this posting.') ?>"><?php print t('Comment') ?></a>
-      </div>
-      <?php endif; ?>
+      <?php print $links; ?>
     </div>
     <?php endif; ?>
 
