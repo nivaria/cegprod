@@ -603,6 +603,9 @@ body.not-front #content-inner-inner {
   line-height: 25px;
   min-width: 0;
   width: 144px;
+  
+  width:120px;
+  margin-right:30px;
 }
 #search-box .contextual-search-wrapper .contextual-search-list {
   width: 118px;
