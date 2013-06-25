@@ -97,7 +97,23 @@
     </div>
     <?php endif;?>
     
-      aa<? print $node->og_public ?>bb
+      <?
+        if ( $node->og_public==1 ){
+      ?>
+          <div class="content_access">
+            <span class="content_access_title" ><? print t("Contenido público"); ?></span>
+            <div class="content_access_help_trigger" ><span class="content_access_help" ><? print t("Este contenido y todos sus comentarios serán visibles en la web"); ?></span></div>
+          </div>
+      <?
+        } else {
+      ?>
+          <div class="content_access">
+            <span class="content_access_title" ><? print t("Contenido privado"); ?></span>
+            <div class="content_access_help_trigger" ><span class="content_access_help" ><? print t("Este contenido y todos sus comentarios sólo serán visibles por los miembros del o los grupos a los que pertenece"); ?></span></div>
+          </div>
+      <?
+        }
+      ?>
       <?php print $content ?>
     </div>
 

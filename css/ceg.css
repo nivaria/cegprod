@@ -2771,6 +2771,52 @@ body.page-comment .box h2.title{
 }
 /* END comment boxes */
 
+/* BEGIN public or private */
+.content_access{
+    height:42px;
+    line-height:42px;
+    border:1px solid #d2d2d2;
+    border-left: 0 none;
+    border-right:0 none;
+}
+.content_access_title{
+    color:#4bbb00;
+    text-transform:uppercase;
+    font-size:13px;
+    font-weight:bold;
+}
+.content_access_help_trigger{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background-repeat:no-repeat;
+    background-image:url('../images/sprites.png');
+    background-position:-658px -358px;
+    position:relative;
+}
+.content_access_help{
+    display:none;
+    
+    background-color: #444444;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    position: absolute;
+}
+.content_access_help:before{
+    background-image: url("../images/sprites.png");
+    background-position: -9px -467px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 7px;
+    left: 40%;
+    position: absolute;
+    top: -6px;
+    width: 12px;
+}
+/* END public or private */
+
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
   background-color: #ffffff;
