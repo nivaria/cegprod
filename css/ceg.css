@@ -1581,6 +1581,7 @@ body.has_one_sidebar #page .form-submit#edit-submit {
   float: left;
 }
 /* BEGIN default full node */
+body.full-node .content .area_terms,
 body.full-node .content .terms {
   border-bottom: 1px solid #D3D3D3;
   margin-bottom: 1em;
@@ -1696,6 +1697,13 @@ div.node {
 #page .fivestar-widget,
 #page form.fivestar-widget {
   float: right;
+  margin-bottom:8px;
+}
+body.node-type-blog #page .fivestar-widget-static,
+body.node-type-blog #page form.fivestar-widget-static,
+body.node-type-blog #page .fivestar-widget,
+body.node-type-blog #page form.fivestar-widget {
+  margin-bottom:0;
   margin-top:-20px;
 }
 /*.fivestar-summary:before{
@@ -2835,6 +2843,11 @@ body.page-comment .box h2.title{
     width: 12px;
 }
 /* END public or private */
+
+
+div.node-type-question p {
+    font-size: 100%;
+}
 
 /* CSS generated from Adobe Fireworks document: CEG-homev2.fw.png*/
 .Shadowbox {
