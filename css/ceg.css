@@ -858,14 +858,14 @@ fieldset .form-item {
     float:none;
 }
 
-body.#pid-groups #content-content{
+body#pid-groups #content-content{
     background-color:transparent;
     box-shadow:none;
     margin:0;
     padding:0;
 }
-body.#pid-groups #content-content #view-id-subgroups_main_listing-page_1,
-body.#pid-groups #content-content #block-views-subgroups_main_listing-block_2{
+body#pid-groups #content-content #view-id-subgroups_main_listing-page_1,
+body#pid-groups #content-content #block-views-subgroups_main_listing-block_2{
     background-color: #FFFFFF;
     border: 0 none;
     box-shadow: 2px 4px 4px #D6D6D6;
