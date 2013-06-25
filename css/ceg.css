@@ -2390,6 +2390,8 @@ body.node-type-challenge .node-type-idea.teaser {
   border-bottom: 0 none;
   margin-bottom: 0;
   padding-bottom: 1em;
+  border-left:0 none;
+  border-right:0 none;
 }
 body.node-type-challenge .node-type-idea.teaser .field-field-idea-challenge {
   max-width: 80%;
@@ -2414,9 +2416,12 @@ body.node-type-challenge .node-type-idea.teaser .username a {
 body.node-type-challenge .node-type-idea.teaser .submitted img {
   /*margin-right: 14px;*/
 }
+body.node-type-question .node-type-answer.teaser .submitted,
 body.node-type-challenge .node-type-idea.teaser .submitted {
   position: relative;
 }
+body.node-type-question .node-type-answer.teaser .submitted .user_badges,
+body.node-type-question .node-type-answer.teaser .submitted .userpoints-value,
 body.node-type-challenge .node-type-idea.teaser .submitted .user_badges,
 body.node-type-challenge .node-type-idea.teaser .submitted .userpoints-value {
   top: 52px;
