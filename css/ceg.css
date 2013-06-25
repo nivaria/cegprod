@@ -2382,6 +2382,7 @@ body.page-comment .node-type-idea .field-field-valid-date div,
 body.node-type-idea .field-field-valid-date div {
   display: inline;
 }
+body.node-type-question .view-question-answers .node-type-answer,
 body.node-type-challenge .node-type-idea.teaser {
   border-top: 1px solid #d3d3d3;
   margin-top: 0;
@@ -2708,13 +2709,12 @@ body.node-type-challenge .view-challenge-ideas{
     overflow: hidden;
     padding: 20px;
 }
-h2.view-question-answers-title,
+h3.view-question-answers-title,
 h3.view-challenge-ideas-title{
     color: #000000;
     font-size: 20px;
     margin-bottom: 4px;
 }
-
 
 /* BEGIN comment boxes */
 body.page-comment div.node{

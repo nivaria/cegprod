@@ -63,8 +63,8 @@ jQuery(document).ready(function($){
         jQuery("<h3 class='view-challenge-ideas-title' >Ideas propuestas</h3>"),
         jQuery(".view-challenge-ideas")
     );
-    jQuery("body.node-type-question #content-content").after(
-        jQuery("body.node-type-question #content-content .inner .content h2").addClass("view-question-answers-title"),
+    jQuery("body.node-type-question #content-content").after(        
+        jQuery("<h3 class='view-question-answers-title' >"+jQuery("h1").text()+"</h3>"),
         jQuery(".view-question-answers")
     );
 });
