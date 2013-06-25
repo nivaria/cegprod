@@ -2778,6 +2778,11 @@ body.page-comment .box h2.title{
     border:1px solid #d2d2d2;
     border-left: 0 none;
     border-right:0 none;
+    margin:1em 0;
+}
+.content_access.terms_there{
+    border-top:0 none;
+    margin-top:-1em;
 }
 .content_access_title{
     color:#4bbb00;
@@ -2792,16 +2797,27 @@ body.page-comment .box h2.title{
     background-repeat:no-repeat;
     background-image:url('../images/sprites.png');
     background-position:-658px -358px;
-    position:relative;
+    margin-left: 0.5em;
+    cursor:pointer;
+    position: relative;
+    top: 5px;
 }
 .content_access_help{
-    display:none;
-    
     background-color: #444444;
     border-radius: 4px 4px 4px 4px;
     color: #FFFFFF;
+    display: none;
+    font-size: 13px;
+    left: -29px;
+    line-height: 20px;
     padding: 4px 8px;
     position: absolute;
+    top: 30px;
+    width: 200px;
+    z-index: 100;
+}
+.content_access_help_trigger:hover .content_access_help{
+    display:block;
 }
 .content_access_help:before{
     background-image: url("../images/sprites.png");
@@ -2810,7 +2826,7 @@ body.page-comment .box h2.title{
     content: " ";
     display: block;
     height: 7px;
-    left: 40%;
+    left: 15%;
     position: absolute;
     top: -6px;
     width: 12px;
