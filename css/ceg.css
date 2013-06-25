@@ -550,6 +550,7 @@ body.not-front #content-inner-inner {
   min-width: 0;
   padding: 0;
   top: 68px;
+  filter:none;
 }
 #search-box-inner {
   border: 0 none;

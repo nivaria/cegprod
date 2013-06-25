@@ -97,6 +97,7 @@
     </div>
     <?php endif;?>
     
+      aa<? print $node->og_public ?>bb
       <?php print $content ?>
     </div>
 

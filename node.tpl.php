@@ -36,6 +36,7 @@
       Area de Gestión:<?php print $area_terms[5]; ?>
     </div>
     <?php endif;?>
+      cc<? print $node->og_public ?>dd
       <?php print $content ?>
     </div>
 
