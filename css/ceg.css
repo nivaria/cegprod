@@ -2742,6 +2742,7 @@ body.page-comment div.node{
     background-color: #F9F9F9;
     padding: 1px 16px 10px;
     margin-top:3em;
+    border:0 none;
 }
 #commons-answers-add-answer-form label,
 #commons-answers-add-question-form label,
@@ -2749,6 +2750,8 @@ body.page-comment div.node{
 #commons-ideas-add-challenge-form label,
 #commons-ideas-add-idea-form label{
     color:#666;
+    font-size:12px !important;
+    margin:0;
 }
 #comment-form .comment-author-title,
 #comment-form .comment-author-title a{
