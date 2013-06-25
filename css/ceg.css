@@ -805,6 +805,10 @@ fieldset .form-item {
   background-color: #fff;
 }
 
+#page #page-inner .ceg-groups-list .views-row img{
+    display:block;
+    margin-bottom:1em;
+}
 #page #page-inner .ceg-groups-list .views-field-title {
 
 }
@@ -821,19 +825,19 @@ fieldset .form-item {
     clear:both;
     margin-right:2em;
 }
-#page #page-inner .ceg-groups-list .views-field-post-count,
+#page #page-inner .ceg-groups-list .views-field-posts-count,
 #page #page-inner .ceg-groups-list .views-field-members-count{
     font-size:13px;
     color:#444;
     float:left;
 }
-#page #page-inner .ceg-groups-list .views-field-post-count:before,
+#page #page-inner .ceg-groups-list .views-field-posts-count:before,
 #page #page-inner .ceg-groups-list .views-field-members-count:before{
     content:'>';
-    padding-right:1em;
     color:#a5a3a3;
     font-size:22px;
     font-weight:bold;
+    vertical-align:top;
 }
 
 #page #page-inner .ceg-groups-list .views-field-tid a,
@@ -848,6 +852,26 @@ fieldset .form-item {
 #page #page-inner .ceg-groups-list .views-field-tid a,
 #page #page-inner .ceg-groups-list .tags a{
     font-weight:bold;
+}
+
+#page #block-views-subgroups_main_listing-block_2{
+    float:none;
+}
+
+body.#pid-groups #content-content{
+    background-color:transparent;
+    box-shadow:none;
+    margin:0;
+    padding:0;
+}
+body.#pid-groups #content-content #view-id-subgroups_main_listing-page_1,
+body.#pid-groups #content-content #block-views-subgroups_main_listing-block_2{
+    background-color: #FFFFFF;
+    border: 0 none;
+    box-shadow: 2px 4px 4px #D6D6D6;
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 
