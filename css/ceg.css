@@ -1706,6 +1706,13 @@ body.node-type-blog #page form.fivestar-widget {
   margin-bottom:0;
   margin-top:-20px;
 }
+body.node-type-question #page .fivestar-widget-static,
+body.node-type-question #page form.fivestar-widget-static,
+body.node-type-question #page .fivestar-widget,
+body.node-type-question #page form.fivestar-widget {
+  margin-bottom:0;
+  margin-top:-42px;
+}
 /*.fivestar-summary:before{
     background-image: url("../images/sprites.png");
     background-position: -9px -467px;
@@ -2729,7 +2736,7 @@ body.node-type-answer .full-node{
     padding:0;
     margin:0;
 }
-body.node-type-answer .full-node .inner{
+body.node-type-answer #page .full-node .inner{
     margin:0;
 }
 
