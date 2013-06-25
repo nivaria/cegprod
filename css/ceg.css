@@ -2724,6 +2724,15 @@ h3.view-challenge-ideas-title{
     margin-bottom: 4px;
 }
 
+body.node-type-answer .full-node{
+    border:0 none;
+    padding:0;
+    margin:0;
+}
+body.node-type-answer .full-node .inner{
+    margin:0;
+}
+
 /* BEGIN comment boxes */
 body.page-comment div.node{
     padding:0;
@@ -2762,7 +2771,7 @@ body.page-comment div.node{
 body.page-comment .box h2.title{
     display:none;
 }
-##commons-answers-add-answer-form #edit-title,
+#commons-answers-add-answer-form #edit-title,
 #comment-form #edit-subject,
 #comment-form #edit-title,
 #commons-answers-add-question-form #edit-title,
