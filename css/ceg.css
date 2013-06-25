@@ -2698,6 +2698,7 @@ body.node-type-challenge .full-node{
     margin:0;
     border:0 none;
 }
+body.node-type-question .view-question-answers,
 body.node-type-challenge .view-challenge-ideas{
     background-color: #FFFFFF;
     border: 0 none;
@@ -2707,6 +2708,7 @@ body.node-type-challenge .view-challenge-ideas{
     overflow: hidden;
     padding: 20px;
 }
+h2.view-question-answers-title,
 h3.view-challenge-ideas-title{
     color: #000000;
     font-size: 20px;
