@@ -821,6 +821,15 @@ fieldset .form-item {
     font-size:13px;
     color:#000;
 }
+#page #page-inner .ceg-groups-list .views-field-parent-title span:before{
+    background-image:url('../images/sprites.png');
+    background-repeat:no-repeat;
+    background-position: -255px -727px;
+    width:14px;
+    height:15px;
+    display:inline-block;
+    content:' ';
+}
 #page #page-inner .ceg-groups-list .views-field-members-count{
     clear:both;
     margin-right:2em;
