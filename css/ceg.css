@@ -2396,6 +2396,7 @@ body.node-type-challenge .node-type-idea.teaser {
 body.node-type-challenge .node-type-idea.teaser .field-field-idea-challenge {
   max-width: 80%;
 }
+body.node-type-question .attachment-after,
 body.node-type-challenge .attachment-after {
   /*border-top: 1px solid #d3d3d3;
   margin-top: 1em;
@@ -2403,12 +2404,14 @@ body.node-type-challenge .attachment-after {
   
   margin-top:3em;
 }
+body.node-type-question .node-type-answer.teaser h2.title a
 body.node-type-challenge .node-type-idea.teaser h2.title a {
   display: block;
   font-size: 16px;
   font-weight: normal;
   line-height: 140%;
 }
+body.node-type-question .node-type-answer.teaser .username a,
 body.node-type-challenge .node-type-idea.teaser .username a {
   color: #F2570E;
   font-size: 14px;
@@ -2731,6 +2734,7 @@ body.page-comment div.node{
 #commons-ideas-add-challenge-form{
     margin-top:3em;
 }
+#commons-answers-add-answer-form,
 #commons-answers-add-question-form,
 #comment-form,
 #commons-ideas-add-challenge-form,
@@ -2739,6 +2743,7 @@ body.page-comment div.node{
     padding: 1px 16px 10px;
     margin-top:3em;
 }
+#commons-answers-add-answer-form label,
 #commons-answers-add-question-form label,
 #comment-form label,
 #commons-ideas-add-challenge-form label,
@@ -2754,6 +2759,7 @@ body.page-comment div.node{
 body.page-comment .box h2.title{
     display:none;
 }
+##commons-answers-add-answer-form #edit-title,
 #comment-form #edit-subject,
 #comment-form #edit-title,
 #commons-answers-add-question-form #edit-title,
