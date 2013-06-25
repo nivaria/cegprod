@@ -1696,7 +1696,7 @@ div.node {
 #page .fivestar-widget,
 #page form.fivestar-widget {
   float: right;
-  margin-bottom: 7px;
+  margin-top:-20px;
 }
 /*.fivestar-summary:before{
     background-image: url("../images/sprites.png");
@@ -2789,6 +2789,9 @@ body.page-comment .box h2.title{
     text-transform:uppercase;
     font-size:13px;
     font-weight:bold;
+}
+.content_access_title.private_content{
+    color:#999;
 }
 .content_access_help_trigger{
     display:inline-block;

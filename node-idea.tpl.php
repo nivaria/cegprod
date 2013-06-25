@@ -35,6 +35,25 @@
     <?php print $node->classify_challenge; ?>
     <?php print $ongoing ?>
     <?php print $challenge_date ?>
+    
+      <?
+        if ( $node->og_public==1 ){
+      ?>
+          <div class="content_access <? if($terms){ print("terms_there"); } ?>">
+            <span class="content_access_title" ><? print t("Contenido público"); ?></span>
+            <div class="content_access_help_trigger" ><span class="content_access_help" ><? print t("Este contenido y todos sus comentarios serán visibles en la web"); ?></span></div>
+          </div>
+      <?
+        } else {
+      ?>
+          <div class="content_access <? if($terms){ print("terms_there"); } ?>">
+            <span class="content_access_title private_content" ><? print t("Contenido privado"); ?></span>
+            <div class="content_access_help_trigger" ><span class="content_access_help" ><? print t("Este contenido y todos sus comentarios sólo serán visibles por los miembros del o los grupos a los que pertenece"); ?></span></div>
+          </div>
+      <?
+        }
+      ?>
+    
     <div class="content clearfix">
       <?php print $content ?>
     </div>
