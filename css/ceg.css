@@ -807,7 +807,10 @@ fieldset .form-item {
 
 #page #page-inner .ceg-groups-list .views-row img{
     display:block;
-    margin-bottom:1em;
+    margin-bottom:2em;
+}
+#page #page-inner .ceg-groups-list .views-row p{
+    margin:0;
 }
 #page #page-inner .ceg-groups-list .views-field-title {
 
@@ -816,16 +819,20 @@ fieldset .form-item {
 #page #page-inner .ceg-groups-list .views-field-title a {
     color:#0077b7;
     font-size:18px;
+    display:inline-block;
+    padding-bottom:6px;
 }
 #page #page-inner .ceg-groups-list .views-field-parent-title span{
     font-size:13px;
     color:#000;
+    display:inline-block;
+    padding-bottom:8px;
 }
 #page #page-inner .ceg-groups-list .views-field-parent-title span:before{
     background-image:url('../images/sprites.png');
     background-repeat:no-repeat;
     background-position: -255px -727px;
-    width:14px;
+    width:18px;
     height:15px;
     display:inline-block;
     content:' ';
@@ -848,7 +855,10 @@ fieldset .form-item {
     font-weight:bold;
     vertical-align:top;
 }
-
+#page #page-inner .ceg-groups-list .views-field-tid,
+#page #page-inner .ceg-groups-list .tags{
+    margin:0.5em 0 1em;
+}
 #page #page-inner .ceg-groups-list .views-field-tid a,
 #page #page-inner .ceg-groups-list .tags a,
 #page #page-inner .ceg-groups-list .views-field-tid,
