@@ -880,13 +880,15 @@ fieldset .form-item {
 #page #block-views-subgroups_main_listing-block_2{
     float:none;
 }
-
+body#pid-groups-mine #content-content,
 body#pid-groups #content-content{
     background-color:transparent;
     box-shadow:none;
     margin:0;
     padding:0;
 }
+body#pid-groups-mine #view-id-groups_my_groups_listing-page_1,
+body#pid-groups-mine #block-views-221fe1b61723fd9b2953d88ae45c822f,
 body#pid-groups #content-content #view-id-subgroups_main_listing-page_1,
 body#pid-groups #content-content #block-views-subgroups_main_listing-block_2{
     background-color: #FFFFFF;
