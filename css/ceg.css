@@ -2256,13 +2256,12 @@ body.node-type-idea .field-field-idea-challenge {
   line-height: 20px;
   margin-left: -26px;
   margin-top: 20px;
-  max-width: 450px;
+  width: 450px;
   padding-left: 26px;
   padding-right: 26px;
   padding-top: 10px;
   position: relative;
   text-overflow: ellipsis;
-  width: auto;
 }
 body.node-type-answer .field-field-answer-question:after,
 body.page-comment .node-type-idea .field-field-idea-challenge:after,
@@ -2287,7 +2286,6 @@ body.node-type-idea .field-field-idea-challenge .field-label-inline-first {
   display: block;
   float: left;
 }
-body.node-type-answer .field-field-answer-question a,
 body.page-comment .node-type-idea .field-field-idea-challenge a,
 body.node-type-idea .field-field-idea-challenge a {
   color: #009EFF;
@@ -2299,6 +2297,13 @@ body.node-type-idea .field-field-idea-challenge a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+body.node-type-answer .field-field-answer-question a{
+  color: #009EFF;
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+  float: left;
 }
 .challenge-selector-link {
   font-weight: normal;
