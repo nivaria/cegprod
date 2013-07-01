@@ -811,6 +811,8 @@ fieldset .form-item {
 
 #page #page-inner .ceg-groups-list .views-row img{
     display:block;
+    float:left;
+    margin-right:1em;
     margin-bottom:2em;
 }
 #page #page-inner .ceg-groups-list .views-row p{
@@ -825,6 +827,7 @@ fieldset .form-item {
     font-size:18px;
     display:inline-block;
     padding-bottom:6px;
+    font-weight:normal;
 }
 #page #page-inner .ceg-groups-list .views-field-parent-title span{
     font-size:13px;
@@ -897,6 +900,7 @@ body#pid-groups #content-content #block-views-subgroups_main_listing-block_2{
     display: block;
     margin-bottom: 20px;
     padding: 20px;
+    float:none;
 }
 
 
