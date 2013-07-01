@@ -2278,6 +2278,7 @@ body.node-type-idea .field-field-idea-challenge:after {
   top: 0;
   width: 107px;
 }
+body.node-type-answer .field-field-answer-question .field-label-inline-first,
 body.page-comment .node-type-idea .field-field-idea-challenge .field-label-inline-first,
 body.node-type-idea .field-field-idea-challenge .field-label-inline-first {
   color: #000000;
@@ -2286,6 +2287,7 @@ body.node-type-idea .field-field-idea-challenge .field-label-inline-first {
   display: block;
   float: left;
 }
+body.node-type-answer .field-field-answer-question a,
 body.page-comment .node-type-idea .field-field-idea-challenge a,
 body.node-type-idea .field-field-idea-challenge a {
   color: #009EFF;
