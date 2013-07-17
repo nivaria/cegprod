@@ -3235,3 +3235,23 @@ div.node-type-question p {
 .Estilo11 {
   background-color: #ffffff;
 }
+
+
+#page .year-view table{
+    table-layout:fixed;
+}
+#page .year-view table td{
+    padding:4px;
+    font-size:11px;
+}
+#page .calendar-calendar .day-view td div.view-item div.view-data-node-title a{
+    background-color: #0086CC;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-right: 0.5em;
+    padding: 5px 16px;
+}
