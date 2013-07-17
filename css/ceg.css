@@ -2068,6 +2068,7 @@ body.page-stream .facebook-status-update {
   border-bottom: 0 none;
   margin-bottom: 0;
 }
+#page .calendar-calendar li:hover a,
 #page .calendar-calendar li.active a,
 #page #content-tabs .tabs li.active a {
   background-color: #0086cc;
