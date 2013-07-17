@@ -68,7 +68,7 @@ jQuery(document).ready(function($){
         jQuery(".view-question-answers")
     );
     
-    var calendar_view = jQuery("attachment-after > calendar-calendar div");
+    var calendar_view = jQuery(".attachment-after > .calendar-calendar > div");
     
     if ( calendar_view.hasClass("year-view") ){
         jQuery(".calendar-year").addClass("active");
