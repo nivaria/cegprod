@@ -67,4 +67,19 @@ jQuery(document).ready(function($){
         jQuery("<h3 class='view-question-answers-title' >"+jQuery("h1").text()+"</h3>"),
         jQuery(".view-question-answers")
     );
+    
+    var calendar_view = jQuery("attachment-after > calendar-calendar div");
+    
+    if ( calendar_view.hasClass("year-view") ){
+        jQuery(".calendar-year").addClass("active");
+    }
+    if ( calendar_view.hasClass("month-view") ){
+        jQuery(".calendar-month").addClass("active");
+    }
+    if ( calendar_view.hasClass("week-view") ){
+        jQuery(".calendar-week").addClass("active");
+    }
+    if ( calendar_view.hasClass("day-view") ){
+        jQuery(".calendar-day").addClass("active");
+    }
 });
