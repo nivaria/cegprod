@@ -3273,7 +3273,19 @@ div.node-type-question p {
     border:1px solid #F68000;
     color:#777;
 }
+#page .block .calendar-calendar .month-view table tr td.today a{
+	color:#777;
+}
 #page .calendar-calendar .week-view td div.view-item div.view-data-node-title a,
 #page .calendar-calendar .day-view td div.view-item div.view-data-node-title a{
     background-color:transparent;
+}
+.calendar-calendar .week-view table{
+	table-layout:fixed;
+}
+.calendar-calendar div.calendar {
+	float:none;
+}
+.calendar-calendar .week-view td.calendar-agenda-hour{
+	white-space:normal;
 }
