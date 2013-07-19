@@ -3273,6 +3273,7 @@ div.node-type-question p {
     border:1px solid #F68000;
     color:#777;
 }
+#page .calendar-calendar .week-view td div.view-item div.view-data-node-title a,
 #page .calendar-calendar .day-view td div.view-item div.view-data-node-title a{
     background-color:transparent;
 }
