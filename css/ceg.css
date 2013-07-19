@@ -2608,6 +2608,22 @@ body.page-user-1 #block-facebook_status-facebook_status {
     text-decoration:underline;
 }
 
+.calendar-calendar .month-view div.date-nav{
+    margin:0;
+}
+.calendar-calendar div.date-nav a,
+.calendar-calendar div.date-nav h3 {
+    font-size:16px;
+}
+.calendar-calendar div.date-nav div.date-next {
+    text-align: right;
+}
+.calendar-calendar div.date-nav div.date-prev {
+    text-align: left;
+}
+.calendar-calendar td.calendar-agenda-hour .calendar-hour {
+    font-size: 13px;
+}
 .calendar-calendar td .inner div,
 .calendar-calendar td .inner div a{
     background-color:transparent;
