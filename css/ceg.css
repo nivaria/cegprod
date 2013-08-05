@@ -3291,3 +3291,20 @@ div.node-type-question p {
 .calendar-calendar .week-view td.calendar-agenda-hour{
 	white-space:normal;
 }
+#page .comment-content ul li {
+    padding-bottom: 0.5em;
+    padding-left: 20px;
+    position: relative;
+}
+#page .comment-content ul li:before {
+    background-image: url("../images/sprites.png");
+    background-position: -6px -529px;
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    height: 14px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 14px;
+}
